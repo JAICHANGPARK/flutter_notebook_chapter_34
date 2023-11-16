@@ -158,7 +158,18 @@ class _ProductMainPageState extends State<ProductMainPage> {
                 ],
               ),
               Gap(16),
-              
+              Row(
+                children: [
+                  Text("Exclusive"),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.tealAccent,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
+                    child: Text("03:25:43"),
+                  )
+                ],
+              )
             ],
           ),
         ),
