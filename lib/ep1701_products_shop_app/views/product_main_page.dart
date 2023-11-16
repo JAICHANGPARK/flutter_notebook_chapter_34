@@ -22,20 +22,21 @@ class _ProductMainPageState extends State<ProductMainPage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[300],
+                        color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: TextField(
                         controller: TextEditingController(),
-                        decoration: InputDecoration(),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
                       ),
                     ),
                   ),
                   Gap(8),
-
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
@@ -45,9 +46,8 @@ class _ProductMainPageState extends State<ProductMainPage> {
                   ),
                   Gap(8),
                   Container(
-
                     decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
@@ -55,6 +55,95 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       onPressed: () {},
                     ),
                   ),
+                ],
+              ),
+              Gap(16),
+              Container(
+                height: 180,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Placeholder(),
+              ),
+              Gap(16),
+              Row(
+                children: [
+                  Text("Categories"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("See all"),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent,
+                          ),
+                          child: Icon(Icons.light),
+                        ),
+                        Text("Lamp")
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent,
+                          ),
+                          child: Icon(Icons.light),
+                        ),
+                        Text("Lamp")
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent,
+                          ),
+                          child: Icon(Icons.light),
+                        ),
+                        Text("Lamp")
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent,
+                          ),
+                          child: Icon(Icons.light),
+                        ),
+                        Text("Lamp")
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent,
+                          ),
+                          child: Icon(Icons.light),
+                        ),
+                        Text("Lamp")
+                      ],
+                    ),
+                  )
                 ],
               )
             ],
