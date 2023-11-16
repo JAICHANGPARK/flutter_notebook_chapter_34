@@ -156,7 +156,9 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     ),
                   )
                 ],
-              )
+              ),
+              Gap(16),
+              
             ],
           ),
         ),
