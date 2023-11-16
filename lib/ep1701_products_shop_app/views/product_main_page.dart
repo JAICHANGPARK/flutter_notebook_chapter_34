@@ -81,6 +81,25 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: EdgeInsets.symmetric(vertical: 8),
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent,
+                          ),
+                          child: Icon(
+                            Icons.light,
+                            size: 28,
+                          ),
+                        ),
+                        Text("Lamp")
+                      ],
+                    ),
+                  ),
+                  Gap(12),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
@@ -91,6 +110,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       ],
                     ),
                   ),
+                  Gap(12),
                   Expanded(
                     child: Column(
                       children: [
@@ -105,10 +125,12 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       ],
                     ),
                   ),
+                  Gap(12),
                   Expanded(
                     child: Column(
                       children: [
                         Container(
+                          width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
                           ),
@@ -118,23 +140,12 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       ],
                     ),
                   ),
+                  Gap(12),
                   Expanded(
                     child: Column(
                       children: [
                         Container(
-                          decoration: BoxDecoration(
-                            color: Colors.lightBlueAccent,
-                          ),
-                          child: Icon(Icons.light),
-                        ),
-                        Text("Lamp")
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Container(
+                          width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
                           ),
