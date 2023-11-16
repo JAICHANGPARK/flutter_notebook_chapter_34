@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  
+
 }
 
 class ProductsShopApp extends StatelessWidget {
@@ -9,6 +9,8 @@ class ProductsShopApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: ,
+    );
   }
 }
