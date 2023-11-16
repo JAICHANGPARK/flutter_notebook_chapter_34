@@ -12,35 +12,49 @@ class _ProductMainPageState extends State<ProductMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: TextField(
+                        controller: TextEditingController(),
+                        decoration: InputDecoration(),
+                      ),
+                    ),
+                  ),
+
+                  Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: TextField(
-                      controller: TextEditingController(),
-                      decoration: InputDecoration(),
+                    child: IconButton(
+                      icon: Icon(Icons.percent),
+                      onPressed: () {},
                     ),
                   ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(8),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.wallet),
+                      onPressed: () {},
+                    ),
                   ),
-                  child: IconButton(
-                    icon: Icon(Icons.percent),
-                    onPressed: () {},
-                  ),
-                ),
-              ],
-            )
-          ],
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
