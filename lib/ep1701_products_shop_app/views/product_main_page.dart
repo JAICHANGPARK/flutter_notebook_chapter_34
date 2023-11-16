@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ProductMainPage extends StatefulWidget {
   const ProductMainPage({super.key});
@@ -30,6 +31,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       ),
                     ),
                   ),
+                  Gap(8),
 
                   Container(
                     decoration: BoxDecoration(
@@ -41,7 +43,9 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       onPressed: () {},
                     ),
                   ),
+                  Gap(8),
                   Container(
+
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(8),
