@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1701_products_shop_app/views/product_main_page.dart';
 
 void main() {
 
@@ -10,7 +11,7 @@ class ProductsShopApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      home: ProductMainPage(),
     );
   }
 }
