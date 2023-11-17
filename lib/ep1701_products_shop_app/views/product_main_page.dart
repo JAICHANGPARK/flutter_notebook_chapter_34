@@ -254,9 +254,9 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
                       color: Colors.tealAccent,
                       borderRadius: BorderRadius.circular(16),
@@ -278,7 +278,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(16),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: NetworkImage(
                             "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
                           ),
@@ -289,7 +289,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         children: [
                           Positioned.fill(
                             child: Container(
-                              margin: EdgeInsets.all(8),
+                              margin: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                   border: Border.all(
                                     color: Colors.white,
@@ -297,14 +297,14 @@ class _ProductMainPageState extends State<ProductMainPage> {
                                   borderRadius: BorderRadius.circular(16)),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             right: 16,
                             top: 16,
                             child: CircleAvatar(
                               radius: 16,
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                               left: 20,
                               bottom: 20,
                               child: Column(
@@ -314,28 +314,190 @@ class _ProductMainPageState extends State<ProductMainPage> {
                                     "Lamp",
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 18
+                                      fontSize: 18,
                                     ),
                                   ),
                                   Gap(4),
-                                  Text("LAMPlamp",style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12
-                                  ),)
+                                  Text(
+                                    "LAMPlamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  )
                                 ],
                               )),
                         ],
                       ),
                     ),
                     Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned.fill(
+                            child: Container(
+                              margin: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
+                            ),
+                          ),
+                          const Positioned(
+                            right: 16,
+                            top: 16,
+                            child: CircleAvatar(
+                              radius: 16,
+                            ),
+                          ),
+                          const Positioned(
+                              left: 20,
+                              bottom: 20,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Lamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text(
+                                    "LAMPlamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              )),
+                        ],
+                      ),
                     ),
                     Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned.fill(
+                            child: Container(
+                              margin: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
+                            ),
+                          ),
+                          const Positioned(
+                            right: 16,
+                            top: 16,
+                            child: CircleAvatar(
+                              radius: 16,
+                            ),
+                          ),
+                          const Positioned(
+                              left: 20,
+                              bottom: 20,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Lamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text(
+                                    "LAMPlamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              )),
+                        ],
+                      ),
                     ),
                     Container(
-                      color: Colors.blue,
-                    )
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned.fill(
+                            child: Container(
+                              margin: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
+                            ),
+                          ),
+                          const Positioned(
+                            right: 16,
+                            top: 16,
+                            child: CircleAvatar(
+                              radius: 16,
+                            ),
+                          ),
+                          const Positioned(
+                              left: 20,
+                              bottom: 20,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Lamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text(
+                                    "LAMPlamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              )),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
