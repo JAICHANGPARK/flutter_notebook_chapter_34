@@ -63,9 +63,9 @@ class _ProductMainPageState extends State<ProductMainPage> {
               Gap(16),
               Container(
                   height: 160,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                  ),
+                  // decoration: BoxDecoration(
+                  //   color: Colors.blue,
+                  // ),
                   child: Stack(
                     children: [
                       Positioned(
@@ -79,6 +79,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             color: Colors.grey,
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
@@ -96,6 +97,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
+                                  borderRadius: BorderRadius.circular(16)
                                 ),
                                 padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                                 child: Text("Buy now"),
