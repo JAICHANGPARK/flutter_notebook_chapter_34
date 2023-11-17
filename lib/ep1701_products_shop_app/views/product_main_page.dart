@@ -291,11 +291,17 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             child: Container(
                               margin: EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.white,
-                                ),
-                                borderRadius: BorderRadius.circular(16)
-                              ),
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
+                            ),
+                          ),
+                          Positioned(
+                            right: 16,
+                            top: 16,
+                            child: CircleAvatar(
+                              radius: 16,
                             ),
                           )
                         ],
