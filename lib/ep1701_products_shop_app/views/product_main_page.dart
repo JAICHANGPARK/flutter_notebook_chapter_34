@@ -249,7 +249,10 @@ class _ProductMainPageState extends State<ProductMainPage> {
                 children: [
                   const Text(
                     "Exclusive",
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Gap(12),
                   Container(
