@@ -305,16 +305,25 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             ),
                           ),
                           Positioned(
-                            left: 16,
-                            bottom: 16,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Lamp"),
-                                Text("LAMPlamp")
-                              ],
-                            )
-                          ),
+                              left: 20,
+                              bottom: 20,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Lamp",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text("LAMPlamp",style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12
+                                  ),)
+                                ],
+                              )),
                         ],
                       ),
                     ),
