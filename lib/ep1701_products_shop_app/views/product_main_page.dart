@@ -77,6 +77,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                           padding: EdgeInsets.all(12),
                           decoration: BoxDecoration(
                             color: Colors.grey,
+                            borderRadius: BorderRadius.circular(13)
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
