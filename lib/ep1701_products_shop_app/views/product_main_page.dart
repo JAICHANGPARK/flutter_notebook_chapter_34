@@ -303,7 +303,18 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             child: CircleAvatar(
                               radius: 16,
                             ),
-                          )
+                          ),
+                          Positioned(
+                            left: 16,
+                            bottom: 16,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Lamp"),
+                                Text("LAMPlamp")
+                              ],
+                            )
+                          ),
                         ],
                       ),
                     ),
