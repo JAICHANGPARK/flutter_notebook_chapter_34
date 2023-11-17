@@ -275,7 +275,31 @@ class _ProductMainPageState extends State<ProductMainPage> {
                   ),
                   children: [
                     Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(16),
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned.fill(
+                            child: Container(
+                              margin: EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.white,
+                                ),
+                                borderRadius: BorderRadius.circular(16)
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       color: Colors.blue,
