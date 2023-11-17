@@ -163,12 +163,18 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           width: double.infinity,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
+                            borderRadius: BorderRadius.circular(8),
                           ),
-                          child: const Icon(Icons.light),
+                          child: const Icon(
+                            Icons.light,
+                            size: 28,
+                          ),
                         ),
+                        const Gap(8),
                         const Text("Lamp")
                       ],
                     ),
@@ -178,12 +184,18 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           width: double.infinity,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
+                            borderRadius: BorderRadius.circular(8),
                           ),
-                          child: const Icon(Icons.light),
+                          child: const Icon(
+                            Icons.light,
+                            size: 28,
+                          ),
                         ),
+                        const Gap(8),
                         const Text("Lamp")
                       ],
                     ),
@@ -193,12 +205,18 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           width: double.infinity,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
+                            borderRadius: BorderRadius.circular(8),
                           ),
-                          child: const Icon(Icons.light),
+                          child: const Icon(
+                            Icons.light,
+                            size: 28,
+                          ),
                         ),
+                        const Gap(8),
                         const Text("Lamp")
                       ],
                     ),
@@ -208,23 +226,34 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           width: double.infinity,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
+                            borderRadius: BorderRadius.circular(8),
                           ),
-                          child: const Icon(Icons.light),
+                          child: const Icon(
+                            Icons.light,
+                            size: 28,
+                          ),
                         ),
+                        const Gap(8),
                         const Text("Lamp")
                       ],
                     ),
                   )
                 ],
               ),
-              const Gap(16),
+              const Gap(32),
               Row(
                 children: [
-                  const Text("Exclusive"),
+                  const Text(
+                    "Exclusive",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                  Gap(12),
                   Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
                       color: Colors.tealAccent,
                       borderRadius: BorderRadius.circular(16),
