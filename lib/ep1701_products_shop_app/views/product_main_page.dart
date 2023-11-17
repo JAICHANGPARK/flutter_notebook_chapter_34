@@ -62,7 +62,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
               ),
               Gap(16),
               Container(
-                  height: 160,
+                  height: 150,
                   // decoration: BoxDecoration(
                   //   color: Colors.blue,
                   // ),
@@ -74,7 +74,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         right: 0,
                         bottom: 0,
                         child: Container(
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(12),
                           decoration: BoxDecoration(
                             color: Colors.grey,
                           ),
@@ -84,22 +84,23 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             children: [
                               Text(
                                 "Explore Electronics",
+                                style: TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                              Text(
+                                "Exchange for what you want",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 18
                                 ),
                               ),
-                              Text("Exchange for what you want",
-                                style: TextStyle(
-                                    color: Colors.white,
-
-                                ),),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
-                                  borderRadius: BorderRadius.circular(16)
+                                  borderRadius: BorderRadius.circular(16),
                                 ),
-                                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                                padding: EdgeInsets.symmetric(
+                                  vertical: 12,
+                                  horizontal: 24,
+                                ),
                                 child: Text("Buy now"),
                               )
                             ],
