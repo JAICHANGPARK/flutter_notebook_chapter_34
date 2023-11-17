@@ -21,6 +21,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                 children: [
                   Expanded(
                     child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(8),
@@ -28,8 +29,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       child: TextField(
                         controller: TextEditingController(),
                         decoration: InputDecoration(
-                          border: InputBorder.none,
-                        ),
+                            border: InputBorder.none, hintText: "Search products", icon: Icon(Icons.search)),
                       ),
                     ),
                   ),
@@ -59,12 +59,37 @@ class _ProductMainPageState extends State<ProductMainPage> {
               ),
               Gap(16),
               Container(
-                height: 180,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
-                child: Placeholder(),
-              ),
+                  height: 180,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: 18,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                          child: Column(
+                            children: [
+                              Text("Explore Electronics"),
+                              Text("Exchange for what you want"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.pink,
+                                ),
+                                child: Text("Buy now"),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  )),
               Gap(16),
               Row(
                 children: [
