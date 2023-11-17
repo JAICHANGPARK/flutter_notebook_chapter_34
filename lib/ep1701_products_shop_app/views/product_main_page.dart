@@ -21,14 +21,14 @@ class _ProductMainPageState extends State<ProductMainPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: TextField(
                         controller: TextEditingController(),
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: InputBorder.none,
                           hintText: "Search products",
                           icon: Icon(Icons.search),
@@ -36,31 +36,31 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       ),
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.percent),
+                      icon: const Icon(Icons.percent),
                       onPressed: () {},
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.wallet),
+                      icon: const Icon(Icons.wallet),
                       onPressed: () {},
                     ),
                   ),
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               Container(
                   height: 150,
                   // decoration: BoxDecoration(
@@ -74,39 +74,36 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         right: 0,
                         bottom: 0,
                         child: Container(
-                          padding: EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(13)
-                          ),
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(13)),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "Explore Electronics",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "Exchange for what you want",
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
-                              Gap(4),
+                              const Gap(4),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                   vertical: 12,
                                   horizontal: 24,
                                 ),
-                                child: Text("Buy now"),
+                                child: const Text("Buy now"),
                               )
                             ],
                           ),
@@ -118,18 +115,24 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         bottom: 0,
                         child: Container(
                           width: 140,
-                          decoration: BoxDecoration(color: Colors.pink),
+                          decoration: const BoxDecoration(
+                            color: Colors.pink,
+                          ),
                         ),
                       )
                     ],
                   )),
-              Gap(16),
+              const Gap(16),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Categories"),
+                  const Text(
+                    "Categories",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("See all"),
+                    child: const Text("See all"),
                   )
                 ],
               ),
@@ -139,99 +142,101 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     child: Column(
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 8),
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
+                            borderRadius: BorderRadius.circular(8),
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.light,
                             size: 28,
                           ),
                         ),
-                        Text("Lamp")
+                        const Gap(8),
+                        const Text("Lamp")
                       ],
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: Column(
                       children: [
                         Container(
                           width: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.lightBlueAccent,
                           ),
-                          child: Icon(Icons.light),
+                          child: const Icon(Icons.light),
                         ),
-                        Text("Lamp")
+                        const Text("Lamp")
                       ],
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: Column(
                       children: [
                         Container(
                           width: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.lightBlueAccent,
                           ),
-                          child: Icon(Icons.light),
+                          child: const Icon(Icons.light),
                         ),
-                        Text("Lamp")
+                        const Text("Lamp")
                       ],
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: Column(
                       children: [
                         Container(
                           width: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.lightBlueAccent,
                           ),
-                          child: Icon(Icons.light),
+                          child: const Icon(Icons.light),
                         ),
-                        Text("Lamp")
+                        const Text("Lamp")
                       ],
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: Column(
                       children: [
                         Container(
                           width: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.lightBlueAccent,
                           ),
-                          child: Icon(Icons.light),
+                          child: const Icon(Icons.light),
                         ),
-                        Text("Lamp")
+                        const Text("Lamp")
                       ],
                     ),
                   )
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               Row(
                 children: [
-                  Text("Exclusive"),
+                  const Text("Exclusive"),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.tealAccent,
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Text("03:25:43"),
+                    child: const Text("03:25:43"),
                   )
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               Expanded(
                 child: GridView(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 12,
