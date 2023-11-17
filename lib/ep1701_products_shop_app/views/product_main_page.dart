@@ -91,12 +91,13 @@ class _ProductMainPageState extends State<ProductMainPage> {
                               Text("Exchange for what you want",
                                 style: TextStyle(
                                     color: Colors.white,
-                                  
+
                                 ),),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
                                 ),
+                                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                                 child: Text("Buy now"),
                               )
                             ],
