@@ -59,14 +59,14 @@ class _ProductMainPageState extends State<ProductMainPage> {
               ),
               Gap(16),
               Container(
-                  height: 180,
+                  height: 160,
                   decoration: BoxDecoration(
                     color: Colors.blue,
                   ),
                   child: Stack(
                     children: [
                       Positioned(
-                        top: 18,
+                        top: 24,
                         left: 0,
                         right: 0,
                         bottom: 0,
@@ -75,6 +75,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             color: Colors.grey,
                           ),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Explore Electronics"),
                               Text("Exchange for what you want"),
@@ -85,6 +86,17 @@ class _ProductMainPageState extends State<ProductMainPage> {
                                 child: Text("Buy now"),
                               )
                             ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        right: 0,
+                        top: 0,
+                        bottom: 0,
+                        child: Container(
+                          width: 160,
+                          decoration: BoxDecoration(
+                            color: Colors.pink
                           ),
                         ),
                       )
