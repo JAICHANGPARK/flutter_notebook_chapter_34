@@ -84,7 +84,10 @@ class _ProductMainPageState extends State<ProductMainPage> {
                             children: [
                               Text(
                                 "Explore Electronics",
-                                style: TextStyle(color: Colors.white, fontSize: 18),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
                               ),
                               Text(
                                 "Exchange for what you want",
@@ -92,6 +95,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                                   color: Colors.white,
                                 ),
                               ),
+                              Gap(4),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
