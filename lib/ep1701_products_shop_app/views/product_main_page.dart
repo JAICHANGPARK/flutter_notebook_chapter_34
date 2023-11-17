@@ -162,7 +162,10 @@ class _ProductMainPageState extends State<ProductMainPage> {
                 children: [
                   Text("Exclusive"),
                   Container(
-                    decoration: BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(16)),
+                    decoration: BoxDecoration(
+                      color: Colors.tealAccent,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Text("03:25:43"),
                   )
                 ],
