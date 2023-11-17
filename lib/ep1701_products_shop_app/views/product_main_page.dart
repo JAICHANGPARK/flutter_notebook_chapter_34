@@ -29,7 +29,10 @@ class _ProductMainPageState extends State<ProductMainPage> {
                       child: TextField(
                         controller: TextEditingController(),
                         decoration: InputDecoration(
-                            border: InputBorder.none, hintText: "Search products", icon: Icon(Icons.search)),
+                          border: InputBorder.none,
+                          hintText: "Search products",
+                          icon: Icon(Icons.search),
+                        ),
                       ),
                     ),
                   ),
@@ -71,14 +74,25 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         right: 0,
                         bottom: 0,
                         child: Container(
+                          padding: EdgeInsets.all(16),
                           decoration: BoxDecoration(
                             color: Colors.grey,
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Explore Electronics"),
-                              Text("Exchange for what you want"),
+                              Text(
+                                "Explore Electronics",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18
+                                ),
+                              ),
+                              Text("Exchange for what you want",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                  
+                                ),),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
@@ -95,9 +109,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         bottom: 0,
                         child: Container(
                           width: 140,
-                          decoration: BoxDecoration(
-                            color: Colors.pink
-                          ),
+                          decoration: BoxDecoration(color: Colors.pink),
                         ),
                       )
                     ],
