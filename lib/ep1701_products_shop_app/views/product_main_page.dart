@@ -90,11 +90,11 @@ class _ProductMainPageState extends State<ProductMainPage> {
                         ),
                       ),
                       Positioned(
-                        right: 0,
+                        right: 24,
                         top: 0,
                         bottom: 0,
                         child: Container(
-                          width: 160,
+                          width: 140,
                           decoration: BoxDecoration(
                             color: Colors.pink
                           ),
