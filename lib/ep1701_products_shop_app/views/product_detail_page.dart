@@ -77,8 +77,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Lamp"),
-
+                    Text(
+                      "Lamp",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Text("Posted 1 hr ago"),
                   ],
                 ),
@@ -106,8 +110,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Gap(16),
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 16),
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Colors.pinkAccent,
+                    borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Center(
                     child: Text("Exchange"),
