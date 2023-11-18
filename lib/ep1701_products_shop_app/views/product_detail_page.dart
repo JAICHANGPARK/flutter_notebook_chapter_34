@@ -14,19 +14,26 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          Expanded(child: Container()),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                image: NetworkImage(
+                  "https://cdn.pixabay.com/photo/2016/08/18/20/05/light-bulbs-1603766_1280.jpg",
+                ),
+              )),
+            ),
+          ),
           Container(
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(16),
-                topLeft: Radius.circular(16),
-              )
-            ),
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft: Radius.circular(16),
+                )),
             padding: EdgeInsets.all(16),
             child: Column(
               children: [
-
                 Row(
                   children: [
                     CircleAvatar(),
@@ -62,10 +69,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Row(
                   children: [
                     Container(
-                      decoration: BoxDecoration(
-                        color: Colors.tealAccent,
-                        borderRadius: BorderRadius.circular(32)
-                      ),
+                      decoration: BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(32)),
                       child: Row(
                         children: [
                           Icon(
