@@ -103,7 +103,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Gap(8),
                 const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                Gap(16),
                 Container(
+                  padding: EdgeInsets.symmetric(vertical: 16),
                   decoration: const BoxDecoration(
                     color: Colors.pinkAccent,
                   ),
