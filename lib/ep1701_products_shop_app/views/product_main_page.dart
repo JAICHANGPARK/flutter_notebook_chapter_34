@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1701_products_shop_app/views/product_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class ProductMainPage extends StatefulWidget {
@@ -274,60 +275,67 @@ class _ProductMainPageState extends State<ProductMainPage> {
                     mainAxisSpacing: 12,
                   ),
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(16),
-                        image: const DecorationImage(
-                          image: NetworkImage(
-                            "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
-                          ),
-                          fit: BoxFit.cover,
+                    GestureDetector(
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProductDetailPage(),
                         ),
                       ),
-                      child: Stack(
-                        children: [
-                          Positioned.fill(
-                            child: Container(
-                              margin: const EdgeInsets.all(8),
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                  ),
-                                  borderRadius: BorderRadius.circular(16)),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(16),
+                          image: const DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2014/12/20/22/35/kerosene-lamp-574504_1280.jpg",
                             ),
+                            fit: BoxFit.cover,
                           ),
-                          const Positioned(
-                            right: 16,
-                            top: 16,
-                            child: CircleAvatar(
-                              radius: 16,
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned.fill(
+                              child: Container(
+                                margin: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.white,
+                                    ),
+                                    borderRadius: BorderRadius.circular(16)),
+                              ),
                             ),
-                          ),
-                          const Positioned(
-                              left: 20,
-                              bottom: 20,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Lamp",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 18,
+                            const Positioned(
+                              right: 16,
+                              top: 16,
+                              child: CircleAvatar(
+                                radius: 16,
+                              ),
+                            ),
+                            const Positioned(
+                                left: 20,
+                                bottom: 20,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Lamp",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
                                     ),
-                                  ),
-                                  Gap(4),
-                                  Text(
-                                    "LAMPlamp",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12,
-                                    ),
-                                  )
-                                ],
-                              )),
-                        ],
+                                    Gap(4),
+                                    Text(
+                                      "LAMPlamp",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                      ),
+                                    )
+                                  ],
+                                )),
+                          ],
+                        ),
                       ),
                     ),
                     Container(
