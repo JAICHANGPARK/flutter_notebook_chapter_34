@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_34/ep1701_products_shop_app/views/product_main_page.dart';
 
 void main() {
-  runApp(ProductsShopApp());
+  runApp(const ProductsShopApp());
 }
 
 class ProductsShopApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class ProductsShopApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: ProductMainPage(),
     );
   }
