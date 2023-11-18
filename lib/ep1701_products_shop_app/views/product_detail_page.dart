@@ -87,7 +87,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
                 Container(
-                  decoration: BoxDecoration(),
+                  decoration: BoxDecoration(
+                    color: Colors.pinkAccent,
+                  ),
+                  child: Center(
+                    child: Text("Exchange"),
+                  ),
                 )
               ],
             ),
