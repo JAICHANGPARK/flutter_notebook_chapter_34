@@ -17,11 +17,13 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                image: NetworkImage(
-                  "https://cdn.pixabay.com/photo/2016/08/18/20/05/light-bulbs-1603766_1280.jpg",
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2016/08/18/20/05/light-bulbs-1603766_1280.jpg",
+                  ),
+                  fit: BoxFit.cover,
                 ),
-              )),
+              ),
             ),
           ),
           Container(
@@ -80,6 +82,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ),
                     )
                   ],
+                ),
+                Text("Description"),
+                Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                Container(
+                  decoration: BoxDecoration(),
                 )
               ],
             ),
