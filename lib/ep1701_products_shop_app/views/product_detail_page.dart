@@ -16,7 +16,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
         children: [
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
                     "https://cdn.pixabay.com/photo/2016/08/18/20/05/light-bulbs-1603766_1280.jpg",
@@ -27,42 +27,47 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             ),
           ),
           Container(
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(16),
-                  topLeft: Radius.circular(16),
-                )),
-            padding: EdgeInsets.all(16),
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(16),
+                topLeft: Radius.circular(16),
+              ),
+            ),
+            padding: const EdgeInsets.all(16),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    CircleAvatar(),
-                    Column(
-                      children: [
-                        Text("Design house"),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.star,
-                              color: Colors.purpleAccent,
-                            ),
-                            Text('4.9'),
-                            Text("(127)"),
-                          ],
-                        ),
-                      ],
+                    const CircleAvatar(),
+                    Expanded(
+                      child: const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Design house"),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                color: Colors.purpleAccent,
+                              ),
+                              Text('4.9'),
+                              Text("(127)"),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                     Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black,
                       ),
-                      child: Icon(Icons.chat_bubble_outline),
+                      child: const Icon(Icons.chat_bubble_outline),
                     ),
                   ],
                 ),
-                Row(
+                const Row(
                   children: [
                     Text("Lamp"),
                     Text("Posted 1 hr ago"),
@@ -72,7 +77,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   children: [
                     Container(
                       decoration: BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(32)),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Icon(
                             Icons.refresh,
@@ -83,14 +88,14 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     )
                   ],
                 ),
-                Text("Description"),
-                Text(
+                const Text("Description"),
+                const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.pinkAccent,
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text("Exchange"),
                   ),
                 )
