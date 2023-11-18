@@ -18,9 +18,15 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(16),
+                topLeft: Radius.circular(16),
+              )
             ),
+            padding: EdgeInsets.all(16),
             child: Column(
               children: [
+
                 Row(
                   children: [
                     CircleAvatar(),
@@ -58,6 +64,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.tealAccent,
+                        borderRadius: BorderRadius.circular(32)
                       ),
                       child: Row(
                         children: [
