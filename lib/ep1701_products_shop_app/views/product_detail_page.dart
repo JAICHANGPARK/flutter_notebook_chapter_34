@@ -14,7 +14,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-
+          Expanded(child: Container()),
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+          )
         ],
       ),
     );
