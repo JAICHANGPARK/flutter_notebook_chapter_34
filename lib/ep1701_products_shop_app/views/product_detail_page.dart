@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ProductDetailPage extends StatefulWidget {
   const ProductDetailPage({super.key});
@@ -41,18 +42,23 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Row(
                   children: [
                     const CircleAvatar(),
+                    Gap(8),
                     Expanded(
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Design house"),
+                          Gap(4),
                           Row(
                             children: [
                               Icon(
                                 Icons.star,
                                 color: Colors.purpleAccent,
+                                size: 16,
                               ),
+                              Gap(4),
                               Text('4.9'),
+                              Gap(4),
                               Text("(127)"),
                             ],
                           ),
@@ -67,12 +73,16 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     ),
                   ],
                 ),
+                Gap(16),
                 const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Lamp"),
+
                     Text("Posted 1 hr ago"),
                   ],
                 ),
+                Gap(16),
                 Row(
                   children: [
                     Container(
@@ -88,7 +98,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     )
                   ],
                 ),
+                Gap(16),
                 const Text("Description"),
+                Gap(8),
                 const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
                 Container(
