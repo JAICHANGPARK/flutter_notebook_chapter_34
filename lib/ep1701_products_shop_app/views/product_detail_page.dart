@@ -159,15 +159,15 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.tealAccent,
+                        color: Colors.indigo[50],
                         borderRadius: BorderRadius.circular(32),
                       ),
                       child: const Row(
                         children: [
                           Icon(
-                            Icons.refresh,
+                            Icons.flash_on,
                           ),
-                          Text("Buy Online"),
+                          Text("Best product"),
                         ],
                       ),
                     )
