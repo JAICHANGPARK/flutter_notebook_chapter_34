@@ -126,8 +126,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   children: [
                     Text(
                       "Lamp",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                      ),
                     ),
                     Text(
                       "Posted 1 hr ago",
@@ -174,7 +176,13 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ],
                 ),
                 const Gap(16),
-                const Text("Description"),
+                const Text(
+                  "Description",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 22,
+                  ),
+                ),
                 const Gap(8),
                 const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
@@ -186,7 +194,14 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Center(
-                    child: Text("Exchange"),
+                    child: Text(
+                      "Exchange",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                      ),
+                    ),
                   ),
                 )
               ],
