@@ -31,23 +31,25 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   Row(
                     children: [
                       CircleAvatar(
-                        child: Icon(
-                          Icons.arrow_back_ios_new,
-                        ),
                         backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
+                        child: const Icon(
+                          Icons.arrow_back_ios_new,
+                        ),
                       ),
-                      Spacer(),
-                      CircleAvatar(  backgroundColor: Colors.white.withOpacity(0.2),
+                      const Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
-                        child: Icon(
+                        child: const Icon(
                           Icons.bookmark_border,
                         ),
                       ),
-                      Gap(16),
-                      CircleAvatar(  backgroundColor: Colors.white.withOpacity(0.2),
+                      const Gap(16),
+                      CircleAvatar(
+                        backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
-                        child: Icon(
+                        child: const Icon(
                           Icons.upload,
                         ),
                       )
