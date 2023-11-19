@@ -25,7 +25,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Column(
+              padding: const EdgeInsets.only(top: 72, left: 16, right: 16),
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -34,14 +35,16 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           Icons.arrow_back_ios_new,
                         ),
                       ),
+                      Spacer(),
                       CircleAvatar(
                         child: Icon(
-                          Icons.arrow_back_ios_new,
+                          Icons.bookmark_border,
                         ),
                       ),
+                      Gap(16),
                       CircleAvatar(
                         child: Icon(
-                          Icons.arrow_back_ios_new,
+                          Icons.upload,
                         ),
                       )
                     ],
@@ -65,9 +68,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Row(
                   children: [
                     const CircleAvatar(),
-                    Gap(8),
-                    Expanded(
-                      child: const Column(
+                    const Gap(8),
+                    const Expanded(
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Design house"),
@@ -96,7 +99,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     ),
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -109,7 +112,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     Text("Posted 1 hr ago"),
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 Row(
                   children: [
                     Container(
@@ -127,14 +130,14 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     )
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 const Text("Description"),
-                Gap(8),
+                const Gap(8),
                 const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
-                Gap(16),
+                const Gap(16),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 16),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   decoration: BoxDecoration(
                     color: Colors.pinkAccent,
                     borderRadius: BorderRadius.circular(8),
