@@ -26,7 +26,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 ),
               ),
               padding: const EdgeInsets.only(top: 72, left: 16, right: 16),
-              child: const Column(
+              child: Column(
                 children: [
                   Row(
                     children: [
@@ -34,15 +34,19 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         child: Icon(
                           Icons.arrow_back_ios_new,
                         ),
+                        backgroundColor: Colors.white.withOpacity(0.2),
+                        foregroundColor: Colors.white,
                       ),
                       Spacer(),
-                      CircleAvatar(
+                      CircleAvatar(  backgroundColor: Colors.white.withOpacity(0.2),
+                        foregroundColor: Colors.white,
                         child: Icon(
                           Icons.bookmark_border,
                         ),
                       ),
                       Gap(16),
-                      CircleAvatar(
+                      CircleAvatar(  backgroundColor: Colors.white.withOpacity(0.2),
+                        foregroundColor: Colors.white,
                         child: Icon(
                           Icons.upload,
                         ),
