@@ -25,8 +25,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   fit: BoxFit.cover,
                 ),
               ),
-              padding: const EdgeInsets.only(top: 72, left: 16, right: 16),
+              padding: const EdgeInsets.only(
+                  top: 72, left: 16, right: 16, bottom: 24),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
@@ -57,7 +59,22 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         ),
                       )
                     ],
-                  )
+                  ),
+                  const Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    child: const Text(
+                      '1/4',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -111,8 +128,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 32, vertical: 8),
                       child: const Icon(
                         Icons.chat_bubble_outline,
                         color: Colors.white,
@@ -143,7 +160,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
                         color: Colors.tealAccent,
                         borderRadius: BorderRadius.circular(32),
@@ -157,9 +175,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         ],
                       ),
                     ),
-                    Gap(8),
+                    const Gap(8),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
                         color: Colors.indigo[50],
                         borderRadius: BorderRadius.circular(32),
@@ -197,10 +216,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     child: Text(
                       "Exchange",
                       style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
                     ),
                   ),
                 )
