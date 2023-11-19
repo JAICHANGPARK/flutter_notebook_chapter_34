@@ -25,6 +25,29 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   fit: BoxFit.cover,
                 ),
               ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.arrow_back_ios_new,
+                        ),
+                      ),
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.arrow_back_ios_new,
+                        ),
+                      ),
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.arrow_back_ios_new,
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Container(
@@ -90,7 +113,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 Row(
                   children: [
                     Container(
-                      decoration: BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(32)),
+                      decoration: BoxDecoration(
+                          color: Colors.tealAccent,
+                          borderRadius: BorderRadius.circular(32)),
                       child: const Row(
                         children: [
                           Icon(
