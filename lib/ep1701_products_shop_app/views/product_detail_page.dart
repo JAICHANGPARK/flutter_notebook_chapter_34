@@ -84,10 +84,11 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Design house",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18
-                          ),),
+                          Text(
+                            "Design house",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 18),
+                          ),
                           Gap(4),
                           Row(
                             children: [
@@ -106,35 +107,61 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ),
                     ),
                     Container(
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         color: Colors.black,
+                        borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: const Icon(Icons.chat_bubble_outline,
-                      color: Colors.white,),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+                      child: const Icon(
+                        Icons.chat_bubble_outline,
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),
-                const Gap(16),
+                const Gap(24),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "Lamp",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                    Text(
+                      "Posted 1 hr ago",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
                       ),
                     ),
-                    Text("Posted 1 hr ago"),
                   ],
                 ),
                 const Gap(16),
                 Row(
                   children: [
                     Container(
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                          color: Colors.tealAccent,
-                          borderRadius: BorderRadius.circular(32)),
+                        color: Colors.tealAccent,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.refresh,
+                          ),
+                          Text("Buy Online"),
+                        ],
+                      ),
+                    ),
+                    Gap(8),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: Colors.tealAccent,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
                       child: const Row(
                         children: [
                           Icon(
