@@ -33,6 +33,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
+                        radius: 24,
                         child: const Icon(
                           Icons.arrow_back_ios_new,
                         ),
@@ -41,6 +42,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
+                        radius: 24,
                         child: const Icon(
                           Icons.bookmark_border,
                         ),
@@ -49,6 +51,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
+                        radius: 24,
                         child: const Icon(
                           Icons.upload,
                         ),
@@ -73,13 +76,18 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               children: [
                 Row(
                   children: [
-                    const CircleAvatar(),
+                    const CircleAvatar(
+                      radius: 24,
+                    ),
                     const Gap(8),
                     const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Design house"),
+                          Text("Design house",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18
+                          ),),
                           Gap(4),
                           Row(
                             children: [
@@ -101,7 +109,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       decoration: const BoxDecoration(
                         color: Colors.black,
                       ),
-                      child: const Icon(Icons.chat_bubble_outline),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: const Icon(Icons.chat_bubble_outline,
+                      color: Colors.white,),
                     ),
                   ],
                 ),
