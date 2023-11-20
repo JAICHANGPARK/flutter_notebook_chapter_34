@@ -51,8 +51,14 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text.rich(TextSpan(children: [
-                    TextSpan(text: "Your ", style: TextStyle(color: Colors.white, fontSize: 16)),
-                    TextSpan(text: "favourites", style: TextStyle(color: Colors.grey, fontSize: 16))
+                    TextSpan(
+                      text: "Your ",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                    TextSpan(
+                      text: "favourites",
+                      style: TextStyle(color: Colors.grey, fontSize: 16),
+                    )
                   ])),
                   Gap(16),
                   Container(
