@@ -79,30 +79,50 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ),
                     ),
                     Gap(16),
-                    Expanded(child: SingleChildScrollView(child: Column(
-                      children: [
-                        Text.rich(TextSpan(children: [
-                          TextSpan(
-                            text: "Creators ",
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
-                          TextSpan(
-                            text: "on live",
-                            style: TextStyle(color: Colors.grey, fontSize: 16),
-                          )
-                        ])),
-                        Container(
-                          height: 400,
-                          child: Placeholder(),
-                        )
-                      ],
-                    ),))
-              
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text.rich(TextSpan(children: [
+                              TextSpan(
+                                text: "Creators ",
+                                style: TextStyle(color: Colors.white, fontSize: 16),
+                              ),
+                              TextSpan(
+                                text: "on live",
+                                style: TextStyle(color: Colors.grey, fontSize: 16),
+                              )
+                            ])),
+                            Gap(8),
+                            Container(
+                              height: 400,
+                              child: Placeholder(),
+                            ),
+                            Gap(16),
+                            Text.rich(TextSpan(children: [
+                              TextSpan(
+                                text: "Creators ",
+                                style: TextStyle(color: Colors.white, fontSize: 16),
+                              ),
+                              TextSpan(
+                                text: "on live",
+                                style: TextStyle(color: Colors.grey, fontSize: 16),
+                              )
+                            ])),
+                            Gap(8),
+                            Container(
+                              height: 200,
+                              child: Placeholder(),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
             ),
-
           ],
         ),
       ),
