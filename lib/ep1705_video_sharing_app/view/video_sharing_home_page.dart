@@ -44,30 +44,38 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 ],
               ),
             ),
-            Text.rich(TextSpan(children: [
-              TextSpan(
-                  text: "Your ",
-                  style: TextStyle(
-                    color: Colors.white,
-                  )),
-              TextSpan(
-                  text: "favourites",
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ))
-            ])),
-            Container(
-              height: 100,
-              color: Colors.pinkAccent,
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return CircleAvatar(
-                    radius: 48,
-                    backgroundColor: Colors.blue,
-                  );
-                },
-              ),
+            Column(
+              children: [
+                Text.rich(TextSpan(children: [
+                  TextSpan(
+                      text: "Your ",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16
+                      )),
+                  TextSpan(
+                      text: "favourites",
+                      style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16
+                      ))
+                ])),
+                Container(
+                  height: 100,
+                  color: Colors.pinkAccent,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return CircleAvatar(
+                        radius: 48,
+                        backgroundColor: Colors.blue,
+                      );
+                    },
+                  ),
+                )
+              ],
             )
+
           ],
         ),
       ),
