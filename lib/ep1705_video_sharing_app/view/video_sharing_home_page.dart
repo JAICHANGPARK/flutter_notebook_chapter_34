@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class VideoSharingHomePage extends StatefulWidget {
   const VideoSharingHomePage({super.key});
@@ -44,38 +45,32 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 ],
               ),
             ),
-            Column(
-              children: [
-                Text.rich(TextSpan(children: [
-                  TextSpan(
-                      text: "Your ",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16
-                      )),
-                  TextSpan(
-                      text: "favourites",
-                      style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 16
-                      ))
-                ])),
-                Container(
-                  height: 100,
-                  color: Colors.pinkAccent,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return CircleAvatar(
-                        radius: 48,
-                        backgroundColor: Colors.blue,
-                      );
-                    },
-                  ),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.only(left: 16, top: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text.rich(TextSpan(children: [
+                    TextSpan(text: "Your ", style: TextStyle(color: Colors.white, fontSize: 16)),
+                    TextSpan(text: "favourites", style: TextStyle(color: Colors.grey, fontSize: 16))
+                  ])),
+                  Gap(16),
+                  Container(
+                    height: 100,
+                    color: Colors.pinkAccent,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return CircleAvatar(
+                          radius: 48,
+                          backgroundColor: Colors.blue,
+                        );
+                      },
+                    ),
+                  )
+                ],
+              ),
             )
-
           ],
         ),
       ),
