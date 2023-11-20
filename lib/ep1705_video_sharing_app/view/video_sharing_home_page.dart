@@ -77,23 +77,25 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       },
                     ),
                   ),
+                  Gap(16),
+                  Text.rich(TextSpan(children: [
+                    TextSpan(
+                      text: "Creators ",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                    TextSpan(
+                      text: "on live",
+                      style: TextStyle(color: Colors.grey, fontSize: 16),
+                    )
+                  ])),
+                  Container(
+                    height: 400,
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),
-            Text.rich(TextSpan(children: [
-              TextSpan(
-                text: "Creators ",
-                style: TextStyle(color: Colors.white, fontSize: 16),
-              ),
-              TextSpan(
-                text: "on live",
-                style: TextStyle(color: Colors.grey, fontSize: 16),
-              )
-            ])),
-            Container(
-              height: 400,
-              child: Placeholder(),
-            )
+
           ],
         ),
       ),
