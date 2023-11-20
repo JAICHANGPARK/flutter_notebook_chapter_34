@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-
+  runApp(VideoSharingApp());
 }
 
 class VideoSharingApp extends StatelessWidget {
