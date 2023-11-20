@@ -45,54 +45,61 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 16, top: 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text.rich(TextSpan(children: [
-                    TextSpan(
-                      text: "Your ",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16, top: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text.rich(TextSpan(children: [
+                      TextSpan(
+                        text: "Your ",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
+                      TextSpan(
+                        text: "favourites",
+                        style: TextStyle(color: Colors.grey, fontSize: 16),
+                      )
+                    ])),
+                    Gap(16),
+                    Container(
+                      height: 100,
+                      color: Colors.pinkAccent,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: CircleAvatar(
+                              radius: 48,
+                              backgroundColor: Colors.blue,
+                            ),
+                          );
+                        },
+                      ),
                     ),
-                    TextSpan(
-                      text: "favourites",
-                      style: TextStyle(color: Colors.grey, fontSize: 16),
-                    )
-                  ])),
-                  Gap(16),
-                  Container(
-                    height: 100,
-                    color: Colors.pinkAccent,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: CircleAvatar(
-                            radius: 48,
-                            backgroundColor: Colors.blue,
+                    Gap(16),
+                    Expanded(child: SingleChildScrollView(child: Column(
+                      children: [
+                        Text.rich(TextSpan(children: [
+                          TextSpan(
+                            text: "Creators ",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
                           ),
-                        );
-                      },
-                    ),
-                  ),
-                  Gap(16),
-                  Text.rich(TextSpan(children: [
-                    TextSpan(
-                      text: "Creators ",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
-                    ),
-                    TextSpan(
-                      text: "on live",
-                      style: TextStyle(color: Colors.grey, fontSize: 16),
-                    )
-                  ])),
-                  Container(
-                    height: 400,
-                    child: Placeholder(),
-                  )
-                ],
+                          TextSpan(
+                            text: "on live",
+                            style: TextStyle(color: Colors.grey, fontSize: 16),
+                          )
+                        ])),
+                        Container(
+                          height: 400,
+                          child: Placeholder(),
+                        )
+                      ],
+                    ),))
+              
+                  ],
+                ),
               ),
             ),
 
