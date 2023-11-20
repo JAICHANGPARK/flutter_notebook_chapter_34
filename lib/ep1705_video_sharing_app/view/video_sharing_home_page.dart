@@ -67,15 +67,32 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return CircleAvatar(
-                          radius: 48,
-                          backgroundColor: Colors.blue,
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: CircleAvatar(
+                            radius: 48,
+                            backgroundColor: Colors.blue,
+                          ),
                         );
                       },
                     ),
-                  )
+                  ),
                 ],
               ),
+            ),
+            Text.rich(TextSpan(children: [
+              TextSpan(
+                text: "Creators ",
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              ),
+              TextSpan(
+                text: "on live",
+                style: TextStyle(color: Colors.grey, fontSize: 16),
+              )
+            ])),
+            Container(
+              height: 400,
+              child: Placeholder(),
             )
           ],
         ),
