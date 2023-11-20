@@ -14,6 +14,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -54,7 +55,19 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   style: TextStyle(
                     color: Colors.grey,
                   ))
-            ]))
+            ])),
+            Container(
+              height: 100,
+              color: Colors.pinkAccent,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return CircleAvatar(
+                    radius: 48,
+                    backgroundColor: Colors.blue,
+                  );
+                },
+              ),
+            )
           ],
         ),
       ),
