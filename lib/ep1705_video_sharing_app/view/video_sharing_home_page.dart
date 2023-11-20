@@ -21,14 +21,18 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.white.withOpacity(0.2),
-                    child: Icon(Icons.search),
+                    child: const Icon(Icons.search),
                     foregroundColor: Colors.white,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Video",
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 24,
+                        ),
                       ),
                     ),
                   ),
@@ -38,7 +42,19 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Text.rich(TextSpan(children: [
+              TextSpan(
+                  text: "Your ",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+              TextSpan(
+                  text: "favourites",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ))
+            ]))
           ],
         ),
       ),
