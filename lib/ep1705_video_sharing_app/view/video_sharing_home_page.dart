@@ -155,7 +155,17 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                               ),
                                             ],
                                           ),
-
+                                          Spacer(),
+                                          Text("FLUTTER\nDEVELOPMENT"),
+                                          Row(
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 12,
+                                              ),
+                                              Text("Dream"),
+                                              Text("2m")
+                                            ],
+                                          )
                                         ],
                                       ),
                                     );
