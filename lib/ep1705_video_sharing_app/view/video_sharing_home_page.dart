@@ -112,7 +112,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                             const Gap(8),
                             Container(
-                                height: 400,
+                                height: 360,
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemCount: 10,
@@ -133,8 +133,13 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.redAccent, borderRadius: BorderRadius.circular(32)),
-                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                                  color: Colors.redAccent,
+                                                  borderRadius: BorderRadius.circular(32),
+                                                ),
+                                                padding: EdgeInsets.symmetric(
+                                                  horizontal: 16,
+                                                  vertical: 4,
+                                                ),
                                                 child: Text(
                                                   "LIVE",
                                                   style: TextStyle(
