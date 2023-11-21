@@ -212,6 +212,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 300,
+                                      margin: EdgeInsets.only(right: 16),
                                       decoration: BoxDecoration(
                                         color: Colors.blueAccent,
                                         borderRadius: BorderRadius.circular(16),
