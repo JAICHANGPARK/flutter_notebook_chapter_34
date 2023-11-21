@@ -51,25 +51,29 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text.rich(TextSpan(children: [
+                    const Text.rich(
                       TextSpan(
-                        text: "Your ",
-                        style: TextStyle(color: Colors.white, fontSize: 16),
+                        children: [
+                          TextSpan(
+                            text: "Your ",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
+                          TextSpan(
+                            text: "favourites",
+                            style: TextStyle(color: Colors.grey, fontSize: 16),
+                          )
+                        ],
                       ),
-                      TextSpan(
-                        text: "favourites",
-                        style: TextStyle(color: Colors.grey, fontSize: 16),
-                      )
-                    ])),
-                    Gap(16),
+                    ),
+                    const Gap(16),
                     Container(
                       height: 100,
-                      color: Colors.pinkAccent,
+                    
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                          return const Padding(
+                            padding: EdgeInsets.only(right: 8),
                             child: CircleAvatar(
                               radius: 48,
                               backgroundColor: Colors.blue,
@@ -78,13 +82,13 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                         },
                       ),
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text.rich(TextSpan(children: [
+                            const Text.rich(TextSpan(children: [
                               TextSpan(
                                 text: "Creators ",
                                 style: TextStyle(color: Colors.white, fontSize: 16),
@@ -94,13 +98,13 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 style: TextStyle(color: Colors.grey, fontSize: 16),
                               )
                             ])),
-                            Gap(8),
+                            const Gap(8),
                             Container(
                               height: 400,
-                              child: Placeholder(),
+                              child: const Placeholder(),
                             ),
-                            Gap(16),
-                            Text.rich(
+                            const Gap(16),
+                            const Text.rich(
                               TextSpan(
                                 children: [
                                   TextSpan(
@@ -117,10 +121,10 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 ],
                               ),
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Container(
                               height: 200,
-                              child: Placeholder(),
+                              child: const Placeholder(),
                             )
                           ],
                         ),
