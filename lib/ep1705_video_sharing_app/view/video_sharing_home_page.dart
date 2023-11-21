@@ -224,11 +224,17 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                               color: Colors.white.withOpacity(0.2),
                                               borderRadius: BorderRadius.circular(4),
                                             ),
-                                            child: Row(
+                                            padding: EdgeInsets.all(16),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Icon(Icons.access_time_outlined),
-                                                Gap(6),
-                                                Text("0:24"),
+                                                Row(mainAxisSize: MainAxisSize.min,
+                                                  children: [
+                                                    Icon(Icons.access_time_outlined),
+                                                    Gap(6),
+                                                    Text("0:24"),
+                                                  ],
+                                                ),
                                               ],
                                             ),
                                           )
