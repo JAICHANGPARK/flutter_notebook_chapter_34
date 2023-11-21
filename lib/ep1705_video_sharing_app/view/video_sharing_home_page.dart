@@ -217,6 +217,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                         color: Colors.blueAccent,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
+                                      padding: EdgeInsets.all(16),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
@@ -225,7 +226,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                               color: Colors.white.withOpacity(0.2),
                                               borderRadius: BorderRadius.circular(4),
                                             ),
-                                            padding: EdgeInsets.all(16),
+                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
