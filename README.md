@@ -1,8 +1,8 @@
 # flutter_notebook_chapter_34
 
-### EP1701-1704
-- Barter App Design Concept
-- Dmitry Lauretsky for Ronas IT | UI/UX Team
+### EP1705
+- Video Sharing App
+- Sajon for Orix Creative
 - https://dribbble.com/shots/23080474-Video-Sharing-App
 
 
