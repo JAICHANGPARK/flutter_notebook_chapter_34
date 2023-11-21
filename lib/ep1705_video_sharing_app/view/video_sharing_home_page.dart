@@ -68,7 +68,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                     const Gap(16),
                     Container(
                       height: 100,
-                    
+
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -77,6 +77,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             child: CircleAvatar(
                               radius: 48,
                               backgroundColor: Colors.blue,
+                              backgroundImage: NetworkImage("https://thispersondoesnotexist.com/"),
                             ),
                           );
                         },
