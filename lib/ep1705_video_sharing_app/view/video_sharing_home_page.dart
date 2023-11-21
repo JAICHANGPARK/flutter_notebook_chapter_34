@@ -217,6 +217,23 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                         color: Colors.blueAccent,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
+                                      child: Column(
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white.withOpacity(0.2),
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
+                                            child: Row(
+                                              children: [
+                                                Icon(Icons.access_time_outlined),
+                                                Gap(6),
+                                                Text("0:24"),
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     );
                                   },
                                 ))
