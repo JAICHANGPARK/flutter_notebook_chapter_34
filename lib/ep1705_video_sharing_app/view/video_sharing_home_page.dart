@@ -119,10 +119,10 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 240,
-                                      padding: EdgeInsets.all(16),
-                                      margin: EdgeInsets.only(right: 12),
+                                      padding: const EdgeInsets.all(16),
+                                      margin: const EdgeInsets.only(right: 12),
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[100],
+                                        color: Colors.blueGrey,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
                                       child: Column(
@@ -136,25 +136,26 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                                   color: Colors.redAccent,
                                                   borderRadius: BorderRadius.circular(32),
                                                 ),
-                                                padding: EdgeInsets.symmetric(
+                                                padding: const EdgeInsets.symmetric(
                                                   horizontal: 16,
                                                   vertical: 4,
                                                 ),
-                                                child: Text(
+                                                child: const Text(
                                                   "LIVE",
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                   ),
                                                 ),
                                               ),
-                                              Text(
+                                              const Text(
                                                 "86.4K",
                                                 style: TextStyle(
                                                   color: Colors.grey,
                                                 ),
-                                              )
+                                              ),
                                             ],
-                                          )
+                                          ),
+
                                         ],
                                       ),
                                     );
