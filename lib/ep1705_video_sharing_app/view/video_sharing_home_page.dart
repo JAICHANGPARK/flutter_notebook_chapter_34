@@ -121,16 +121,27 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                       width: 240,
                                       padding: EdgeInsets.all(12),
                                       margin: EdgeInsets.only(right: 12),
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius: BorderRadius.circular(16)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Row(
                                             children: [
-                                              
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.redAccent,
+                                                  borderRadius: BorderRadius.circular(32)
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+
+                                                child: Text(
+                                                  "LIVE",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              )
                                             ],
                                           )
                                         ],
