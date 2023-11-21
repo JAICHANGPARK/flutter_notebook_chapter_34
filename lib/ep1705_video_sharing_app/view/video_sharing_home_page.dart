@@ -217,28 +217,25 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                         color: Colors.blueAccent,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      child: Column(
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.white.withOpacity(0.2),
-                                              borderRadius: BorderRadius.circular(4),
-                                            ),
-                                            padding: EdgeInsets.all(16),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.2),
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        padding: EdgeInsets.all(16),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Row(
+                                              mainAxisSize: MainAxisSize.min,
                                               children: [
-                                                Row(mainAxisSize: MainAxisSize.min,
-                                                  children: [
-                                                    Icon(Icons.access_time_outlined),
-                                                    Gap(6),
-                                                    Text("0:24"),
-                                                  ],
-                                                ),
+                                                Icon(Icons.access_time_outlined),
+                                                Gap(6),
+                                                Text("0:24"),
                                               ],
                                             ),
-                                          )
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     );
                                   },
