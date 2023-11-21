@@ -217,16 +217,16 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                         color: Colors.blueAccent,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.2),
-                                          borderRadius: BorderRadius.circular(4),
-                                        ),
-                                        padding: EdgeInsets.all(16),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Row(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white.withOpacity(0.2),
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
+                                            padding: EdgeInsets.all(16),
+                                            child: Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Icon(Icons.access_time_outlined),
@@ -234,8 +234,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                                 Text("0:24"),
                                               ],
                                             ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     );
                                   },
