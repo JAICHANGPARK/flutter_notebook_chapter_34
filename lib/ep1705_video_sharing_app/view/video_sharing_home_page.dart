@@ -90,16 +90,26 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text.rich(TextSpan(children: [
+                            const Text.rich(
                               TextSpan(
-                                text: "Creators ",
-                                style: TextStyle(color: Colors.white, fontSize: 16),
+                                children: [
+                                  TextSpan(
+                                    text: "Creators ",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: "on live",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 16,
+                                    ),
+                                  )
+                                ],
                               ),
-                              TextSpan(
-                                text: "on live",
-                                style: TextStyle(color: Colors.grey, fontSize: 16),
-                              )
-                            ])),
+                            ),
                             const Gap(8),
                             Container(
                               height: 400,
