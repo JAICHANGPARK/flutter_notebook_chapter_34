@@ -112,82 +112,86 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                             const Gap(8),
                             Container(
-                                height: 360,
-                                child: ListView.builder(
-                                  scrollDirection: Axis.horizontal,
-                                  itemCount: 10,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      width: 240,
-                                      padding: const EdgeInsets.all(16),
-                                      margin: const EdgeInsets.only(right: 12),
-                                      decoration: BoxDecoration(
-                                        color: Colors.blueGrey,
-                                        borderRadius: BorderRadius.circular(16),
-                                      ),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.redAccent,
-                                                  borderRadius: BorderRadius.circular(32),
-                                                ),
-                                                padding: const EdgeInsets.symmetric(
-                                                  horizontal: 16,
-                                                  vertical: 4,
-                                                ),
-                                                child: const Text(
-                                                  "LIVE",
-                                                  style: TextStyle(
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
+                              height: 360,
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: 10,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    width: 240,
+                                    padding: const EdgeInsets.all(16),
+                                    margin: const EdgeInsets.only(right: 12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueGrey,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.redAccent,
+                                                borderRadius: BorderRadius.circular(32),
                                               ),
-                                              const Text(
-                                                "86.4K",
+                                              padding: const EdgeInsets.symmetric(
+                                                horizontal: 16,
+                                                vertical: 4,
+                                              ),
+                                              child: const Text(
+                                                "LIVE",
                                                 style: TextStyle(
-                                                  color: Colors.grey,
+                                                  color: Colors.white,
                                                 ),
                                               ),
-                                            ],
-                                          ),
-                                          const Spacer(),
-                                          const Text(
-                                            "FLUTTER\nDEVELOPMENT",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.w900,
-                                              fontSize: 24,
                                             ),
-                                          ),
-                                          const Gap(8),
-                                          const Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 12,
+                                            const Text(
+                                              "86.4K",
+                                              style: TextStyle(
+                                                color: Colors.grey,
                                               ),
-                                              Gap(8),
-                                              Text("Dream"),
-                                              Gap(8),
-                                              Text("2m")
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                )),
+                                            ),
+                                          ],
+                                        ),
+                                        const Spacer(),
+                                        const Text(
+                                          "FLUTTER\nDEVELOPMENT",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w900,
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        const Gap(8),
+                                        const Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 12,
+                                            ),
+                                            Gap(8),
+                                            Text("Dream"),
+                                            Gap(8),
+                                            Text("2m")
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
                             const Gap(16),
                             const Text.rich(
                               TextSpan(
                                 children: [
                                   TextSpan(
                                     text: "Creators ",
-                                    style: TextStyle(color: Colors.white, fontSize: 16),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                    ),
                                   ),
                                   TextSpan(
                                     text: "on live",
@@ -201,9 +205,20 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                             const Gap(8),
                             Container(
-                              height: 200,
-                              child: const Placeholder(),
-                            )
+                                height: 200,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemCount: 10,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 300,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueAccent,
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    );
+                                  },
+                                ))
                           ],
                         ),
                       ),
