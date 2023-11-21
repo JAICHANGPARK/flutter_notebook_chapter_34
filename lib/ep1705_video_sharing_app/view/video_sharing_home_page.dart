@@ -119,7 +119,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 240,
-                                      padding: EdgeInsets.all(12),
+                                      padding: EdgeInsets.all(16),
                                       margin: EdgeInsets.only(right: 12),
                                       decoration: BoxDecoration(
                                         color: Colors.grey[100],
@@ -129,6 +129,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
