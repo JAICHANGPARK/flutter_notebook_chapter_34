@@ -156,13 +156,23 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                             ],
                                           ),
                                           Spacer(),
-                                          Text("FLUTTER\nDEVELOPMENT"),
+                                          Text(
+                                            "FLUTTER\nDEVELOPMENT",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.w900,
+                                              fontSize: 24,
+                                            ),
+                                          ),
+                                          Gap(8),
                                           Row(
                                             children: [
                                               CircleAvatar(
                                                 radius: 12,
                                               ),
+                                              Gap(8),
                                               Text("Dream"),
+                                              Gap(8),
                                               Text("2m")
                                             ],
                                           )
