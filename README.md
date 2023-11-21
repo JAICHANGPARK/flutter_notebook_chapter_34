@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_34
 
-### EP1701-
+### EP1701-1704
+- Barter App Design Concept
+- Dmitry Lauretsky for Ronas IT | UI/UX Team
+- https://dribbble.com/shots/23080474-Video-Sharing-App
+
+
+### EP1701-1704
 - Barter App Design Concept
 - Dmitry Lauretsky for Ronas IT | UI/UX Team
 - https://dribbble.com/shots/22990933-Barter-App-Design-Concept
