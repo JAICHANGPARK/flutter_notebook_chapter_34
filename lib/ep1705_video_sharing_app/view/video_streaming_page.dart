@@ -99,7 +99,12 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                       ),
                     ],
                   ),
-                  const Spacer(),
+                  Expanded(child: Container()),
+                  Expanded(
+                    child: ListView.builder(itemBuilder: (context, index) {
+                      return Placeholder();
+                    }),
+                  ),
                   Row(
                     children: [
                       Expanded(
