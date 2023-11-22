@@ -124,6 +124,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                     decoration: BoxDecoration(
                                       color: Colors.blueGrey,
                                       borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2022/04/22/19/10/palms-7150464_1280.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -226,7 +232,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                               color: Colors.white.withOpacity(0.2),
                                               borderRadius: BorderRadius.circular(4),
                                             ),
-                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
