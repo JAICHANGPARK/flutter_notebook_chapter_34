@@ -49,9 +49,9 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(),
-                      Gap(16),
-                      Column(
+                      const CircleAvatar(),
+                      const Gap(16),
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
@@ -68,27 +68,27 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           ),
                         ],
                       ),
-                      Gap(16),
+                      const Gap(16),
                       Container(
-                        decoration: ShapeDecoration(
+                        decoration: const ShapeDecoration(
                           shape: StadiumBorder(),
                           color: Colors.deepOrange,
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                        child: Text(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        child: const Text(
                           "Follow",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
+                          shape: const StadiumBorder(),
                           color: Colors.white.withOpacity(0.2),
                         ),
-                        child: Row(
+                        child: const Row(
                           children: [
                             Icon(
                               Icons.visibility,
@@ -96,13 +96,32 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                             Text("159K"),
                           ],
                         ),
-                      )
+                      ),
+                    ],
+                  ),
+                  const Spacer(),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                          child: const TextField(),
+                        ),
+                      ),
+                      const CircleAvatar(
+                        radius: 22,
+                      ),
+                      const CircleAvatar(
+                        radius: 22,
+                      ),
                     ],
                   )
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
