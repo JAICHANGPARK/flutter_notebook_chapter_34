@@ -41,7 +41,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
           Positioned(
             left: 16,
             right: 16,
-            top: 0,
+            top: 24,
             bottom: 0,
             child: SafeArea(
               child: Column(
@@ -110,6 +110,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           child: const TextField(),
                         ),
                       ),
+                      Gap(16),
                       const CircleAvatar(
                         radius: 22,
                       ),
