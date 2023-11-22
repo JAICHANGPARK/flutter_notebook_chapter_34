@@ -70,8 +70,9 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                       ),
                       Gap(16),
                       Container(
-                        decoration: BoxDecoration(
-                          color: Colors.deepOrangeAccent,
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.deepOrange,
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         child: Text(
@@ -83,6 +84,10 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                       ),
                       Spacer(),
                       Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white.withOpacity(0.2),
+                        ),
                         child: Row(
                           children: [
                             Icon(
