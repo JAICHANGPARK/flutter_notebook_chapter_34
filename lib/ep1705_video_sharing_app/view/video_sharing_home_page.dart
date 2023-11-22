@@ -124,7 +124,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                     decoration: BoxDecoration(
                                       color: Colors.blueGrey,
                                       borderRadius: BorderRadius.circular(16),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                           "https://cdn.pixabay.com/photo/2022/04/22/19/10/palms-7150464_1280.jpg",
                                         ),
@@ -218,12 +218,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 300,
-                                      margin: EdgeInsets.only(right: 16),
+                                      margin: const EdgeInsets.only(right: 16),
                                       decoration: BoxDecoration(
                                         color: Colors.blueAccent,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.all(16),
+                                      padding: const EdgeInsets.all(16),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
@@ -232,8 +232,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                               color: Colors.white.withOpacity(0.2),
                                               borderRadius: BorderRadius.circular(4),
                                             ),
-                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                            child: Row(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                            child: const Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Icon(Icons.access_time_outlined),
