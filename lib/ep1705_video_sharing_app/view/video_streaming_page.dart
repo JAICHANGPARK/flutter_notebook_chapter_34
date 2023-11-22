@@ -58,7 +58,23 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                         decoration: BoxDecoration(
                           color: Colors.deepOrangeAccent,
                         ),
-                        child: Text("Follow"),
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        child: Text(
+                          "Follow",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.visibility,
+                            ),
+                          ],
+                        ),
                       )
                     ],
                   )
