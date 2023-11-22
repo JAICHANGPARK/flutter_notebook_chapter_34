@@ -73,6 +73,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                             Icon(
                               Icons.visibility,
                             ),
+                            Text("159K"),
                           ],
                         ),
                       )
