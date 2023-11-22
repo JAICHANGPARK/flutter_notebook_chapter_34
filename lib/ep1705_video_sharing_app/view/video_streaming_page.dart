@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class VideoSharingLivePage extends StatefulWidget {
   const VideoSharingLivePage({super.key});
@@ -49,7 +50,9 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                   Row(
                     children: [
                       CircleAvatar(),
+                      Gap(16),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Flutter Developer",
@@ -65,6 +68,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           ),
                         ],
                       ),
+                      Gap(16),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.deepOrangeAccent,
