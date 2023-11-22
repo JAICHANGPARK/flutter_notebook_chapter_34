@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class VideoSharingLivePage extends StatefulWidget {
   const VideoSharingLivePage({super.key});
 
@@ -11,6 +10,12 @@ class VideoSharingLivePage extends StatefulWidget {
 class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
