@@ -13,7 +13,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+
         ],
       ),
     );
