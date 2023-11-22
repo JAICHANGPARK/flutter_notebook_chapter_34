@@ -27,17 +27,24 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
               height: MediaQuery.sizeOf(context).height / 2,
               decoration: BoxDecoration(
                 color: Colors.black,
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.black,
-                    Colors.black,
-                    Colors.black,
-                    Colors.black.withOpacity(0.8),
-                    Colors.black.withOpacity(0.2),
-                  ],
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter
-                ),
+                gradient: LinearGradient(colors: [
+                  Colors.black,
+                  Colors.black,
+                  Colors.black,
+                  Colors.black.withOpacity(0.8),
+                  Colors.black.withOpacity(0.2),
+                ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 16,
+            right: 16,
+            top: 0,
+            bottom: 0,
+            child: SafeArea(
+              child: Column(
+                children: [],
               ),
             ),
           )
