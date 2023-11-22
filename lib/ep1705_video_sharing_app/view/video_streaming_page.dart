@@ -44,7 +44,25 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
             bottom: 0,
             child: SafeArea(
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        children: [
+                          Text("Flutter Developer"),
+                          Text("Flutter"),
+                        ],
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.deepOrangeAccent,
+                        ),
+                        child: Text("Follow"),
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
           )
