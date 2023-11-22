@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1705_video_sharing_app/view/video_streaming_page.dart';
 import 'package:gap/gap.dart';
 
 class VideoSharingHomePage extends StatefulWidget {
@@ -117,72 +118,81 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
-                                  return Container(
-                                    width: 240,
-                                    padding: const EdgeInsets.all(16),
-                                    margin: const EdgeInsets.only(right: 12),
-                                    decoration: BoxDecoration(
-                                      color: Colors.blueGrey,
-                                      borderRadius: BorderRadius.circular(16),
-                                      image: const DecorationImage(
-                                        image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2022/04/22/19/10/palms-7150464_1280.jpg",
+                                  return GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                          builder: (context) => VideoSharingLivePage(),
                                         ),
-                                        fit: BoxFit.cover,
+                                      );
+                                    },
+                                    child: Container(
+                                      width: 240,
+                                      padding: const EdgeInsets.all(16),
+                                      margin: const EdgeInsets.only(right: 12),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueGrey,
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: const DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2022/04/22/19/10/palms-7150464_1280.jpg",
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
-                                    ),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.redAccent,
-                                                borderRadius: BorderRadius.circular(32),
-                                              ),
-                                              padding: const EdgeInsets.symmetric(
-                                                horizontal: 16,
-                                                vertical: 4,
-                                              ),
-                                              child: const Text(
-                                                "LIVE",
-                                                style: TextStyle(
-                                                  color: Colors.white,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.redAccent,
+                                                  borderRadius: BorderRadius.circular(32),
+                                                ),
+                                                padding: const EdgeInsets.symmetric(
+                                                  horizontal: 16,
+                                                  vertical: 4,
+                                                ),
+                                                child: const Text(
+                                                  "LIVE",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                            const Text(
-                                              "86.4K",
-                                              style: TextStyle(
-                                                color: Colors.grey,
+                                              const Text(
+                                                "86.4K",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                        const Spacer(),
-                                        const Text(
-                                          "FLUTTER\nDEVELOPMENT",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w900,
-                                            fontSize: 24,
+                                            ],
                                           ),
-                                        ),
-                                        const Gap(8),
-                                        const Row(
-                                          children: [
-                                            CircleAvatar(
-                                              radius: 12,
+                                          const Spacer(),
+                                          const Text(
+                                            "FLUTTER\nDEVELOPMENT",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.w900,
+                                              fontSize: 24,
                                             ),
-                                            Gap(8),
-                                            Text("Dream"),
-                                            Gap(8),
-                                            Text("2m")
-                                          ],
-                                        )
-                                      ],
+                                          ),
+                                          const Gap(8),
+                                          const Row(
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 12,
+                                              ),
+                                              Gap(8),
+                                              Text("Dream"),
+                                              Gap(8),
+                                              Text("2m")
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   );
                                 },
