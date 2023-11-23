@@ -114,7 +114,9 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                   Row(
                     children: [
                       CircleAvatar(),
+                      Gap(8),
                       Chip(
+                        avatar: CircleAvatar(),
                         label: Text("Dream Donated"),
                       ),
                     ],
