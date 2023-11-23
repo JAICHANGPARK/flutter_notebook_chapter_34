@@ -93,8 +93,17 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                             Icon(
                               Icons.visibility,
                               color: Colors.white,
+                              size: 16,
                             ),
-                            Text("159K"),
+                            Gap(8),
+                            Text(
+                              "159K",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                                color: Colors.white,
+                              ),
+                            ),
                           ],
                         ),
                       ),
