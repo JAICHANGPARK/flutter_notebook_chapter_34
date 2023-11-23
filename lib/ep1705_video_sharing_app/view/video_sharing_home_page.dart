@@ -67,7 +67,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ),
                     ),
                     const Gap(16),
-                    Container(
+                    SizedBox(
                       height: 100,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
@@ -112,7 +112,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                               ),
                             ),
                             const Gap(8),
-                            Container(
+                            SizedBox(
                               height: 360,
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
@@ -122,7 +122,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                         MaterialPageRoute(
-                                          builder: (context) => VideoSharingLivePage(),
+                                          builder: (context) =>
+                                              VideoSharingLivePage(),
                                         ),
                                       );
                                     },
@@ -141,17 +142,21 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                         ),
                                       ),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.redAccent,
-                                                  borderRadius: BorderRadius.circular(32),
+                                                  borderRadius:
+                                                      BorderRadius.circular(32),
                                                 ),
-                                                padding: const EdgeInsets.symmetric(
+                                                padding:
+                                                    const EdgeInsets.symmetric(
                                                   horizontal: 16,
                                                   vertical: 4,
                                                 ),
@@ -220,7 +225,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                               ),
                             ),
                             const Gap(8),
-                            Container(
+                            SizedBox(
                                 height: 200,
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
@@ -235,18 +240,23 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                       ),
                                       padding: const EdgeInsets.all(16),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Container(
                                             decoration: BoxDecoration(
-                                              color: Colors.white.withOpacity(0.2),
-                                              borderRadius: BorderRadius.circular(4),
+                                              color:
+                                                  Colors.white.withOpacity(0.2),
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
                                             ),
-                                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                            padding: const EdgeInsets.symmetric(
+                                                horizontal: 8, vertical: 4),
                                             child: const Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
-                                                Icon(Icons.access_time_outlined),
+                                                Icon(
+                                                    Icons.access_time_outlined),
                                                 Gap(6),
                                                 Text("0:24"),
                                               ],
