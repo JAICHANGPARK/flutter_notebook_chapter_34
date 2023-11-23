@@ -111,6 +111,14 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                     ],
                   ),
                   Expanded(child: Container()),
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Chip(
+                        label: Text("Dream Donated"),
+                      ),
+                    ],
+                  ),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
