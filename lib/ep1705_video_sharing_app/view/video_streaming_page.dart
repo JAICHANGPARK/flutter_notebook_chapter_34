@@ -113,7 +113,9 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                   Expanded(child: Container()),
                   Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 16,
+                      ),
                       Gap(8),
                       Chip(
                         avatar: CircleAvatar(),
@@ -121,14 +123,39 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                         backgroundColor: Colors.white.withOpacity(0.2),
                         shape: StadiumBorder(),
                         surfaceTintColor: Colors.white.withOpacity(0.8),
-
                       ),
                     ],
                   ),
+                  Gap(16),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
-                        return const Placeholder();
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                radius: 16,
+                              ),
+                              Gap(8),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text("Flutter"),
+                                        Text("24mm"),
+                                      ],
+                                    ),
+                                    Text("Welcome Flutter Developers")
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        );
                       },
                     ),
                   ),
