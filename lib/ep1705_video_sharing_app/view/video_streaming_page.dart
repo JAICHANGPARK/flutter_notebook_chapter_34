@@ -118,6 +118,8 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                       Chip(
                         avatar: CircleAvatar(),
                         label: Text("Dream Donated"),
+                        backgroundColor: Colors.white.withOpacity(0.78),
+                        shape: StadiumBorder(),
                       ),
                     ],
                   ),
