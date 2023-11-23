@@ -141,6 +141,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                       const Gap(16),
                       CircleAvatar(
                         radius: 22,
+                        backgroundColor: Colors.white.withOpacity(0.2),
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(
@@ -148,15 +149,14 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           ),
                           color: Colors.redAccent,
                         ),
-                        backgroundColor: Colors.white.withOpacity(0.2),
                       ),
                       CircleAvatar(
                         radius: 22,
                         backgroundColor: Colors.white.withOpacity(0.2),
+                        foregroundColor: Colors.grey,
                         child: Icon(
                           Icons.videocam_rounded,
                         ),
-                        foregroundColor: Colors.grey,
                       ),
                     ],
                   )
