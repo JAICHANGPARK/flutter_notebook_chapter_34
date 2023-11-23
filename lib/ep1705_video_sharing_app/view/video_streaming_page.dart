@@ -145,11 +145,25 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                                   children: [
                                     Row(
                                       children: [
-                                        Text("Flutter"),
-                                        Text("24mm"),
+                                        Text(
+                                          "Flutter",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        Gap(16),
+                                        Text("24mm",   style: TextStyle(
+                                          color: Colors.grey,
+                                        ),),
                                       ],
                                     ),
-                                    Text("Welcome Flutter Developers")
+                                    Gap(8),
+                                    Text(
+                                      "Welcome Flutter Developers",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    )
                                   ],
                                 ),
                               )
