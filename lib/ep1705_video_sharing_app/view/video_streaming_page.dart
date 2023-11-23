@@ -122,17 +122,17 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                     children: [
                       Expanded(
                         child: Container(
-                          decoration:BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0.3),
-                            borderRadius: BorderRadius.circular(32)
+                            borderRadius: BorderRadius.circular(32),
                           ),
-                          
                           child: const TextField(
                             decoration: InputDecoration(
                               hintText: "Message",
                               hintStyle: TextStyle(
                                 color: Colors.grey,
-                              )
+                              ),
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
