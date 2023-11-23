@@ -126,6 +126,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                             color: Colors.white.withOpacity(0.3),
                             borderRadius: BorderRadius.circular(32),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 12),
                           child: const TextField(
                             decoration: InputDecoration(
                               hintText: "Message",
@@ -138,8 +139,15 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                         ),
                       ),
                       const Gap(16),
-                      const CircleAvatar(
+                       CircleAvatar(
                         radius: 22,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.favorite,
+                          ),
+                          color: Colors.redAccent,
+                        ),
                       ),
                       const CircleAvatar(
                         radius: 22,
