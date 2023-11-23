@@ -74,7 +74,8 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           shape: StadiumBorder(),
                           color: Colors.deepOrange,
                         ),
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 8),
                         child: const Text(
                           "Follow",
                           style: TextStyle(
@@ -102,7 +103,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                   Expanded(child: Container()),
                   Expanded(
                     child: ListView.builder(itemBuilder: (context, index) {
-                      return Placeholder();
+                      return const Placeholder();
                     }),
                   ),
                   Row(
@@ -115,7 +116,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           child: const TextField(),
                         ),
                       ),
-                      Gap(16),
+                      const Gap(16),
                       const CircleAvatar(
                         radius: 22,
                       ),
