@@ -88,6 +88,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           shape: const StadiumBorder(),
                           color: Colors.white.withOpacity(0.2),
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         child: const Row(
                           children: [
                             Icon(
@@ -121,10 +122,19 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                     children: [
                       Expanded(
                         child: Container(
-                          decoration: const BoxDecoration(
-                            color: Colors.blue,
+                          decoration:BoxDecoration(
+                            color: Colors.white.withOpacity(0.3),
+                            borderRadius: BorderRadius.circular(32)
                           ),
-                          child: const TextField(),
+                          
+                          child: const TextField(
+                            decoration: InputDecoration(
+                              hintText: "Message",
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                              )
+                            ),
+                          ),
                         ),
                       ),
                       const Gap(16),
