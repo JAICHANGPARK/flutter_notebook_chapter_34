@@ -88,7 +88,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           shape: const StadiumBorder(),
                           color: Colors.white.withOpacity(0.2),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         child: const Row(
                           children: [
                             Icon(
@@ -113,25 +113,25 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                   Expanded(child: Container()),
                   Row(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 16,
                       ),
-                      Gap(8),
+                      const Gap(8),
                       Chip(
-                        avatar: CircleAvatar(),
-                        label: Text("Dream Donated"),
+                        avatar: const CircleAvatar(),
+                        label: const Text("Dream Donated"),
                         backgroundColor: Colors.white.withOpacity(0.2),
-                        shape: StadiumBorder(),
+                        shape: const StadiumBorder(),
                         surfaceTintColor: Colors.white.withOpacity(0.8),
                       ),
                     ],
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 16),
+                        return const Padding(
+                          padding: EdgeInsets.only(bottom: 16),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -181,7 +181,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                             color: Colors.white.withOpacity(0.3),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
                           child: const TextField(
                             decoration: InputDecoration(
                               hintText: "Message",
@@ -199,7 +199,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                         backgroundColor: Colors.white.withOpacity(0.2),
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.favorite,
                           ),
                           color: Colors.redAccent,
@@ -209,7 +209,7 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                         radius: 22,
                         backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.grey,
-                        child: Icon(
+                        child: const Icon(
                           Icons.videocam_rounded,
                         ),
                       ),
