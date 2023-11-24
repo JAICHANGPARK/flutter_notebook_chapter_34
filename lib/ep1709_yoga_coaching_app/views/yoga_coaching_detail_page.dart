@@ -95,9 +95,10 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                       child: Row(
                         children: [
                           Container(
-                            width: 72,
+                            width: 120,
                             child: Placeholder(),
                           ),
+                          Gap(16),
                           Expanded(
                             child: Placeholder(),
                           ),
