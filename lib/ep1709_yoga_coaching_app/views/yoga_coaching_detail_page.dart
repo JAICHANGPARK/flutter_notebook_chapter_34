@@ -38,13 +38,17 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
             SizedBox(
-              height: 100,
+              height: 72,
+
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: List.generate(
                   100,
                   (index) => Container(
+                    width: 52,
+                    margin: EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(12),
