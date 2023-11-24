@@ -91,9 +91,18 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 400,
-                    child: Placeholder(),
-                  );
+                      height: 400,
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 72,
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ));
                 },
               ),
             ),
