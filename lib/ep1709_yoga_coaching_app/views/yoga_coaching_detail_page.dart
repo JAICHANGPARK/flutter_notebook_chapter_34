@@ -39,7 +39,17 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
             ),
             SizedBox(
               height: 100,
-            )
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 400,
+                    child: Placeholder(),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
