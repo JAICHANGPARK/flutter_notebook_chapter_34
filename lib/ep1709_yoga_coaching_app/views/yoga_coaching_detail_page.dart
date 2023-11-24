@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class YogaCoachingDetailPage extends StatefulWidget {
   const YogaCoachingDetailPage({super.key});
@@ -25,8 +26,22 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
           ),
         ],
       ),
-      body: Column(
-        children: [],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Text(
+              "Schedule data",
+              style: GoogleFonts.kronaOne(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 100,
+            )
+          ],
+        ),
       ),
     );
   }
