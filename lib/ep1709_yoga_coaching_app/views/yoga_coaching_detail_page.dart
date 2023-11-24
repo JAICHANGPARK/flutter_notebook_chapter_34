@@ -168,11 +168,16 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                                           style: GoogleFonts.kronaOne(
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
+                                            color: Colors.white
                                           ),
                                         ),
-                                        Icon(Icons.person_outline),
-                                        Icon(Icons.list_alt_outlined),
-                                        Icon(Icons.refresh),
+                                        Gap(16),
+                                        Icon(Icons.person_outline,  color: Colors.white),
+                                        Gap(16),
+
+                                        Icon(Icons.list_alt_outlined,  color: Colors.white),
+                                        Gap(16),
+                                        Icon(Icons.refresh,  color: Colors.white),
                                       ],
                                     ),
                                   )
