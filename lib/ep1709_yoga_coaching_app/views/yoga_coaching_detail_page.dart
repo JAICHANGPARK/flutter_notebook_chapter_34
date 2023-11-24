@@ -105,11 +105,16 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                                     children: [
                                       Center(child: Text("11:00")),
                                       Gap(8),
-                                      Center(child: Text("11:00")),Gap(8),
-                                      Center(child: Text("11:00")),Gap(8),
-                                      Center(child: Text("11:00")),Gap(8),
-                                      Center(child: Text("11:00")),Gap(8),
-                                      Center(child: Text("11:00")),Gap(8),
+                                      Center(child: Text("11:00")),
+                                      Gap(8),
+                                      Center(child: Text("11:00")),
+                                      Gap(8),
+                                      Center(child: Text("11:00")),
+                                      Gap(8),
+                                      Center(child: Text("11:00")),
+                                      Gap(8),
+                                      Center(child: Text("11:00")),
+                                      Gap(8),
                                     ],
                                   ),
                                 ),
@@ -141,7 +146,15 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                           Gap(16),
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(16),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2021/01/16/17/46/male-5922911_1280.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
                           ),
                         ],
