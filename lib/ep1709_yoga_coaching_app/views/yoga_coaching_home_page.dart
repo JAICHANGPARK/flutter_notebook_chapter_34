@@ -160,11 +160,10 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
               Gap(24),
               Text(
                 "Yoga\nclasses\nfrom home",
-
-                style: GoogleFonts.kronaOne(
-                  fontSize: 48,
-                  height: 1.1
-                ),
+                style: GoogleFonts.kronaOne(fontSize: 48, height: 1.1),
+              ),
+              Expanded(
+                child: Placeholder(),
               )
             ],
           ),
