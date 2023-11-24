@@ -100,8 +100,17 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  child: ListView(
-                                    children: [],
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Center(child: Text("11:00")),
+                                      Gap(8),
+                                      Center(child: Text("11:00")),Gap(8),
+                                      Center(child: Text("11:00")),Gap(8),
+                                      Center(child: Text("11:00")),Gap(8),
+                                      Center(child: Text("11:00")),Gap(8),
+                                      Center(child: Text("11:00")),Gap(8),
+                                    ],
                                   ),
                                 ),
                                 Container(
