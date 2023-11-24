@@ -182,16 +182,20 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                       child: Row(
                         children: [
                           Expanded(
-                              child: Container(
-                            decoration: BoxDecoration(
+                            child: Container(
+                              decoration: BoxDecoration(
                                 border: Border.all(
-                              color: Colors.black,
-                            )),
-                          )),
+                                  color: Colors.black,
+                                ),
+                                borderRadius: BorderRadius.circular(42)
+                              ),
+                            ),
+                          ),
+                          Gap(32),
                           CircleAvatar(
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
-                            radius: 32,
+                            radius: 36,
                             child: Icon(Icons.keyboard_arrow_down_rounded),
                           )
                         ],
