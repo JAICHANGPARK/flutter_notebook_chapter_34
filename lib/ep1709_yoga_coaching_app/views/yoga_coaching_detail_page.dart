@@ -45,12 +45,21 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 children: List.generate(
                   100,
                   (index) => Container(
-                    decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(12)),
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                     child: Column(
                       children: [
                         Text("${DateTime.now().add(
-                          Duration(days: index),
-                        )},")
+                              Duration(days: index),
+                            ).weekday}"),
+                        Text(
+                          "${DateTime.now().add(
+                                Duration(days: index),
+                              ).day}",
+                          style: GoogleFonts.kronaOne(),
+                        ),
                       ],
                     ),
                   ),
