@@ -49,12 +49,24 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                           ),
                         ),
                         Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 0,
                           child: Row(
                             children: [
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(32),
+                                ),
+
+                                padding: EdgeInsets.symmetric(horizontal: 16, ),
+                                child: Text(
+                                  "Sign in",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                               CircleAvatar(
