@@ -155,6 +155,29 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                                   fit: BoxFit.cover,
                                 ),
                               ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    right: 16,
+                                    top: 16,
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.end,
+                                      children: [
+                                        Text(
+                                          "Yoga Guru",
+                                          style: GoogleFonts.kronaOne(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Icon(Icons.person_outline),
+                                        Icon(Icons.list_alt_outlined),
+                                        Icon(Icons.refresh),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ],
