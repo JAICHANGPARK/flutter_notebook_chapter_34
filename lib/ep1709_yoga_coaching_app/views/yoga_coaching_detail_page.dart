@@ -12,12 +12,16 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        title: Text("yoguru"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.face),
+          ),
+        ],
       ),
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
     );
   }
