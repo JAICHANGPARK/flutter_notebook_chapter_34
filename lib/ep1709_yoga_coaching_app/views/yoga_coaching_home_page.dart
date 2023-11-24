@@ -32,7 +32,6 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
             children: [
               Container(
                 height: 52,
-                color: Colors.blue,
                 child: Row(
                   children: [
                     Expanded(
@@ -75,12 +74,22 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                     ),
                                   ),
                                 ),
-                                const CircleAvatar(
-                                  radius: 32,
-                                  backgroundColor: Colors.black,
-                                  foregroundColor: Colors.white,
-                                  child: Text("or"),
-                                )
+                                Container(
+                                  height: 54,
+                                  width: 54,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                // const CircleAvatar(
+                                //   radius: 32,
+                                //   backgroundColor: Colors.black,
+                                //   foregroundColor: Colors.white,
+                                //   child: Text("or"),
+                                //
+                                // ),
+
                               ],
                             ),
                           )
@@ -91,14 +100,14 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                       child: Stack(
                         children: [
                           Positioned(
-                            left: 0,
+                            left: -8,
                             right: 8,
                             top: 0,
                             bottom: 0,
                             child: Center(
                               child: Container(
                                 height: 24,
-                                color: Color(0xff7eb179),
+                                color: const Color(0xff7eb179),
                               ),
                             ),
                           ),
@@ -110,14 +119,20 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Color(0xff7eb179),
+                                borderRadius: BorderRadius.circular(32),
                               ),
-                              child: Row(
+                              child:  Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
                                     "Search for a guru",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                   Icon(
                                     Icons.keyboard_arrow_right,
+                                    color: Colors.white,
                                   )
                                 ],
                               ),
