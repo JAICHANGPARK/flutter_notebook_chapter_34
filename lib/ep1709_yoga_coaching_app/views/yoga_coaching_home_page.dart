@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class YogaCoachingHomePage extends StatefulWidget {
   const YogaCoachingHomePage({super.key});
@@ -29,6 +30,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 52,
@@ -70,6 +72,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                       "Sign in",
                                       style: TextStyle(
                                         color: Colors.white,
+                                        fontSize: 18,
                                       ),
                                     ),
                                   ),
@@ -81,6 +84,15 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                     shape: BoxShape.circle,
                                     color: Colors.black,
                                   ),
+                                  child: Center(
+                                    child: Text(
+                                      "or",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                                 // const CircleAvatar(
                                 //   radius: 32,
@@ -89,7 +101,6 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                 //   child: Text("or"),
                                 //
                                 // ),
-
                               ],
                             ),
                           )
@@ -121,13 +132,14 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                 color: Color(0xff7eb179),
                                 borderRadius: BorderRadius.circular(32),
                               ),
-                              child:  Row(
+                              child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
                                     "Search for a guru",
                                     style: TextStyle(
                                       color: Colors.white,
+                                      fontSize: 16,
                                     ),
                                   ),
                                   Icon(
@@ -143,6 +155,15 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                     ),
                   ],
                 ),
+              ),
+              Text(
+                "Yoga\nclasses\nfrom home",
+
+                style: GoogleFonts.kronaOne(
+                  fontSize: 48,
+
+                ),
+
               )
             ],
           ),
