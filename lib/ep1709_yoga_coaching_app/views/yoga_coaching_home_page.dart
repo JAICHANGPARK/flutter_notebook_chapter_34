@@ -196,7 +196,8 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
                             radius: 36,
-                            child: Icon(Icons.keyboard_arrow_down_rounded),
+                            child: Icon(Icons.keyboard_arrow_down_rounded,
+                            size: 42,),
                           )
                         ],
                       ),
