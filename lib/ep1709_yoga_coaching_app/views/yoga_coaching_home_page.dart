@@ -26,70 +26,74 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
         ],
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              height: 48,
-              color: Colors.blue,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          left: 16,
-                          right: 16,
-                          top: 0,
-                          bottom: 0,
-                          child: Center(
-                            child: Container(
-                              height: 24,
-                              color: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Container(
+                height: 48,
+                color: Colors.blue,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 16,
+                            right: 16,
+                            top: 0,
+                            bottom: 0,
+                            child: Center(
+                              child: Container(
+                                height: 24,
+                                color: Colors.black,
+                              ),
                             ),
                           ),
-                        ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          bottom: 0,
-                          top: 0,
-                          child: Row(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.circular(32),
-                                ),
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 24,
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Sign in",
-                                    style: TextStyle(
-                                      color: Colors.white,
+                          Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            top: 0,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 24,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Sign in",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.black,
-                                foregroundColor: Colors.white,
-                                child: Text("or"),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
+                                CircleAvatar(
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                  child: Text("or"),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                  Expanded(
-                    child: Stack(),
-                  ),
-                ],
-              ),
-            )
-          ],
+                    Expanded(
+                      child: Stack(),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
