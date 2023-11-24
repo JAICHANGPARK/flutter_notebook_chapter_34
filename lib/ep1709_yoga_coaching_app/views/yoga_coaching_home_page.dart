@@ -187,8 +187,13 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                 border: Border.all(
                                   color: Colors.black,
                                 ),
-                                borderRadius: BorderRadius.circular(42)
+                                borderRadius: BorderRadius.circular(42),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 24, ),
+                              child: Center(child: Text("We truly believe in your and the work of our gurus",
+                              style: TextStyle(
+                                fontSize: 16
+                              ),)),
                             ),
                           ),
                           Gap(32),
@@ -196,15 +201,18 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
                             radius: 36,
-                            child: Icon(Icons.keyboard_arrow_down_rounded,
-                            size: 42,),
+                            child: Icon(
+                              Icons.keyboard_arrow_down_rounded,
+                              size: 42,
+                            ),
                           )
                         ],
                       ),
                     )
                   ],
                 ),
-              )
+              ),
+              Gap(24),
             ],
           ),
         ),
