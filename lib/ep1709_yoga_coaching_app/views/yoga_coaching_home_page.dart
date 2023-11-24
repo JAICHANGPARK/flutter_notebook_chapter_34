@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1709_yoga_coaching_app/views/yoga_coaching_detail_page.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -189,21 +190,33 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                 ),
                                 borderRadius: BorderRadius.circular(42),
                               ),
-                              padding: EdgeInsets.symmetric(horizontal: 24, ),
-                              child: Center(child: Text("We truly believe in your and the work of our gurus",
-                              style: TextStyle(
-                                fontSize: 16
-                              ),)),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 24,
+                              ),
+                              child: Center(
+                                  child: Text(
+                                "We truly believe in your and the work of our gurus",
+                                style: TextStyle(fontSize: 16),
+                              )),
                             ),
                           ),
                           Gap(32),
-                          CircleAvatar(
-                            backgroundColor: Colors.black,
-                            foregroundColor: Colors.white,
-                            radius: 36,
-                            child: Icon(
-                              Icons.keyboard_arrow_down_rounded,
-                              size: 42,
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => YogaCoachingDetailPage(),
+                                ),
+                              );
+                            },
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              radius: 36,
+                              child: Icon(
+                                Icons.keyboard_arrow_down_rounded,
+                                size: 42,
+                              ),
                             ),
                           )
                         ],
