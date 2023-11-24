@@ -39,11 +39,9 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-
             Gap(16),
             SizedBox(
               height: 72,
-
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: List.generate(
@@ -56,10 +54,23 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("${DateTime.now().add(
+                        Text(switch (DateTime.now()
+                            .add(
                               Duration(days: index),
-                            ).weekday}"),
+                            )
+                            .weekday) {
+                          0 => "0",
+                          1 => "Mon",
+                          2 => "Tue",
+                          3 => "Wed",
+                          4 => "Thu",
+                          5 => "Fri",
+                          6 => "Sat",
+                          7 => "Sun",
+                          _ => "?",
+                        }),
                         Text(
                           "${DateTime.now().add(
                                 Duration(days: index),
