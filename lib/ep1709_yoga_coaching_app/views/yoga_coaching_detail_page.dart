@@ -14,16 +14,16 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("yoguru"),
+        title: const Text("yoguru"),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.face),
+            icon: const Icon(Icons.face),
           ),
         ],
       ),
@@ -39,7 +39,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Gap(16),
+            const Gap(16),
             SizedBox(
               height: 72,
               child: ListView(
@@ -48,7 +48,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                   100,
                   (index) => Container(
                     width: 54,
-                    margin: EdgeInsets.only(right: 16),
+                    margin: const EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(12),
@@ -86,12 +86,12 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 ),
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                      margin: EdgeInsets.only(bottom: 24),
+                      margin: const EdgeInsets.only(bottom: 24),
                       height: 360,
                       child: Row(
                         children: [
@@ -99,7 +99,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                             width: 92,
                             child: Column(
                               children: [
-                                Expanded(
+                                const Expanded(
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -120,11 +120,11 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                                 ),
                                 Container(
                                   decoration: BoxDecoration(
-                                    color: Color(0xff7eb179),
+                                    color: const Color(0xff7eb179),
                                     borderRadius: BorderRadius.circular(16),
                                   ),
-                                  padding: EdgeInsets.symmetric(vertical: 12),
-                                  child: Row(
+                                  padding: const EdgeInsets.symmetric(vertical: 12),
+                                  child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
@@ -143,13 +143,13 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                               ],
                             ),
                           ),
-                          Gap(16),
+                          const Gap(16),
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2021/01/16/17/46/male-5922911_1280.jpg"),
                                   fit: BoxFit.cover,
@@ -171,13 +171,13 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                                             color: Colors.white
                                           ),
                                         ),
-                                        Gap(16),
-                                        Icon(Icons.person_outline,  color: Colors.white),
-                                        Gap(16),
+                                        const Gap(16),
+                                        const Icon(Icons.person_outline,  color: Colors.white),
+                                        const Gap(16),
 
-                                        Icon(Icons.list_alt_outlined,  color: Colors.white),
-                                        Gap(16),
-                                        Icon(Icons.refresh,  color: Colors.white),
+                                        const Icon(Icons.list_alt_outlined,  color: Colors.white),
+                                        const Gap(16),
+                                        const Icon(Icons.refresh,  color: Colors.white),
                                       ],
                                     ),
                                   )
