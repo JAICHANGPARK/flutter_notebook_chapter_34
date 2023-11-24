@@ -91,6 +91,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
+                    margin: EdgeInsets.only(bottom: 24),
                       height: 400,
                       child: Row(
                         children: [
