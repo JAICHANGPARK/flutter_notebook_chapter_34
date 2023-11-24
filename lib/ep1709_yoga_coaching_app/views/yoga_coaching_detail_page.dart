@@ -10,6 +10,15 @@ class YogaCoachingDetailPage extends StatefulWidget {
 class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        
+      ),
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
