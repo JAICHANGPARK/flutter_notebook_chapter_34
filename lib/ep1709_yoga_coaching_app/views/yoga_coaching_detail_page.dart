@@ -47,7 +47,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 children: List.generate(
                   100,
                   (index) => Container(
-                    width: 52,
+                    width: 54,
                     margin: EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       border: Border.all(),
@@ -75,7 +75,10 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                           "${DateTime.now().add(
                                 Duration(days: index),
                               ).day}",
-                          style: GoogleFonts.kronaOne(),
+                          style: GoogleFonts.kronaOne(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ],
                     ),
