@@ -91,17 +91,46 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    margin: EdgeInsets.only(bottom: 24),
-                      height: 400,
+                      margin: EdgeInsets.only(bottom: 24),
+                      height: 360,
                       child: Row(
                         children: [
                           Container(
                             width: 120,
-                            child: Placeholder(),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: ListView(
+                                    children: [],
+                                  ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff7eb179),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Text(
+                                        "Submit",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_right,
+                                        color: Colors.white,
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Gap(16),
                           Expanded(
-                            child: Placeholder(),
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                            ),
                           ),
                         ],
                       ));
