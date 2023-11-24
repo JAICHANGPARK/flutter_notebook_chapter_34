@@ -31,7 +31,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
           child: Column(
             children: [
               Container(
-                height: 48,
+                height: 52,
                 color: Colors.blue,
                 child: Row(
                   children: [
@@ -64,7 +64,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                     borderRadius: BorderRadius.circular(32),
                                   ),
                                   padding: EdgeInsets.symmetric(
-                                    horizontal: 24,
+                                    horizontal: 32,
                                   ),
                                   child: Center(
                                     child: Text(
@@ -76,6 +76,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                   ),
                                 ),
                                 CircleAvatar(
+                                  radius: 32,
                                   backgroundColor: Colors.black,
                                   foregroundColor: Colors.white,
                                   child: Text("or"),
