@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class YogaCoachingDetailPage extends StatefulWidget {
@@ -39,6 +40,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
               ),
             ),
 
+            Gap(16),
             SizedBox(
               height: 72,
 
@@ -70,6 +72,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                 ),
               ),
             ),
+            Gap(16),
             Expanded(
               child: ListView.builder(
                 itemBuilder: (context, index) {
