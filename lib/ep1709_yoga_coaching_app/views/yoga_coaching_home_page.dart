@@ -27,7 +27,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
               Container(
@@ -103,6 +103,10 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                             ),
                           ),
                           Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            top: 0,
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Color(0xff7eb179),
