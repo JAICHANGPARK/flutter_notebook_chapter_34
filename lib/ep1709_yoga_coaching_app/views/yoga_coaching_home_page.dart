@@ -163,7 +163,30 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                 style: GoogleFonts.kronaOne(fontSize: 48, height: 1.1),
               ),
               Expanded(
-                child: Placeholder(),
+                child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 24),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                    image: DecorationImage(
+                      image: NetworkImage("https://cdn.pixabay.com/photo/2020/06/29/17/41/meditate-5353620_1280.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                height: 72,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      child: Row(
+                        children: [
+                          Expanded(child: Container())
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
