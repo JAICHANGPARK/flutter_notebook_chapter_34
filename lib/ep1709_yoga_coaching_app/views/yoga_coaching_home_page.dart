@@ -112,7 +112,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                             ),
                           ),
                           Positioned(
-                            left: 0,
+                            left: 16,
                             right: 0,
                             bottom: 0,
                             top: 0,
