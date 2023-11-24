@@ -96,7 +96,7 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                       child: Row(
                         children: [
                           Container(
-                            width: 120,
+                            width: 92,
                             child: Column(
                               children: [
                                 Expanded(
@@ -107,8 +107,11 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Color(0xff7eb179),
+                                    borderRadius: BorderRadius.circular(16),
                                   ),
+                                  padding: EdgeInsets.symmetric(vertical: 12),
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
                                         "Submit",
