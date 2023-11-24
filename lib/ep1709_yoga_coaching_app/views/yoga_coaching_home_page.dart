@@ -13,13 +13,13 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {},
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.face,
             ),
           )
@@ -63,10 +63,10 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(32),
                                   ),
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                     horizontal: 32,
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "Sign in",
                                       style: TextStyle(
@@ -75,7 +75,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                     ),
                                   ),
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 32,
                                   backgroundColor: Colors.black,
                                   foregroundColor: Colors.white,
@@ -88,7 +88,39 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                       ),
                     ),
                     Expanded(
-                      child: Stack(),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            right: 8,
+                            top: 0,
+                            bottom: 0,
+                            child: Center(
+                              child: Container(
+                                height: 24,
+                                color: Color(0xff7eb179),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color(0xff7eb179),
+                              ),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "Search for a guru",
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right,
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
