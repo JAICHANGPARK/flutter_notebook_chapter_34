@@ -13,6 +13,11 @@ class _YogaCoachingDetailPageState extends State<YogaCoachingDetailPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("yoguru"),
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.menu),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
