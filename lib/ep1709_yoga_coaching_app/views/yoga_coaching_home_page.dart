@@ -29,7 +29,7 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
         child: Column(
           children: [
             Container(
-              height: 64,
+              height: 48,
               color: Colors.blue,
               child: Row(
                 children: [
@@ -37,8 +37,8 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                     child: Stack(
                       children: [
                         Positioned(
-                          left: 0,
-                          right: 0,
+                          left: 16,
+                          right: 16,
                           top: 0,
                           bottom: 0,
                           child: Center(
@@ -60,12 +60,15 @@ class _YogaCoachingHomePageState extends State<YogaCoachingHomePage> {
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(32),
                                 ),
-
-                                padding: EdgeInsets.symmetric(horizontal: 16, ),
-                                child: Text(
-                                  "Sign in",
-                                  style: TextStyle(
-                                    color: Colors.white,
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 24,
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "Sign in",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
