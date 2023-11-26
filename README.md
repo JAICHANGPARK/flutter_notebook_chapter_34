@@ -11,7 +11,7 @@
 - Dmitry Lauretsky for Ronas IT | UI/UX Team
 - https://dribbble.com/shots/22990933-Barter-App-Design-Concept
 
-A new Flutter project.
+
 
 ## Getting Started
 
