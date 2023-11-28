@@ -68,6 +68,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
           ),
         ],
       ),
+
     );
   }
 }
