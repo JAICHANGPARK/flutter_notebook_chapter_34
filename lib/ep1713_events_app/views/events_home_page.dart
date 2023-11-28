@@ -33,7 +33,32 @@ class _EventsHomePageState extends State<EventsHomePage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  
+                  Container(
+                    height: 72,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 160,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 100,
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    child: ListView(
+                      children: [
+                        Container(
+                          height: 260,
+                          child: Placeholder(),
+                        ),
+                        Container(
+                          height: 300,
+                          child: Placeholder(),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
