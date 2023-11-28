@@ -31,35 +31,38 @@ class _EventsHomePageState extends State<EventsHomePage> {
           ),
           Positioned.fill(
             child: SafeArea(
-              child: Column(
-                children: [
-                  Container(
-                    height: 72,
-                    child: Placeholder(),
-                  ),
-                  Container(
-                    height: 160,
-                    child: Placeholder(),
-                  ),
-                  Container(
-                    height: 100,
-                    child: Placeholder(),
-                  ),
-                  Expanded(
-                    child: ListView(
-                      children: [
-                        Container(
-                          height: 260,
-                          child: Placeholder(),
-                        ),
-                        Container(
-                          height: 300,
-                          child: Placeholder(),
-                        )
-                      ],
+              child: Padding(
+                padding: const EdgeInsets.only(top: 24),
+                child: Column(
+                  children: [
+                    Container(
+                      height: 72,
+                      child: Placeholder(),
                     ),
-                  )
-                ],
+                    Container(
+                      height: 160,
+                      child: Placeholder(),
+                    ),
+                    Container(
+                      height: 100,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      child: ListView(
+                        children: [
+                          Container(
+                            height: 260,
+                            child: Placeholder(),
+                          ),
+                          Container(
+                            height: 300,
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
