@@ -1,22 +1,25 @@
 # flutter_notebook_chapter_34
 
 ### EP1713
+
 - Events App
 - Ionut Zamfir
 - https://dribbble.com/shots/23092188-Events-App
 
 ### EP1709-1712
+
 - Yoga Coaching Service
 - Desire Creative Agency
 - https://dribbble.com/shots/23053799-Yoga-Coaching-Service
 
 ### EP1705-1708
+
 - Video Sharing App
 - Sajon for Orix Creative
 - https://dribbble.com/shots/23080474-Video-Sharing-App
 
-
 ### EP1701-1704
+
 - Barter App Design Concept
 - Dmitry Lauretsky for Ronas IT | UI/UX Team
 - https://dribbble.com/shots/22990933-Barter-App-Design-Concept
