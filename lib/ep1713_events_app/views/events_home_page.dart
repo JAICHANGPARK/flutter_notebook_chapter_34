@@ -19,7 +19,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                 gradient: LinearGradient(
                   colors: [
                     Color.fromRGBO(243, 231, 254, 1),
+                    Color.fromRGBO(243, 231, 254, 1),
+
                     Color.fromRGBO(247, 239, 254, 1),
+                    Color.fromRGBO(247, 239, 254, 1),
+                    Color.fromRGBO(251, 249, 251, 1),
+                    Color.fromRGBO(251, 249, 251, 1),
+                    Colors.white
                   ],
                 ),
               ),
