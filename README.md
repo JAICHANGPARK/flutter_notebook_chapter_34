@@ -1,8 +1,9 @@
 # flutter_notebook_chapter_34
 
 ### EP1713
-- 
--
+- Events App
+- Ionut Zamfir
+- https://dribbble.com/shots/23092188-Events-App
 
 ### EP1709-1712
 - 
