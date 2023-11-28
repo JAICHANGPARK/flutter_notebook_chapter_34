@@ -6,8 +6,8 @@
 - https://dribbble.com/shots/23092188-Events-App
 
 ### EP1709-1712
-- 
-- 
+- Yoga Coaching Service
+- Desire Creative Agency
 - https://dribbble.com/shots/23053799-Yoga-Coaching-Service
 
 ### EP1705-1708
