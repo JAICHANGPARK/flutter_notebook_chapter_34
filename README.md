@@ -1,5 +1,10 @@
 # flutter_notebook_chapter_34
 
+### EP1705-1708
+- Video Sharing App
+- Sajon for Orix Creative
+- https://dribbble.com/shots/23080474-Video-Sharing-App
+
 ### EP1705
 - Video Sharing App
 - Sajon for Orix Creative
