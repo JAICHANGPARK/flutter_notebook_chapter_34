@@ -8,7 +8,7 @@
 ### EP1709-1712
 - 
 - 
-- https://dribbble.com/shots/23080474-Video-Sharing-App
+- https://dribbble.com/shots/23053799-Yoga-Coaching-Service
 
 ### EP1705-1708
 - Video Sharing App
