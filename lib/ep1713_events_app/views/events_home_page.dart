@@ -16,24 +16,28 @@ class _EventsHomePageState extends State<EventsHomePage> {
           Positioned.fill(
             child: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color.fromRGBO(243, 231, 254, 1),
-                    Color.fromRGBO(243, 231, 254, 1),
-
-                    Color.fromRGBO(247, 239, 254, 1),
-                    Color.fromRGBO(247, 239, 254, 1),
-                    Color.fromRGBO(251, 249, 251, 1),
-                    Color.fromRGBO(251, 249, 251, 1),
-                    Colors.white,
-                    Colors.white
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter
-                ),
+                gradient: LinearGradient(colors: [
+                  Color.fromRGBO(243, 231, 254, 1),
+                  Color.fromRGBO(243, 231, 254, 1),
+                  Color.fromRGBO(247, 239, 254, 1),
+                  Color.fromRGBO(247, 239, 254, 1),
+                  Color.fromRGBO(251, 249, 251, 1),
+                  Color.fromRGBO(251, 249, 251, 1),
+                  Colors.white,
+                  Colors.white
+                ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
               ),
             ),
-          )
+          ),
+          Positioned.fill(
+            child: SafeArea(
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
