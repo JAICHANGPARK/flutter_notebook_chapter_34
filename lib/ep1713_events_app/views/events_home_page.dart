@@ -82,8 +82,14 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       ),
                     ),
                     Container(
-                      height: 160,
-                      child: Placeholder(),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+
+                        ),
+                      ),
                     ),
                     Container(
                       height: 100,
