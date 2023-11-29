@@ -87,7 +87,8 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       ),
                       child: TextField(
                         decoration: InputDecoration(
-                          
+                          hintText: "Search for an event",
+                          icon: Icon(Icons.search),
                         ),
                       ),
                     ),
