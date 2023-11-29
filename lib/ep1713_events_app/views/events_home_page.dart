@@ -96,19 +96,28 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         ),
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text("You might like"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'See All',
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        children: [
+                          Text(
+                            "You might like",
                             style: TextStyle(
-                              decoration: TextDecoration.underline,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
                             ),
                           ),
-                        )
-                      ],
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              'See All',
+                              style: TextStyle(
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Expanded(
                       child: ListView(
