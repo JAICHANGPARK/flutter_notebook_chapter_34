@@ -99,6 +99,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
                             "You might like",
