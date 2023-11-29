@@ -35,9 +35,30 @@ class _EventsHomePageState extends State<EventsHomePage> {
                 padding: const EdgeInsets.only(top: 24),
                 child: Column(
                   children: [
-                    Container(
-                      height: 72,
-                      child: Placeholder(),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("South Korea"),
+                                    Icon(Icons.keyboard_arrow_down_outlined),
+                                  ],
+                                ),
+                                Text("within 20 miles"),
+                              ],
+                            ),
+                          ),
+                          CircleAvatar(),
+                        ],
+                      ),
+                    ),
+                    Column(
+                      children: [],
                     ),
                     Container(
                       height: 160,
@@ -68,7 +89,6 @@ class _EventsHomePageState extends State<EventsHomePage> {
           ),
         ],
       ),
-
     );
   }
 }
