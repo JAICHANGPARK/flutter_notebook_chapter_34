@@ -15,7 +15,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(colors: [
                   Color.fromRGBO(243, 231, 254, 1),
                   Color.fromRGBO(243, 231, 254, 1),
@@ -29,15 +29,15 @@ class _EventsHomePageState extends State<EventsHomePage> {
               ),
             ),
           ),
-          Positioned.fill(
+           Positioned.fill(
             child: SafeArea(
               child: Padding(
-                padding: const EdgeInsets.only(top: 24),
+                padding: EdgeInsets.only(top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Row(
                         children: [
                           Expanded(
@@ -59,23 +59,20 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Hello, Simone",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 32
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                           ),
                           Text(
                             "There are 25 new\nevents in your area.",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 32,
-                              color: Color
+                              fontWeight: FontWeight.bold,
+                              fontSize: 32,
+                              color: Color.fromRGBO(193, 163, 223, 1),
                             ),
                           ),
                         ],
