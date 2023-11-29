@@ -29,7 +29,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
               ),
             ),
           ),
-           Positioned.fill(
+          Positioned.fill(
             child: SafeArea(
               child: Padding(
                 padding: EdgeInsets.only(top: 24),
@@ -64,8 +64,11 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Hello, Simone",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                            "Hello, Dream",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 32,
+                            ),
                           ),
                           Text(
                             "There are 25 new\nevents in your area.",
