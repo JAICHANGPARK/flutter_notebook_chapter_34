@@ -96,9 +96,19 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         ),
                       ),
                     ),
-                    Container(
-                      height: 100,
-                      child: const Placeholder(),
+                    Row(
+                      children: [
+                        Text("You might like"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'See All',
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                     Expanded(
                       child: ListView(
