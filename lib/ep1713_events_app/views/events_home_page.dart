@@ -58,7 +58,18 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       ),
                     ),
                     Column(
-                      children: [],
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Hello, Simone",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "There are 25 new\nevents in your area.",
+                        ),
+                      ],
                     ),
                     Container(
                       height: 160,
