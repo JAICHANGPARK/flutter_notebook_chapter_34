@@ -87,7 +87,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       ),
                       child: TextField(
                         decoration: InputDecoration(
-
+                          
                         ),
                       ),
                     ),
