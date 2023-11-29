@@ -32,11 +32,11 @@ class _EventsHomePageState extends State<EventsHomePage> {
           Positioned.fill(
             child: SafeArea(
               child: Padding(
-                padding: EdgeInsets.only(top: 24),
+                padding: const EdgeInsets.only(top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Row(
                         children: [
@@ -58,7 +58,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         ],
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,9 +86,9 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      margin: EdgeInsets.all(16),
-                      child: TextField(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      margin: const EdgeInsets.all(16),
+                      child: const TextField(
                         decoration: InputDecoration(
                           hintText: "Search for an event",
                           icon: Icon(Icons.search),
@@ -98,18 +98,18 @@ class _EventsHomePageState extends State<EventsHomePage> {
                     ),
                     Container(
                       height: 100,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     ),
                     Expanded(
                       child: ListView(
                         children: [
                           Container(
                             height: 260,
-                            child: Placeholder(),
+                            child: const Placeholder(),
                           ),
                           Container(
                             height: 300,
-                            child: Placeholder(),
+                            child: const Placeholder(),
                           )
                         ],
                       ),
