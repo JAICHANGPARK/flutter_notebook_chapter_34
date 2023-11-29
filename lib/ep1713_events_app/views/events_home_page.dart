@@ -84,11 +84,15 @@ class _EventsHomePageState extends State<EventsHomePage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      margin: EdgeInsets.all(16),
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: "Search for an event",
                           icon: Icon(Icons.search),
+                          border: InputBorder.none,
                         ),
                       ),
                     ),
