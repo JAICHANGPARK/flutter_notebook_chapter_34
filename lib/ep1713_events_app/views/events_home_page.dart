@@ -34,6 +34,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
               child: Padding(
                 padding: const EdgeInsets.only(top: 24),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(16.0),
