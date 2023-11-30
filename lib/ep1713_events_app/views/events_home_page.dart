@@ -215,7 +215,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                               },
                             ),
                           ),
-                          Gap(16),
+                          Gap(32),
                           Container(
                             height: 300,
                             child: const Placeholder(),
