@@ -143,6 +143,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             color: Colors.blue,
                                           ),
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Container(
                                                 child: Column(
@@ -161,7 +162,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                         ),
                                       ),
                                       Gap(8),
-                                      Text("Learn to cook with Walker"),
+                                      Text(
+                                        "Learn to cook with Walker",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),
+                                      ),
                                       Gap(8),
                                       Row(
                                         children: [
