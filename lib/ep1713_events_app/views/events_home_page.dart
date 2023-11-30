@@ -125,7 +125,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       child: ListView(
                         children: [
                           Container(
-                            height: 240,
+                            height: 260,
                             margin: EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
@@ -146,6 +146,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           padding: EdgeInsets.all(16),
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
