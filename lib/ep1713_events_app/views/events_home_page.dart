@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class EventsHomePage extends StatefulWidget {
   const EventsHomePage({super.key});
@@ -129,7 +130,8 @@ class _EventsHomePageState extends State<EventsHomePage> {
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
-                                return SizedBox(
+                                return Container(
+                                  margin: EdgeInsets.only(right: 16),
                                   width: 300,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,9 +160,15 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           ),
                                         ),
                                       ),
+                                      Gap(8),
                                       Text("Learn to cook with Walker"),
+                                      Gap(8),
                                       Row(
-                                        children: [Icon(Icons.access_time_outlined), Text("10:00 - 19:30")],
+                                        children: [
+                                          Icon(Icons.access_time_outlined),
+                                          Gap(8),
+                                          Text("10:00 - 19:30"),
+                                        ],
                                       )
                                     ],
                                   ),
