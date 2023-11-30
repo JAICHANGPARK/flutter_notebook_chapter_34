@@ -168,7 +168,20 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                                     )
                                                   ],
                                                 ),
-                                              )
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green[50],
+                                                  borderRadius: BorderRadius.circular(8),
+                                                ),
+                                                child: Row(
+                                                  mainAxisSize: MainAxisSize.min,
+                                                  children: [
+                                                    Icon(Icons.menu_book_outlined),
+                                                    Text("Workshops"),
+                                                  ],
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
