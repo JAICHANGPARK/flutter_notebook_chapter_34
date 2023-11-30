@@ -148,13 +148,23 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey,
+                                                  borderRadius: BorderRadius.circular(8),
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                                 child: Column(
                                                   children: [
                                                     Text(
                                                       "NOV",
+                                                      style: TextStyle(fontSize: 16),
                                                     ),
                                                     Text(
                                                       "20",
+                                                      style: TextStyle(
+                                                        fontSize: 18,
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
                                                     )
                                                   ],
                                                 ),
