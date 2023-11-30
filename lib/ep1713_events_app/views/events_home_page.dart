@@ -197,7 +197,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           fontSize: 16,
                                         ),
                                       ),
-                                      Gap(8),
+                                      Gap(6),
                                       Row(
                                         children: [
                                           Icon(Icons.access_time_outlined),
@@ -211,6 +211,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                               },
                             ),
                           ),
+                          Gap(16),
                           Container(
                             height: 300,
                             child: const Placeholder(),
