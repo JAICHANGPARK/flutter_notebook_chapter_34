@@ -131,23 +131,35 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                 return SizedBox(
                                   width: 300,
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Expanded(
                                         child: Container(
+                                          width: double.infinity,
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                           ),
                                           child: Column(
-                                            children: [],
+                                            children: [
+                                              Container(
+                                                child: Column(
+                                                  children: [
+                                                    Text(
+                                                      "NOV",
+                                                    ),
+                                                    Text(
+                                                      "20",
+                                                    )
+                                                  ],
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ),
                                       ),
                                       Text("Learn to cook with Walker"),
                                       Row(
-                                        children: [
-                                          Icon(Icons.access_time_outlined),
-                                          Text("10:00 - 19:30")
-                                        ],
+                                        children: [Icon(Icons.access_time_outlined), Text("10:00 - 19:30")],
                                       )
                                     ],
                                   ),
