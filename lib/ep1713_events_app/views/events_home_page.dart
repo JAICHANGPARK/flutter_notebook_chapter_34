@@ -175,10 +175,12 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                                   color: Colors.green[50],
                                                   borderRadius: BorderRadius.circular(8),
                                                 ),
+                                                padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
                                                 child: Row(
                                                   mainAxisSize: MainAxisSize.min,
                                                   children: [
                                                     Icon(Icons.menu_book_outlined),
+                                                    Gap(4),
                                                     Text("Workshops"),
                                                   ],
                                                 ),
