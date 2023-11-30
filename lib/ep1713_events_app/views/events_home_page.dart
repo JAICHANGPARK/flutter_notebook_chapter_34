@@ -141,6 +141,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             children: [],
                                           ),
                                         ),
+                                      ),
+                                      Text("Learn to cook with Walker"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.access_time_outlined),
+                                          Text("10:00 - 19:30")
+                                        ],
                                       )
                                     ],
                                   ),
