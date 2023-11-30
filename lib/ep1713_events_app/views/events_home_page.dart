@@ -125,7 +125,9 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         children: [
                           Container(
                             height: 260,
-                            child: const Placeholder(),
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {},
+                            ),
                           ),
                           Container(
                             height: 300,
