@@ -126,7 +126,18 @@ class _EventsHomePageState extends State<EventsHomePage> {
                           Container(
                             height: 260,
                             child: ListView.builder(
-                              itemBuilder: (context, index) {},
+                              itemBuilder: (context, index) {
+                                return SizedBox(
+                                  width: 300,
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        child: Container(),
+                                      )
+                                    ],
+                                  ),
+                                );
+                              },
                             ),
                           ),
                           Container(
