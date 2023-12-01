@@ -140,13 +140,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                         child: Container(
                                           width: double.infinity,
                                           decoration: BoxDecoration(
-                                            color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(8),
-                                            image: DecorationImage(
-                                              image: NetworkImage("https://cdn.pixabay.com/photo/2020/01/31/07/26/chef-4807317_1280.jpg"),
-                                              fit: BoxFit.cover,
-                                            )
-                                          ),
+                                              color: Colors.blue,
+                                              borderRadius: BorderRadius.circular(8),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2020/01/31/07/26/chef-4807317_1280.jpg"),
+                                                fit: BoxFit.cover,
+                                              )),
                                           padding: EdgeInsets.all(16),
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -240,9 +240,8 @@ class _EventsHomePageState extends State<EventsHomePage> {
                               ],
                             ),
                           ),
-                          Container(
-                            height: 300,
-                            child: const Placeholder(),
+                          Column(
+                            children: List.generate(10, (index) => Container()),
                           )
                         ],
                       ),
