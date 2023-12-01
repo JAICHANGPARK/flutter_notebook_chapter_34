@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RentingHomePage extends StatefulWidget {
   const RentingHomePage({super.key});
@@ -33,14 +34,23 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.4),
-                          borderRadius: BorderRadius.circular(32)
+                          borderRadius: BorderRadius.circular(32),
                         ),
                         child: Row(
-                          mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.location_on,color: Colors.white,),
-                            Text("South Korea")
+                            Icon(
+                              Icons.location_on,
+                              color: Colors.white,
+                              size: 16,
+                            ),
+                            Gap(12),
+                            Text(
+                              "South Korea",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
                           ],
                         ),
                       ),
@@ -48,13 +58,14 @@ class _RentingHomePageState extends State<RentingHomePage> {
                   ),
                   Badge(
                     child: IconButton(
-                      icon: Icon(Icons.notifications_none,),
-
-                      color: Colors.white, onPressed: () {  },
+                      icon: Icon(
+                        Icons.notifications_none,
+                      ),
+                      color: Colors.white,
+                      onPressed: () {},
                     ),
                     backgroundColor: Color(0xff794aff),
                     label: Text("1"),
-
                   ),
                 ],
               ),
