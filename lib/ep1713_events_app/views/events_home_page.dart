@@ -261,9 +261,15 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                           child: Column(
                                             children: [
-                                              Text("NOV"),
+                                              Text(
+                                                "NOV",
+                                                style: TextStyle(
+                                                  fontSize: 13,
+                                                ),
+                                              ),
                                               Text(
                                                 "${18 + index}",
+                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                               )
                                             ],
                                           ),
