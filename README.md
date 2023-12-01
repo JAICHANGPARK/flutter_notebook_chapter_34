@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_34
 
-### EP1713
+### EP1717
+
+- Renting App Design Concept: iOS
+- Dmitry Lauretsky for Ronas IT | UI/UX Team
+- https://dribbble.com/shots/23154100-Renting-App-Design-Concept-iOS
+
+### EP1713-1716
 
 - Events App
 - Ionut Zamfir
