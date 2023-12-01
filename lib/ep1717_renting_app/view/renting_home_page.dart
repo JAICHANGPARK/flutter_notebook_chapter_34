@@ -74,10 +74,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
               height: 200,
               child: Placeholder(),
             ),
+            Gap(16),
             Expanded(
               child: Container(
-                color: Colors.white,
+
                 decoration: BoxDecoration(
+                  color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
                     topRight: Radius.circular(24),
