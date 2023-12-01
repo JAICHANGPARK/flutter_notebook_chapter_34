@@ -11,6 +11,6 @@ class RentingHomePage extends StatefulWidget {
 class _RentingHomePageState extends State<RentingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
