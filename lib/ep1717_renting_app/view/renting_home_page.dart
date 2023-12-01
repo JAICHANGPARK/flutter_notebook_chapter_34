@@ -15,31 +15,49 @@ class _RentingHomePageState extends State<RentingHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.4),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.white,
                     ),
                   ),
-                ),
-                Badge(
-                  child: Icon(
-                    Icons.search,
-                    color: Colors.white,
+                  Expanded(
+                    child: Center(
+                      child: Container(
+                        width: 160,
+                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(32)
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.location_on,color: Colors.white,),
+                            Text("South Korea")
+                          ],
+                        ),
+                      ),
+                    ),
                   ),
-                  label: Text(""),
-                  
-                ),
-              ],
+                  Badge(
+                    child: IconButton(
+                      icon: Icon(Icons.notifications_none,),
+
+                      color: Colors.white, onPressed: () {  },
+                    ),
+                    backgroundColor: Color(0xff794aff),
+                    label: Text("1"),
+
+                  ),
+                ],
+              ),
             )
           ],
         ),
