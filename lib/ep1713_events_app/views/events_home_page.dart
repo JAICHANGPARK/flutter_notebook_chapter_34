@@ -244,6 +244,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                             children: List.generate(
                               10,
                               (index) => Container(
+                                margin: EdgeInsets.only(left: 16, right: 16, bottom: 0),
                                 decoration: BoxDecoration(
                                   color: Colors.orange,
                                 ),
@@ -271,11 +272,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                         )
                                       ],
                                     ),
+                                    Gap(12),
                                     Expanded(
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.redAccent,
                                         ),
+                                        margin: EdgeInsets.only(bottom: 16),
                                       ),
                                     )
                                   ],
