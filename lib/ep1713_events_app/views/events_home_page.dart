@@ -296,7 +296,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             fit: BoxFit.cover,
                                           ),
                                         ),
-                                        margin: const EdgeInsets.only(bottom: 16),
+                                        margin: const EdgeInsets.only(bottom: 24),
                                       ),
                                     )
                                   ],
