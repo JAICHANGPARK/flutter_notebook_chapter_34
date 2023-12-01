@@ -69,6 +69,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              height: 200,
+              child: Placeholder(),
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.white,
+              ),
             )
           ],
         ),
