@@ -102,7 +102,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "You might like",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -111,7 +111,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               'See All',
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
@@ -126,12 +126,12 @@ class _EventsHomePageState extends State<EventsHomePage> {
                         children: [
                           Container(
                             height: 260,
-                            margin: EdgeInsets.only(left: 16),
+                            margin: const EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                   width: 300,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -142,12 +142,12 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           decoration: BoxDecoration(
                                               color: Colors.blue,
                                               borderRadius: BorderRadius.circular(8),
-                                              image: DecorationImage(
+                                              image: const DecorationImage(
                                                 image: NetworkImage(
                                                     "https://cdn.pixabay.com/photo/2020/01/31/07/26/chef-4807317_1280.jpg"),
                                                 fit: BoxFit.cover,
                                               )),
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -157,8 +157,8 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                                   color: Colors.grey,
                                                   borderRadius: BorderRadius.circular(8),
                                                 ),
-                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                                child: Column(
+                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                child: const Column(
                                                   children: [
                                                     Text(
                                                       "NOV",
@@ -179,8 +179,8 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                                   color: Colors.green[50],
                                                   borderRadius: BorderRadius.circular(8),
                                                 ),
-                                                padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
-                                                child: Row(
+                                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                                                child: const Row(
                                                   mainAxisSize: MainAxisSize.min,
                                                   children: [
                                                     Icon(Icons.menu_book_outlined),
@@ -193,16 +193,16 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           ),
                                         ),
                                       ),
-                                      Gap(8),
-                                      Text(
+                                      const Gap(8),
+                                      const Text(
                                         "Learn to cook with Walker",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 16,
                                         ),
                                       ),
-                                      Gap(6),
-                                      Row(
+                                      const Gap(6),
+                                      const Row(
                                         children: [
                                           Icon(Icons.access_time_outlined),
                                           Gap(8),
@@ -215,13 +215,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                               },
                             ),
                           ),
-                          Gap(32),
+                          const Gap(32),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Upcoming events",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -230,7 +230,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     'See All',
                                     style: TextStyle(
                                       decoration: TextDecoration.underline,
@@ -240,14 +240,15 @@ class _EventsHomePageState extends State<EventsHomePage> {
                               ],
                             ),
                           ),
+                          Gap(16),
                           Column(
                             children: List.generate(
                               10,
                               (index) => Container(
-                                margin: EdgeInsets.only(left: 16, right: 16, bottom: 0),
-                                decoration: BoxDecoration(
-                                  color: Colors.orange,
-                                ),
+                                margin: const EdgeInsets.only(left: 16, right: 16, bottom: 0),
+                                // decoration: const BoxDecoration(
+                                //   color: Colors.orange,
+                                // ),
                                 height: 200,
                                 child: Row(
                                   children: [
@@ -258,10 +259,10 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             border: Border.all(),
                                             borderRadius: BorderRadius.circular(6),
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                           child: Column(
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "NOV",
                                                 style: TextStyle(
                                                   fontSize: 13,
@@ -269,7 +270,7 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                               ),
                                               Text(
                                                 "${18 + index}",
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 18,
                                                 ),
@@ -277,22 +278,25 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             ],
                                           ),
                                         ),
-                                        Expanded(
+                                        const Expanded(
                                           child: VerticalDivider(),
                                         )
                                       ],
                                     ),
-                                    Gap(12),
+                                    const Gap(12),
                                     Expanded(
                                       child: Container(
                                         decoration: BoxDecoration(
-                                            color: Colors.redAccent,
-                                            borderRadius: BorderRadius.circular(8),
-                                            image: DecorationImage(
-                                                image: NetworkImage(
+                                          color: Colors.redAccent,
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: const DecorationImage(
+                                            image: NetworkImage(
                                               "https://cdn.pixabay.com/photo/2016/04/26/03/55/salmon-1353598_1280.jpg",
-                                            ),),),
-                                        margin: EdgeInsets.only(bottom: 16),
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        margin: const EdgeInsets.only(bottom: 16),
                                       ),
                                     )
                                   ],
