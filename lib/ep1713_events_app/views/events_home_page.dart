@@ -269,8 +269,11 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                               ),
                                               Text(
                                                 "${18 + index}",
-                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                              )
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
@@ -283,8 +286,12 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                     Expanded(
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.redAccent,
-                                        ),
+                                            color: Colors.redAccent,
+                                            borderRadius: BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/04/26/03/55/salmon-1353598_1280.jpg",
+                                            ),),),
                                         margin: EdgeInsets.only(bottom: 16),
                                       ),
                                     )
