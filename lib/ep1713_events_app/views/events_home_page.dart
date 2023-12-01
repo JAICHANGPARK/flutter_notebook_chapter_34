@@ -258,11 +258,12 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                             border: Border.all(),
                                             borderRadius: BorderRadius.circular(6),
                                           ),
+                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                           child: Column(
                                             children: [
                                               Text("NOV"),
                                               Text(
-                                                "18",
+                                                "${18 + index}",
                                               )
                                             ],
                                           ),
