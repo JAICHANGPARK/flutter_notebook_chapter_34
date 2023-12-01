@@ -270,6 +270,13 @@ class _EventsHomePageState extends State<EventsHomePage> {
                                           child: VerticalDivider(),
                                         )
                                       ],
+                                    ),
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.redAccent,
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
