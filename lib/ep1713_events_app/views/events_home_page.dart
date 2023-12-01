@@ -241,7 +241,40 @@ class _EventsHomePageState extends State<EventsHomePage> {
                             ),
                           ),
                           Column(
-                            children: List.generate(10, (index) => Container()),
+                            children: List.generate(
+                              10,
+                              (index) => Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.orange,
+                                ),
+                                height: 200,
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            borderRadius: BorderRadius.circular(6),
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Text("NOV"),
+                                              Text(
+                                                "18",
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: VerticalDivider(),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       ),
