@@ -72,7 +72,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
               ),
             ),
             Container(
-              height: 200,
+              height: 160,
               padding: EdgeInsets.only(left: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,6 +84,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       fontSize: 18,
                     ),
                   ),
+                  Gap(16),
                   Expanded(
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
