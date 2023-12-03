@@ -91,7 +91,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 120,
-                          margin: EdgeInsets.all(16),
+                          margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                             color: Colors.pink,
 
