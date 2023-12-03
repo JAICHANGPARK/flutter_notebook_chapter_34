@@ -126,11 +126,14 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             "Lease again",
                             style: GoogleFonts.urbanist(
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 20,
                             ),
                           ),
                           Spacer(),
-                          Text("View all"),
+                          Text("View all",
+                          style: GoogleFonts.urbanist(
+                            color: Color(0xff794aff)
+                          ),),
                           Icon(Icons.keyboard_arrow_right),
                         ],
                       ),
