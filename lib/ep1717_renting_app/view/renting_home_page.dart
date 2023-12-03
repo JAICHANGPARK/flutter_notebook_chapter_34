@@ -73,6 +73,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             ),
             Container(
               height: 200,
+              padding: EdgeInsets.only(left: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
