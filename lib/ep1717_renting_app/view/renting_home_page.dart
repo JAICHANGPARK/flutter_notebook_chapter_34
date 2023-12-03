@@ -140,18 +140,27 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     SizedBox(
                       height: 260,
                       child: Padding(
-
                         padding: const EdgeInsets.only(top: 8, bottom: 16, left: 16),
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
-                              width:  160,
+                              width: 160,
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.orange,
                             );
                           },
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        "Available now",
+                        style: GoogleFonts.urbanist(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     )
