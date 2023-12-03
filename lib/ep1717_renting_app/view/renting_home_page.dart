@@ -12,7 +12,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff151617),
+      backgroundColor: const Color(0xff151617),
       body: SafeArea(
         child: Column(
           children: [
@@ -22,7 +22,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.search,
                       color: Colors.white,
                     ),
@@ -31,12 +31,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     child: Center(
                       child: Container(
                         width: 160,
-                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.4),
+                          color: Colors.white.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(32),
                         ),
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
@@ -58,27 +58,27 @@ class _RentingHomePageState extends State<RentingHomePage> {
                   ),
                   Badge(
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.notifications_none,
                       ),
                       color: Colors.white,
                       onPressed: () {},
                     ),
-                    backgroundColor: Color(0xff794aff),
-                    label: Text("1"),
+                    backgroundColor: const Color(0xff794aff),
+                    label: const Text("1"),
                   ),
                 ],
               ),
             ),
             Container(
               height: 200,
-              child: Placeholder(),
+              child: const Placeholder(),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
               child: Container(
 
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
