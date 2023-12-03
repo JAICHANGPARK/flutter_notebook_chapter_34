@@ -81,7 +81,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     "Find the best to rent",
                     style: GoogleFonts.urbanist(
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 22,
                     ),
                   ),
                   Gap(16),
