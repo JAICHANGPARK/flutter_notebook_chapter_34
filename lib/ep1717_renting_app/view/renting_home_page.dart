@@ -72,20 +72,21 @@ class _RentingHomePageState extends State<RentingHomePage> {
               ),
             ),
             Container(
-              height: 200,
-              child: Column(
-                children: [
-                  Text("Find the best to rent", style: GoogleFonts.urbanist(
-                    color: Colors.white,
-                    fontSize: 18
-                  ))
-                ],
-              )
-            ),
+                height: 200,
+                child: Column(
+                  children: [
+                    Text(
+                      "Find the best to rent",
+                      style: GoogleFonts.urbanist(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    )
+                  ],
+                ),),
             const Gap(16),
             Expanded(
               child: Container(
-
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
