@@ -145,6 +145,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width:  160,
+                            margin: EdgeInsets.only(right: 16),
                             color: Colors.orange,
                           );
                         },
