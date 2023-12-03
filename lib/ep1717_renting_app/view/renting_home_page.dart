@@ -81,7 +81,8 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         color: Colors.white,
                         fontSize: 18,
                       ),
-                    )
+                    ),
+                    Expanded(child: ListView.builder(itemBuilder: (context,index){return Container();},),)
                   ],
                 ),),
             const Gap(16),
