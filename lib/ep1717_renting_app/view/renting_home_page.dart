@@ -74,6 +74,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             Container(
               height: 200,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Find the best to rent",
@@ -88,8 +89,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
+                          width: 120,
+                          margin: EdgeInsets.all(16),
                           decoration: BoxDecoration(
                             color: Colors.pink,
+
                           ),
                         );
                       },
