@@ -34,7 +34,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         width: 160,
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                          color: Colors.white.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(32),
                         ),
                         child: const Row(
@@ -58,15 +58,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     ),
                   ),
                   Badge(
+                    backgroundColor: const Color(0xff794aff),
+                    label: const Text("1"),
                     child: IconButton(
+
                       icon: const Icon(
                         Icons.notifications_none,
                       ),
                       color: Colors.white,
                       onPressed: () {},
                     ),
-                    backgroundColor: const Color(0xff794aff),
-                    label: const Text("1"),
                   ),
                 ],
               ),
