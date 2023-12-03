@@ -61,7 +61,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     backgroundColor: const Color(0xff794aff),
                     label: const Text("1"),
                     child: IconButton(
-
                       icon: const Icon(
                         Icons.notifications_none,
                       ),
@@ -94,11 +93,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         return Container(
                           width: 110,
                           margin: EdgeInsets.only(right: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.pink,
-                            borderRadius: BorderRadius.circular(16)
-                            
-                          ),
+                          decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(16)),
                         );
                       },
                     ),
@@ -115,6 +110,32 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     topLeft: Radius.circular(24),
                     topRight: Radius.circular(24),
                   ),
+                ),
+                padding: EdgeInsets.only(
+                  top: 8,
+
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Lease again",
+                            style: GoogleFonts.urbanist(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          Spacer(),
+                          Text("View all"),
+                          Icon(Icons.keyboard_arrow_right),
+                        ],
+                      ),
+                    )
+                  ],
                 ),
               ),
             )
