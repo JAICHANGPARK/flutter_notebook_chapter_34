@@ -113,7 +113,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 ),
                 padding: EdgeInsets.only(
                   top: 8,
-
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,12 +129,24 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             ),
                           ),
                           Spacer(),
-                          Text("View all",
-                          style: GoogleFonts.urbanist(
-                            color: Color(0xff794aff)
-                          ),),
+                          Text(
+                            "View all",
+                            style: GoogleFonts.urbanist(color: Color(0xff794aff)),
+                          ),
                           Icon(Icons.keyboard_arrow_right),
                         ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 260,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width:  160,
+                            color: Colors.orange,
+                          );
+                        },
                       ),
                     )
                   ],
