@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RentingHomePage extends StatefulWidget {
   const RentingHomePage({super.key});
@@ -73,7 +74,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
             Container(
               height: 200,
               child: Column(
-                children: [],
+                children: [
+                  Text("Find the best to rent", style: GoogleFonts.urbanist(
+                    color: Colors.white,
+                    fontSize: 18
+                  ))
+                ],
               )
             ),
             const Gap(16),
