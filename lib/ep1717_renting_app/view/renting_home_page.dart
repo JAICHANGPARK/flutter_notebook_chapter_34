@@ -72,7 +72,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
             ),
             Container(
               height: 200,
-              child: const Placeholder(),
+              child: Column(
+                children: [],
+              )
             ),
             const Gap(16),
             Expanded(
