@@ -91,11 +91,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 120,
+                          width: 110,
                           margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                             color: Colors.pink,
-
+                            borderRadius: BorderRadius.circular(16)
+                            
                           ),
                         );
                       },
