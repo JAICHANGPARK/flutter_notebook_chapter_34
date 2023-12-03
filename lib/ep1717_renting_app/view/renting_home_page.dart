@@ -72,19 +72,32 @@ class _RentingHomePageState extends State<RentingHomePage> {
               ),
             ),
             Container(
-                height: 200,
-                child: Column(
-                  children: [
-                    Text(
-                      "Find the best to rent",
-                      style: GoogleFonts.urbanist(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+              height: 200,
+              child: Column(
+                children: [
+                  Text(
+                    "Find the best to rent",
+                    style: GoogleFonts.urbanist(
+                      color: Colors.white,
+                      fontSize: 18,
                     ),
-                    Expanded(child: ListView.builder(itemBuilder: (context,index){return Container();},),)
-                  ],
-                ),),
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const Gap(16),
             Expanded(
               child: Container(
