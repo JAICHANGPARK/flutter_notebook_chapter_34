@@ -299,6 +299,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             color: Colors.purple[100],
                             borderRadius: BorderRadius.circular(16),
                           ),
+                          padding: EdgeInsets.all(8),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xff724aff),
+                            ),
+                          ),
                         ),
                       ),
                     )
