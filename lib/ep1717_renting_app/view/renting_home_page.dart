@@ -267,19 +267,22 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                 IconButton(
                                   onPressed: () {},
                                   icon: Icon(Icons.apps),
+                                  iconSize: 32,
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: Icon(Icons.favorite_border),
+                                  iconSize: 32,
                                 ),
-
                                 IconButton(
                                   onPressed: () {},
                                   icon: Icon(Icons.chat_outlined),
+                                  iconSize: 32,
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: Icon(Icons.account_circle_outlined),
+                                  iconSize: 32,
                                 ),
                               ],
                             ),
