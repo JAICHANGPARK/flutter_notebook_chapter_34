@@ -138,7 +138,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       ),
                     ),
                     SizedBox(
-                      height: 260,
+                      height: 240,
                       child: Padding(
                         padding: const EdgeInsets.only(top: 8, bottom: 16, left: 16),
                         child: ListView.builder(
@@ -146,14 +146,14 @@ class _RentingHomePageState extends State<RentingHomePage> {
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
-                              width: 160,
+                              width: 150,
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.orange,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 150,
                                     decoration: BoxDecoration(
                                       color: Colors.purple,
                                       borderRadius: BorderRadius.circular(16),
