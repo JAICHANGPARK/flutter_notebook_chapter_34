@@ -250,6 +250,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               margin: EdgeInsets.symmetric(horizontal: 16),
                               decoration: BoxDecoration(
                                 color: Colors.purple[50],
+                                borderRadius: BorderRadius.circular(12)
                               ),
                             )
                           ],
