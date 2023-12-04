@@ -94,7 +94,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                           width: 110,
                           margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
-                            color: Colors.pink,
+                            color: Color.fromRGBO(190, 250, 188, 1),
                             borderRadius: BorderRadius.circular(16),
                           ),
                           padding: EdgeInsets.all(12),
@@ -103,12 +103,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               Expanded(
                                 child: Container(
                                   decoration: BoxDecoration(
-                                  
                                     image: DecorationImage(
                                       image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2023/03/25/19/23/bicycle-7876692_1280.png",
                                       ),
-                                      fit: BoxFit.fitHeight,
+                                      fit: BoxFit.fitWidth,
                                     ),
                                   ),
                                 ),
