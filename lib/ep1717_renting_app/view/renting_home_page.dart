@@ -245,6 +245,13 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                 ),
                               ),
                             ),
+                            Container(
+                              height: 96,
+                              margin: EdgeInsets.symmetric(horizontal: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.purple[50],
+                              ),
+                            )
                           ],
                         ),
                       ),
@@ -308,7 +315,8 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             child: IconButton(
                               color: Colors.white,
                               iconSize: 36,
-                              icon: Icon(Icons.add), onPressed: () {  },
+                              icon: Icon(Icons.add),
+                              onPressed: () {},
                             ),
                           ),
                         ),
