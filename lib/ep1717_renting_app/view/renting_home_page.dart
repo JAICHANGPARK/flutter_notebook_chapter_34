@@ -97,7 +97,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             color: Colors.pink,
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(12),
                           child: Column(
                             children: [
                               Expanded(
@@ -109,7 +109,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               Text(
                                 "Sports",
                                 style: GoogleFonts.urbanist(
-                                  
+                                  fontWeight: FontWeight.bold,
                                 ),
                               )
                             ],
