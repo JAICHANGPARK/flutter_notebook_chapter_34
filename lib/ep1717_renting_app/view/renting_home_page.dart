@@ -163,7 +163,8 @@ class _RentingHomePageState extends State<RentingHomePage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                    )
+                    ),
+
                   ],
                 ),
               ),
@@ -171,6 +172,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
           ],
         ),
       ),
+
     );
   }
 }
