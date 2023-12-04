@@ -127,7 +127,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 ],
               ),
             ),
-            const Gap(16),
+            const Gap(24),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
