@@ -149,6 +149,24 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               width: 160,
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.orange,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 140,
+                                    decoration: BoxDecoration(
+                                      color: Colors.purple,
+                                    ),
+                                  ),
+                                  Text("Flutter Tablet"),
+                                  Row(
+                                    children: [
+                                      Text("\$15.00"),
+                                      Text(" /hr"),
+                                    ],
+                                  )
+                                ],
+                              ),
                             );
                           },
                         ),
@@ -164,7 +182,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         ),
                       ),
                     ),
-
                   ],
                 ),
               ),
@@ -172,7 +189,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
           ],
         ),
       ),
-
     );
   }
 }
