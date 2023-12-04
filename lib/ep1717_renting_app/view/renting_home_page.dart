@@ -104,6 +104,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.purple,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2023/03/25/19/23/bicycle-7876692_1280.png",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               )),
                               Text(
