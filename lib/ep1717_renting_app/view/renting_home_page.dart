@@ -106,6 +106,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   color: Colors.purple,
                                 ),
                               )),
+                              Text(
+                                "Sports",
+                                style: GoogleFonts.urbanist(
+                                  
+                                ),
+                              )
                             ],
                           ),
                         );
