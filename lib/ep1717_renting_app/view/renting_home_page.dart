@@ -184,13 +184,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                     decoration: BoxDecoration(
                                       color: Color.fromRGBO(241, 238, 245, 1),
                                       borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/01/14/23/58/tent-3933238_1280.png",
+                                        ),
+                                      ),
                                     ),
                                     child: Stack(
                                       children: [
                                         Column(
-                                          children: [
-                                            
-                                          ],
+                                          children: [],
                                         )
                                       ],
                                     ),
