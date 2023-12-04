@@ -137,13 +137,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     topRight: Radius.circular(24),
                   ),
                 ),
-                padding: const EdgeInsets.only(
-                  top: 8,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                padding: const EdgeInsets.only(top: 8),
+                child: Stack(
                   children: [
-                    Expanded(
+                    Positioned.fill(
+
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -252,43 +250,40 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         ),
                       ),
                     ),
-                    Container(
-                      height: 92,
-                      decoration: BoxDecoration(color: Colors.orange),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            top: 16,
-                            child: Row(
-
-                              children: [
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.apps),
-                                  iconSize: 32,
-                                ),
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.favorite_border),
-                                  iconSize: 32,
-                                ),
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.chat_outlined),
-                                  iconSize: 32,
-                                ),
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.account_circle_outlined),
-                                  iconSize: 32,
-                                ),
-                              ],
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 92,
+                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.apps),
+                              iconSize: 32,
                             ),
-                          ),
-                        ],
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.favorite_border),
+                              iconSize: 32,
+                            ),
+                            SizedBox(width: 72,),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.chat_outlined),
+                              iconSize: 32,
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.account_circle_outlined),
+                              iconSize: 32,
+                            ),
+                          ],
+                        ),
                       ),
                     )
                   ],
