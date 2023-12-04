@@ -141,7 +141,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 child: Stack(
                   children: [
                     Positioned.fill(
-
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -256,7 +255,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       bottom: 0,
                       child: Container(
                         height: 92,
-                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        padding: EdgeInsets.symmetric(horizontal: 32),
                         decoration: BoxDecoration(color: Colors.white),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -271,7 +270,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               icon: Icon(Icons.favorite_border),
                               iconSize: 32,
                             ),
-                            SizedBox(width: 72,),
+                            SizedBox(
+                              width: 72,
+                            ),
                             IconButton(
                               onPressed: () {},
                               icon: Icon(Icons.chat_outlined),
@@ -283,6 +284,20 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               iconSize: 32,
                             ),
                           ],
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 16,
+                      child: Center(
+                        child: Container(
+                          height: 84,
+                          width: 84,
+                          decoration: BoxDecoration(
+                            color: Colors.purple[100],
+                          ),
                         ),
                       ),
                     )
