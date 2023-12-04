@@ -93,7 +93,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         return Container(
                           width: 110,
                           margin: EdgeInsets.only(right: 16),
-                          decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(16)),
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            children: [
+                              
+                            ],
+                          ),
                         );
                       },
                     ),
@@ -131,7 +139,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
                           Spacer(),
                           Text(
                             "View all",
-                            style: GoogleFonts.urbanist(color: Color(0xff794aff)),
+                            style: GoogleFonts.urbanist(
+                              color: Color(0xff794aff),
+                            ),
                           ),
                           Icon(Icons.keyboard_arrow_right),
                         ],
