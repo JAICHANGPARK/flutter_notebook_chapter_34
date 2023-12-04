@@ -297,12 +297,13 @@ class _RentingHomePageState extends State<RentingHomePage> {
                           width: 72,
                           decoration: BoxDecoration(
                             color: Colors.purple[100],
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(12),
                           ),
                           padding: EdgeInsets.all(8),
                           child: Container(
                             decoration: BoxDecoration(
                               color: Color(0xff724aff),
+                              borderRadius: BorderRadius.circular(12),
                             ),
                           ),
                         ),
