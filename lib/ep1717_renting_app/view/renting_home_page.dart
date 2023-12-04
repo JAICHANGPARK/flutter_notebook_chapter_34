@@ -156,9 +156,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                     height: 140,
                                     decoration: BoxDecoration(
                                       color: Colors.purple,
+                                      borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
-                                  Text("Flutter Tablet"),
+                                  Text(
+                                    "Flutter Tablet",
+                                    style: GoogleFonts.urbanist(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Row(
                                     children: [
                                       Text("\$15.00"),
