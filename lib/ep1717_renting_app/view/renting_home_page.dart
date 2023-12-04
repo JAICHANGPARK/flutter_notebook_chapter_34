@@ -290,11 +290,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     Positioned(
                       left: 0,
                       right: 0,
-                      bottom: 16,
+                      bottom: 24,
                       child: Center(
                         child: Container(
-                          height: 84,
-                          width: 84,
+                          height: 72,
+                          width: 72,
                           decoration: BoxDecoration(
                             color: Colors.purple[100],
                           ),
