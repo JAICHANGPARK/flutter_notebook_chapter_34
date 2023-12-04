@@ -159,6 +159,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
+                                  Gap(16),
                                   Text(
                                     "Flutter Tablet",
                                     style: GoogleFonts.urbanist(
