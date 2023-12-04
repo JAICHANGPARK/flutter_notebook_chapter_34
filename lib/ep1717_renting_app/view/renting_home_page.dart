@@ -253,7 +253,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       ),
                     ),
                     Container(
-                      height: 100,
+                      height: 92,
                       decoration: BoxDecoration(color: Colors.orange),
                       child: Stack(
                         children: [
@@ -263,6 +263,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             bottom: 0,
                             top: 16,
                             child: Row(
+
                               children: [
                                 IconButton(
                                   onPressed: () {},
