@@ -190,12 +190,26 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                         ),
                                       ),
                                     ),
-                                    child: Stack(
-                                      children: [
-                                        Column(
-                                          children: [],
-                                        )
-                                      ],
+                                    padding: EdgeInsets.all(8),
+                                    child: Center(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.end,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.favorite,
+                                              )),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.end,
+                                            children: [
+                                              Icon(Icons.star),
+                                              Text("4.1"),
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   const Gap(16),
