@@ -270,16 +270,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(Icons.apps),
+                                  icon: Icon(Icons.favorite_border),
                                 ),
 
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(Icons.apps),
+                                  icon: Icon(Icons.chat_outlined),
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(Icons.apps),
+                                  icon: Icon(Icons.account_circle_outlined),
                                 ),
                               ],
                             ),
