@@ -97,9 +97,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             color: Colors.pink,
                             borderRadius: BorderRadius.circular(16),
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Column(
                             children: [
-                              
+                              Expanded(
+                                  child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.purple,
+                                ),
+                              )),
                             ],
                           ),
                         );
