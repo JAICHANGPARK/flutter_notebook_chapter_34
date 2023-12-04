@@ -73,7 +73,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             ),
             Container(
               height: 160,
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -84,7 +84,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       fontSize: 22,
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -92,17 +92,17 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 110,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(190, 250, 188, 1),
+                            color: const Color.fromRGBO(190, 250, 188, 1),
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Column(
                             children: [
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     image: DecorationImage(
                                       image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2023/03/25/19/23/bicycle-7876692_1280.png",
@@ -137,7 +137,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     topRight: Radius.circular(24),
                   ),
                 ),
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: 8,
                 ),
                 child: Column(
@@ -154,14 +154,14 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               fontSize: 20,
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Text(
                             "View all",
                             style: GoogleFonts.urbanist(
-                              color: Color(0xff794aff),
+                              color: const Color(0xff794aff),
                             ),
                           ),
-                          Icon(Icons.keyboard_arrow_right),
+                          const Icon(Icons.keyboard_arrow_right),
                         ],
                       ),
                     ),
@@ -175,7 +175,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 150,
-                              margin: EdgeInsets.only(right: 16),
+                              margin: const EdgeInsets.only(right: 16),
                               color: Colors.orange,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -187,7 +187,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
-                                  Gap(16),
+                                  const Gap(16),
                                   Text(
                                     "Flutter Tablet",
                                     style: GoogleFonts.urbanist(
@@ -195,7 +195,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  Row(
+                                  const Row(
                                     children: [
                                       Text("\$15.00"),
                                       Text(" /hr"),
