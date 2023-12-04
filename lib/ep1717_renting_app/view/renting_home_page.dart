@@ -176,15 +176,23 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             return Container(
                               width: 150,
                               margin: const EdgeInsets.only(right: 16),
-                              color: Colors.orange,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
                                     height: 150,
                                     decoration: BoxDecoration(
-                                      color: Colors.purple,
+                                      color: Color.fromRGBO(241, 238, 245, 1),
                                       borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Column(
+                                          children: [
+                                            
+                                          ],
+                                        )
+                                      ],
                                     ),
                                   ),
                                   const Gap(16),
