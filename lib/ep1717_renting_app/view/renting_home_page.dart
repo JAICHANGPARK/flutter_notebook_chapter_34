@@ -248,8 +248,10 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             Container(
                               height: 96,
                               margin: EdgeInsets.symmetric(horizontal: 16),
-                              decoration:
-                              BoxDecoration(color: Colors.purple[50], borderRadius: BorderRadius.circular(12)),
+                              decoration: BoxDecoration(
+                                color: Colors.purple[50],
+                                borderRadius: BorderRadius.circular(12),
+                              ),
                               child: Row(
                                 children: [
                                   Container(
@@ -261,6 +263,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   ),
                                   Expanded(
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Endless Drill"),
                                         Row(
@@ -278,11 +281,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                     ),
                                   ),
                                   IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.favorite,
-                                      ),
-                                      color: Colors.grey, ,
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.favorite,
+                                    ),
+                                    color: Colors.grey,
                                   )
                                 ],
                               ),
