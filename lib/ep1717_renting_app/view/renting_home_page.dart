@@ -248,9 +248,26 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             Container(
                               height: 96,
                               margin: EdgeInsets.symmetric(horizontal: 16),
-                              decoration: BoxDecoration(
-                                color: Colors.purple[50],
-                                borderRadius: BorderRadius.circular(12)
+                              decoration:
+                                  BoxDecoration(color: Colors.purple[50], borderRadius: BorderRadius.circular(12)),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 54,
+                                    width: 54,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Expanded(child: Column(children: [
+                                    Text("Endless Drill"),
+                                    Row(
+                                      children: [
+                                        Text("")
+                                      ],
+                                    )
+                                  ],))
+                                ],
                               ),
                             )
                           ],
