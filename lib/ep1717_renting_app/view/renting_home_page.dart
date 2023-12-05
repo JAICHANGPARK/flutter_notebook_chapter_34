@@ -248,6 +248,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             Container(
                               height: 96,
                               margin: EdgeInsets.symmetric(horizontal: 16),
+                              padding: EdgeInsets.all(12),
                               decoration: BoxDecoration(
                                 color: Colors.purple[50],
                                 borderRadius: BorderRadius.circular(12),
