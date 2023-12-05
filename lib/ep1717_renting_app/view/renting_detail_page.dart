@@ -103,14 +103,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
             ),
             Gap(32),
             Container(
-              height: 64,
+              height: 80,
               decoration: BoxDecoration(
                 color: Colors.purple,
               ),
             ),
             Gap(32),
             Container(
-              height: 64,
+              height: 80,
               decoration: BoxDecoration(
                 color: Colors.purple,
               ),
