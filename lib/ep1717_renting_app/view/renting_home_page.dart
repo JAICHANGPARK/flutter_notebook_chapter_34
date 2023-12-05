@@ -249,7 +249,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               height: 96,
                               margin: EdgeInsets.symmetric(horizontal: 16),
                               decoration:
-                                  BoxDecoration(color: Colors.purple[50], borderRadius: BorderRadius.circular(12)),
+                              BoxDecoration(color: Colors.purple[50], borderRadius: BorderRadius.circular(12)),
                               child: Row(
                                 children: [
                                   Container(
@@ -260,22 +260,30 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                     ),
                                   ),
                                   Expanded(
-                                      child: Column(
-                                    children: [
-                                      Text("Endless Drill"),
-                                      Row(
-                                        children: [
-                                          Icon(Icons.location_on),
-                                          Text("4.0km"),
-                                          Text("\$5.00 /hr"),
-                                          Icon(
-                                            Icons.star,
-                                          ),
-                                          Text("4.9")
-                                        ],
+                                    child: Column(
+                                      children: [
+                                        Text("Endless Drill"),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.location_on),
+                                            Text("4.0km"),
+                                            Text("\$5.00 /hr"),
+                                            Icon(
+                                              Icons.star,
+                                            ),
+                                            Text("4.9")
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.favorite,
                                       ),
-                                    ],
-                                  ))
+                                      color: Colors.grey, ,
+                                  )
                                 ],
                               ),
                             )
