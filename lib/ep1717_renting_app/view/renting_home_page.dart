@@ -262,11 +262,17 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       color: Colors.white,
                                     ),
                                   ),
+                                  Gap(12),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Endless Drill"),
+                                        Text(
+                                          "Endless Drill",
+                                          style: GoogleFonts.urbanist(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                         Row(
                                           children: [
                                             Icon(Icons.location_on),
