@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RentingDetailPage extends StatefulWidget {
   const RentingDetailPage({super.key});
@@ -31,12 +32,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                 color: Colors.blue,
               ),
             ),
+            Gap(16),
             Row(
               children: [
                 CircleAvatar(),
+                Gap(16),
                 Expanded(
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Human's shop"),
                     Row(
@@ -45,11 +48,15 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           5,
                           (index) => Icon(
                             Icons.star,
+                            size: 16,
                           ),
                         ),
+                        Text(
+                          "4.7",
+                          style: TextStyle(fontSize: 13),
+                        )
                       ],
                     ),
-
                   ],
                 )),
                 CircleAvatar(
