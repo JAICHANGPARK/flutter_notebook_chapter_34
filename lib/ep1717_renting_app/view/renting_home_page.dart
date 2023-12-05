@@ -278,8 +278,10 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                         Gap(4),
                                         Row(
                                           children: [
-                                            Icon(Icons.location_on,
-                                            size: 14,),
+                                            Icon(
+                                              Icons.location_on,
+                                              size: 14,
+                                            ),
                                             Gap(4),
                                             Text("4.0km"),
                                             Gap(4),
@@ -287,6 +289,8 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                             Gap(4),
                                             Icon(
                                               Icons.star,
+                                              size: 14,
+                                              color: Colors.,
                                             ),
                                             Text("4.9")
                                           ],
