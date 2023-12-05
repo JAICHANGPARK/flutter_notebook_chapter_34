@@ -10,6 +10,16 @@ class RentingDetailPage extends StatefulWidget {
 class _RentingDetailPageState extends State<RentingDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Base Camp Tent"),
+        actions: [
+          CircleAvatar(
+
+          ),
+         ],
+      ),
+    );
   }
 }
