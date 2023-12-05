@@ -259,14 +259,23 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       color: Colors.white,
                                     ),
                                   ),
-                                  Expanded(child: Column(children: [
-                                    Text("Endless Drill"),
-                                    Row(
-                                      children: [
-                                        Text("")
-                                      ],
-                                    )
-                                  ],))
+                                  Expanded(
+                                      child: Column(
+                                    children: [
+                                      Text("Endless Drill"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.location_on),
+                                          Text("4.0km"),
+                                          Text("\$5.00 /hr"),
+                                          Icon(
+                                            Icons.star,
+                                          ),
+                                          Text("4.9")
+                                        ],
+                                      ),
+                                    ],
+                                  ))
                                 ],
                               ),
                             )
