@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1717_renting_app/view/renting_detail_page.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -175,60 +176,69 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   scrollDirection: Axis.horizontal,
                                   itemCount: 10,
                                   itemBuilder: (context, index) {
-                                    return Container(
-                                      width: 150,
-                                      margin: const EdgeInsets.only(right: 16),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Container(
-                                            height: 150,
-                                            decoration: BoxDecoration(
-                                              color: Color.fromRGBO(241, 238, 245, 1),
-                                              borderRadius: BorderRadius.circular(16),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                  "https://cdn.pixabay.com/photo/2019/01/14/23/58/tent-3933238_1280.png",
+                                    return GestureDetector(
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) => RentingDetailPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        width: 150,
+                                        margin: const EdgeInsets.only(right: 16),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Container(
+                                              height: 150,
+                                              decoration: BoxDecoration(
+                                                color: Color.fromRGBO(241, 238, 245, 1),
+                                                borderRadius: BorderRadius.circular(16),
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2019/01/14/23/58/tent-3933238_1280.png",
+                                                  ),
+                                                ),
+                                              ),
+                                              padding: EdgeInsets.all(8),
+                                              child: Center(
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    IconButton(
+                                                        onPressed: () {},
+                                                        icon: Icon(
+                                                          Icons.favorite,
+                                                        )),
+                                                    Row(
+                                                      mainAxisAlignment: MainAxisAlignment.end,
+                                                      children: [
+                                                        Icon(Icons.star),
+                                                        Text("4.1"),
+                                                      ],
+                                                    )
+                                                  ],
                                                 ),
                                               ),
                                             ),
-                                            padding: EdgeInsets.all(8),
-                                            child: Center(
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.end,
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
-                                                  IconButton(
-                                                      onPressed: () {},
-                                                      icon: Icon(
-                                                        Icons.favorite,
-                                                      )),
-                                                  Row(
-                                                    mainAxisAlignment: MainAxisAlignment.end,
-                                                    children: [
-                                                      Icon(Icons.star),
-                                                      Text("4.1"),
-                                                    ],
-                                                  )
-                                                ],
+                                            const Gap(16),
+                                            Text(
+                                              "Flutter Tablet",
+                                              style: GoogleFonts.urbanist(
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                          const Gap(16),
-                                          Text(
-                                            "Flutter Tablet",
-                                            style: GoogleFonts.urbanist(
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          const Row(
-                                            children: [
-                                              Text("\$15.00"),
-                                              Text(" /hr"),
-                                            ],
-                                          )
-                                        ],
+                                            const Row(
+                                              children: [
+                                                Text("\$15.00"),
+                                                Text(" /hr"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     );
                                   },
