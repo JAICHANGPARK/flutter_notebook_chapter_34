@@ -278,9 +278,13 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                         Gap(4),
                                         Row(
                                           children: [
-                                            Icon(Icons.location_on),
+                                            Icon(Icons.location_on,
+                                            size: 14,),
+                                            Gap(4),
                                             Text("4.0km"),
+                                            Gap(4),
                                             Text("\$5.00 /hr"),
+                                            Gap(4),
                                             Icon(
                                               Icons.star,
                                             ),
