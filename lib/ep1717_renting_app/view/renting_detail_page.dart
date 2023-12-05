@@ -28,7 +28,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               color: Colors.blue,
             ),
           ),
-          
+
         ],
       ),
     );
