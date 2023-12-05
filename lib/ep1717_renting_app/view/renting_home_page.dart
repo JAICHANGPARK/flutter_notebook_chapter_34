@@ -266,13 +266,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Text(
                                           "Endless Drill",
                                           style: GoogleFonts.urbanist(
                                             fontWeight: FontWeight.bold,
+                                            fontSize: 16,
                                           ),
                                         ),
+                                        Gap(4),
                                         Row(
                                           children: [
                                             Icon(Icons.location_on),
