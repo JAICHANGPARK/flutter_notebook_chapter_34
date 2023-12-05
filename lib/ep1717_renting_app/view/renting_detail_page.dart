@@ -16,9 +16,20 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
         title: Text("Base Camp Tent"),
         actions: [
           CircleAvatar(
-
+            child: Icon(Icons.favorite),
           ),
-         ],
+        ],
+      ),
+      body: Column(
+        children: [
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+          ),
+          
+        ],
       ),
     );
   }
