@@ -254,12 +254,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Container(
-                                    height: 54,
-                                    width: 54,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
+                                  Center(
+                                    child: Container(
+                                      height: 54,
+                                      width: 54,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                   Gap(12),
@@ -290,9 +293,14 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                             Icon(
                                               Icons.star,
                                               size: 14,
-                                              color: Colors.,
+                                              color: Color(0xff724aff),
                                             ),
-                                            Text("4.9")
+                                            Text(
+                                              "4.9",
+                                              style: TextStyle(
+                                                color: Color(0xff724aff),
+                                              ),
+                                            )
                                           ],
                                         ),
                                       ],
@@ -319,7 +327,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       child: Container(
                         height: 92,
                         padding: EdgeInsets.symmetric(horizontal: 32),
-                        decoration: BoxDecoration(color: Colors.white),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
