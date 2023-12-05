@@ -23,12 +23,32 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
       body: Column(
         children: [
           Container(
-            height: 200,
+            height: 240,
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
           ),
-
+          Row(
+            children: [
+              CircleAvatar(),
+              Expanded(
+                  child: Column(
+                children: [
+                  Text("Human's shop"),
+                  Row(
+                    children: [
+                      ...List.generate(
+                        5,
+                        (index) => Icon(
+                          Icons.star,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ))
+            ],
+          )
         ],
       ),
     );
