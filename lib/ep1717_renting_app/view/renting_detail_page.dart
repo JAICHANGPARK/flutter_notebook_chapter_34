@@ -28,7 +28,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 240,
+              height: 260,
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
@@ -44,7 +44,10 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   children: [
                     Text(
                       "Human's shop",
-                      style: GoogleFonts.urbanist(fontWeight: FontWeight.bold, fontSize: 16),
+                      style: GoogleFonts.urbanist(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                     Gap(4),
                     Row(
@@ -71,7 +74,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
             ),
             Gap(24),
             Container(
-              height: 160,
+              height: 140,
               color: Colors.blue,
               child: Row(
                 children: [
@@ -81,12 +84,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       color: Colors.grey,
                     ),
                   )),
+                  Gap(6),
                   Expanded(
                       child: Container(
                     decoration: BoxDecoration(
                       color: Colors.black,
                     ),
                   )),
+                  Gap(6),
                   Expanded(
                       child: Container(
                     decoration: BoxDecoration(
