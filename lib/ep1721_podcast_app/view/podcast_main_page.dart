@@ -15,58 +15,61 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                    child: Row(
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: SizedBox(
+                height: 48,
+                child: Row(
                   children: [
                     Expanded(
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            left: 8,
-                            right: 8,
-                            top: 0,
-                            bottom: 0,
-                            child: Center(
-                              child: Container(
-                                height: 24,
-                              ),
-                            ),
-                          ),
-                          Positioned(
-                            left: 0,
-                            top: 0,
-                            bottom: 0,
-                            right: 0,
-                            child: Row(
+                        child: Row(
+                      children: [
+                        Expanded(
+                          child: Stack(
                             children: [
-                              
+                              Positioned(
+                                left: 8,
+                                right: 8,
+                                top: 0,
+                                bottom: 0,
+                                child: Center(
+                                  child: Container(
+                                    height: 24,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                bottom: 0,
+                                right: 0,
+                                child: Row(
+                                  children: [],
+                                ),
+                              ),
                             ],
-                            ),
                           ),
-
-
-                        ],
-                      ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.keyboard_arrow_down),
-                    )
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.keyboard_arrow_down),
+                        )
+                      ],
+                    )),
+                    Expanded(
+                        child: Row(
+                      children: [
+                        Spacer(),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.search),
+                        )
+                      ],
+                    ))
                   ],
-                )),
-                Expanded(
-                    child: Row(
-                  children: [
-                    Spacer(),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.search),
-                    )
-                  ],
-                ))
-              ],
+                ),
+              ),
             )
           ],
         ),
