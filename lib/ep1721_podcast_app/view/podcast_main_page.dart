@@ -60,7 +60,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                           color: Colors.black,
                                           borderRadius: BorderRadius.circular(32),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                                        padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8),
                                         child: GridView.builder(
                                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 10, crossAxisSpacing: 2, mainAxisSpacing: 2),
