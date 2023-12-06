@@ -16,6 +16,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       body: SafeArea(
         child: Column(
           children: [
+            Gap(16),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: SizedBox(
@@ -23,6 +24,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 child: Row(
                   children: [
                     Expanded(
+                      flex: 6,
                         child: Row(
                       children: [
                         Expanded(
@@ -52,16 +54,22 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                       backgroundColor: Colors.black,
                                     ),
                                     Gap(5),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.black,
-                                        borderRadius: BorderRadius.circular(32),
-                                      ),
-                                      child: GridView.builder(
-                                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                          crossAxisCount: 10
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          borderRadius: BorderRadius.circular(32),
                                         ),
-                                        itemBuilder: (context, index) {},
+                                        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                                        child: GridView.builder(
+                                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                              crossAxisCount: 8, crossAxisSpacing: 2, mainAxisSpacing: 2),
+                                          itemBuilder: (context, index) {
+                                            return Container(
+                                              color: Colors.white,
+                                            );
+                                          },
+                                        ),
                                       ),
                                     )
                                   ],
@@ -77,6 +85,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       ],
                     )),
                     Expanded(
+                      flex: 4,
                         child: Row(
                       children: [
                         Spacer(),
