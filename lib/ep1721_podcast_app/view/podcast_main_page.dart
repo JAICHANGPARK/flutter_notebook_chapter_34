@@ -10,6 +10,13 @@ class PodcastMainPage extends StatefulWidget {
 class _PodcastMainPageState extends State<PodcastMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(229, 227, 221, 1),
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
