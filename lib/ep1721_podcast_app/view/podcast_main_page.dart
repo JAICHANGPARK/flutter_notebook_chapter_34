@@ -17,19 +17,31 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           children: [
             Row(
               children: [
-                Expanded(child: Row(
+                Expanded(
+                    child: Row(
                   children: [
-                    
+                    Expanded(
+                      child: Stack(
+                        children: [],
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.keyboard_arrow_down),
+                    )
                   ],
                 )),
-                Expanded(child: Row(
+                Expanded(
+                    child: Row(
                   children: [
                     Spacer(),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.search))
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.search),
+                    )
                   ],
                 ))
               ],
-
             )
           ],
         ),
