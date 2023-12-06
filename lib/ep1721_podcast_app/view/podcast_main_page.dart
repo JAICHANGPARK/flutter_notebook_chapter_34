@@ -37,7 +37,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                 bottom: 0,
                                 child: Center(
                                   child: Container(
-                                    height: 24,
+                                    height: 18,
                                     color: Colors.black,
                                   ),
                                 ),
@@ -63,10 +63,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                                         child: GridView.builder(
                                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                              crossAxisCount: 8, crossAxisSpacing: 2, mainAxisSpacing: 2),
+                                              crossAxisCount: 10, crossAxisSpacing: 2, mainAxisSpacing: 2),
                                           itemBuilder: (context, index) {
                                             return Container(
-                                              color: Colors.white,
+                                              color: index % 6 == 0?  Colors.black :Colors.white,
                                             );
                                           },
                                         ),
