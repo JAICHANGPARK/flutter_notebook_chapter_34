@@ -15,6 +15,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       backgroundColor: const Color.fromRGBO(229, 227, 221, 1),
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Gap(16),
             Padding(
@@ -105,7 +106,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 "My\nPodcasts",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 82),
@@ -113,7 +114,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
             ),
             Expanded(child: Placeholder()),
             Container(
-              height: 120,
+              height: 140,
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
