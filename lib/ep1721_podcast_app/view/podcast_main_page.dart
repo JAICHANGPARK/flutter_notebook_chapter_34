@@ -14,7 +14,24 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       backgroundColor: Color.fromRGBO(229, 227, 221, 1),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                Expanded(child: Row(
+                  children: [
+                    
+                  ],
+                )),
+                Expanded(child: Row(
+                  children: [
+                    Spacer(),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.search))
+                  ],
+                ))
+              ],
+
+            )
+          ],
         ),
       ),
     );
