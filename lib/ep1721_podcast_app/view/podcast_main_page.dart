@@ -103,7 +103,15 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   ],
                 ),
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text(
+                "My\nPodcasts",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 92),
+              ),
+            ),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
