@@ -17,9 +17,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Gap(16),
+            const Gap(8),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: SizedBox(
                 height: 48,
                 child: Row(
