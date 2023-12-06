@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class PodcastMainPage extends StatefulWidget {
   const PodcastMainPage({super.key});
@@ -45,7 +46,25 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                 bottom: 0,
                                 right: 0,
                                 child: Row(
-                                  children: [],
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 24,
+                                      backgroundColor: Colors.black,
+                                    ),
+                                    Gap(5),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.black,
+                                        borderRadius: BorderRadius.circular(32),
+                                      ),
+                                      child: GridView.builder(
+                                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                          crossAxisCount: 10
+                                        ),
+                                        itemBuilder: (context, index) {},
+                                      ),
+                                    )
+                                  ],
                                 ),
                               ),
                             ],
