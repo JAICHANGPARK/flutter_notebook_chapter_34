@@ -22,7 +22,32 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   children: [
                     Expanded(
                       child: Stack(
-                        children: [],
+                        children: [
+                          Positioned(
+                            left: 8,
+                            right: 8,
+                            top: 0,
+                            bottom: 0,
+                            child: Center(
+                              child: Container(
+                                height: 24,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            bottom: 0,
+                            right: 0,
+                            child: Row(
+                            children: [
+                              
+                            ],
+                            ),
+                          ),
+
+
+                        ],
                       ),
                     ),
                     IconButton(
