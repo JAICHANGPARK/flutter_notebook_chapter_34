@@ -109,11 +109,20 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 "My\nPodcasts",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 82,
-                height: 0.5),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 82,
+                  height: 0.5,
+                ),
               ),
             ),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {},
+              ),
+            ),
             Container(
               height: 140,
               decoration: BoxDecoration(
