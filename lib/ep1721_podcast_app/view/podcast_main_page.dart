@@ -112,19 +112,21 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 82,
-                  height: 0.5,
+                  height: 1.0,
                 ),
               ),
             ),
+            Gap(16),
             Expanded(
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
+                    width: 200,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all()
+                      border: Border.all(),
                     ),
                   );
                 },
