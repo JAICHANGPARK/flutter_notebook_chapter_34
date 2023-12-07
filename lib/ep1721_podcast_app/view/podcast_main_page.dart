@@ -127,7 +127,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   itemBuilder: (context, index) {
                     return Container(
                       margin: EdgeInsets.only(right: 12),
-                      width: 260,
+                      width: 250,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(),
@@ -150,13 +150,17 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               )
                             ),
                           ),
-                          Gap(8),
+                          Gap(12),
                           Row(
                             children: [
                               Icon(
                                 Icons.ac_unit,
+                                size: 18,
                               ),
-                              Icon(Icons.share)
+                              Gap(8),
+                              Icon(Icons.share,
+                                size: 18,
+                              )
                             ],
                           ),
                           Gap(8),
