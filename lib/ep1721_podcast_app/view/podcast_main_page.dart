@@ -139,10 +139,20 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
             ),
             Gap(32),
             Container(
-              height: 180,
+              height: 200,
               decoration: BoxDecoration(
-                color: Colors.white,
-              ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(32),
+                    topRight: Radius.circular(32),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[400]!,
+                      blurRadius: 8,
+                      spreadRadius: 4,
+                    )
+                  ]),
             )
           ],
         ),
