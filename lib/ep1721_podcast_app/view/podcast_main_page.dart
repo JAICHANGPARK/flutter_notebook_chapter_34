@@ -132,12 +132,16 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            height: 64,
-                            width: 64,
+                            height: 120,
+                            width: 120,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
                           ),
                           Row(
                             children: [
