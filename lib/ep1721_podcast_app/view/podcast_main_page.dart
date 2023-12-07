@@ -105,6 +105,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
             ),
+            Gap(16),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Text(
@@ -135,8 +136,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
             ),
+            Gap(32),
             Container(
-              height: 140,
+              height: 180,
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
