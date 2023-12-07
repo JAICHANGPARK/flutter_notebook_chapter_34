@@ -109,7 +109,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 "My\nPodcasts",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 82),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 82,
+                height: 0.5),
               ),
             ),
             Expanded(child: Placeholder()),
