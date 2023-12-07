@@ -137,12 +137,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            height: 120,
+                            height: 100,
                             width: 120,
                             decoration: BoxDecoration(
                               color: Colors.red,
                             ),
                           ),
+                          Gap(8),
                           Row(
                             children: [
                               Icon(
@@ -151,11 +152,23 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               Icon(Icons.share)
                             ],
                           ),
+                          Gap(8),
                           Text("Music Tech"),
-                          Text("A Flutterist Talk"),
+                          Gap(8),
+                          Text("A Flutterist Talk",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Gap(8),
                           Row(
                             children: [
-                              Text("14:04"),
+                              Text("14:04",
+                                style: TextStyle(
+                                  fontSize: 52,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               CircleAvatar(
                                 radius: 26,
                                 backgroundColor: Colors.black,
