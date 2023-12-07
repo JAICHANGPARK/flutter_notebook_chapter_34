@@ -137,7 +137,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
             ),
-            Gap(32),
+            Gap(48),
             Container(
               height: 200,
               decoration: BoxDecoration(
