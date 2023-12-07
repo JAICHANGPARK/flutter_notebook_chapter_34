@@ -126,9 +126,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      width: 200,
+                      margin: EdgeInsets.only(right: 12),
+                      width: 260,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(24),
                         border: Border.all(),
                       ),
                     );
