@@ -141,6 +141,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                             width: 120,
                             decoration: BoxDecoration(
                               color: Colors.red,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(24),
+                                topRight: Radius.circular(8),
+                                bottomLeft: Radius.circular(8),
+                                bottomRight: Radius.circular(8),
+
+                              )
                             ),
                           ),
                           Gap(8),
@@ -169,6 +176,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              Gap(8),
                               CircleAvatar(
                                 radius: 26,
                                 backgroundColor: Colors.black,
