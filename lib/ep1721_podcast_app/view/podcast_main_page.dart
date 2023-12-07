@@ -105,9 +105,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
             ),
-            Gap(16),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+            const Gap(16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 "My\nPodcasts",
                 style: TextStyle(
@@ -117,7 +117,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
             ),
-            Gap(24),
+            const Gap(24),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(left: 16),
@@ -126,20 +126,20 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.only(right: 12),
+                      margin: const EdgeInsets.only(right: 12),
                       width: 250,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             height: 100,
                             width: 120,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.red,
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(24),
@@ -150,8 +150,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               )
                             ),
                           ),
-                          Gap(12),
-                          Row(
+                          const Gap(12),
+                          const Row(
                             children: [
                               Icon(
                                 Icons.ac_unit,
@@ -163,16 +163,16 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               )
                             ],
                           ),
-                          Gap(8),
-                          Text("Music Tech"),
-                          Gap(8),
-                          Text("A Flutterist Talk",
+                          const Gap(8),
+                          const Text("Music Tech"),
+                          const Gap(8),
+                          const Text("A Flutterist Talk",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),),
-                          Gap(8),
-                          Row(
+                          const Gap(8),
+                          const Row(
                             children: [
                               Text("14:04",
                                 style: TextStyle(
@@ -196,12 +196,12 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
             ),
-            Gap(48),
+            const Gap(48),
             Container(
               height: 200,
               decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(32),
                     topRight: Radius.circular(32),
                   ),
