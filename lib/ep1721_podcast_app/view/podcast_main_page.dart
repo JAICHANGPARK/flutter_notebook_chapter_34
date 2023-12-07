@@ -110,26 +110,29 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               child: Text(
                 "My\nPodcasts",
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w500,
                   fontSize: 82,
                   height: 1.0,
                 ),
               ),
             ),
-            Gap(16),
+            Gap(24),
             Expanded(
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 200,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(),
-                    ),
-                  );
-                },
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(),
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
             Container(
