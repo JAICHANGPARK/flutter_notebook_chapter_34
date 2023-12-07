@@ -135,7 +135,31 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-
+                          Container(
+                            height: 64,
+                            width: 64,
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.ac_unit,
+                              ),
+                              Icon(Icons.share)
+                            ],
+                          ),
+                          Text("Music Tech"),
+                          Text("A Flutterist Talk"),
+                          Row(
+                            children: [
+                              Text("14:04"),
+                              CircleAvatar(
+                                radius: 26,
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.grey,
+                                child: Icon(Icons.play_arrow),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     );
