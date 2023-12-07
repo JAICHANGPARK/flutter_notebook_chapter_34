@@ -120,7 +120,14 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
-                itemBuilder: (context, index) {},
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all()
+                    ),
+                  );
+                },
               ),
             ),
             Container(
