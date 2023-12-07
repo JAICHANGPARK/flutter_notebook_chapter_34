@@ -132,6 +132,12 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(),
                       ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+
+                        ],
+                      ),
                     );
                   },
                 ),
