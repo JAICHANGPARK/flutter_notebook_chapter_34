@@ -226,6 +226,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       color: Colors.grey,
                     ),
                   ),
+                  Gap(8),
                   const Row(
                     children: [
                       Icon(
@@ -239,11 +240,16 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       )
                     ],
                   ),
+                  Gap(8),
                   Row(
                     children: [
                       Expanded(
                         child: Text(
                           "Sounds of Tomorrow: What's Next in Music Technology?",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       CircleAvatar(
@@ -252,10 +258,20 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         child: Icon(Icons.play_arrow),
                       )
                     ],
+                  ),
+                  LinearProgressIndicator(
+                    value: 0.3,
+                    minHeight: 16,
+                  ),
+                  Row(
+                    children: [
+                      Text('2:21'),
+                      Text("12:46"),
+                    ],
                   )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
