@@ -21,6 +21,9 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   "https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_1280.jpg",
                 ),
                 fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(Colors.black.withOpacity(.4),
+                BlendMode.darken
+                )
               ),
             ),
             width: double.infinity,
