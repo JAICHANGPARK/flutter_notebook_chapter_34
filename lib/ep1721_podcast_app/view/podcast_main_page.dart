@@ -261,9 +261,11 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   ),
                   LinearProgressIndicator(
                     value: 0.3,
-                    minHeight: 16,
+                    minHeight: 12,
                   ),
+                  Gap(4),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text('2:21'),
                       Text("12:46"),
