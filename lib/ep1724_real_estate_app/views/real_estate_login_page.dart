@@ -180,13 +180,13 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       children: [
                         Positioned(
                           child: Icon(
-                            Ionicons.logo_google,
+                            Ionicons.logo_facebook,
                           ),
                         ),
                         Positioned(
                             child: Center(
                               child: Text(
-                                "Continue with Google",
+                                "Continue with Facebook",
                               ),
                             ))
                       ],
