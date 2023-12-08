@@ -4,7 +4,7 @@ import 'package:flutter_notebook_chapter_34/ep1724_real_estate_app/views/real_es
 import 'views/real_estate_home_page.dart';
 
 void main() {
-  runApp(RealEstateMobileApp());
+  runApp(const RealEstateMobileApp());
 }
 
 class RealEstateMobileApp extends StatelessWidget {
@@ -14,8 +14,8 @@ class RealEstateMobileApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => RealEstateLoginPage(),
-        "/home": (context) => RealEstateHomePage(),
+        "/": (context) => const RealEstateLoginPage(),
+        "/home": (context) => const RealEstateHomePage(),
       },
     );
   }
