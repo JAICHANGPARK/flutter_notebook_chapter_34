@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_notebook_chapter_34/ep1724_real_estate_app/views/real_estate_login_page.dart';
 
 void main() {
-    runApp(RealEstateMobileApp());
+  runApp(RealEstateMobileApp());
 }
 
 class RealEstateMobileApp extends StatelessWidget {
@@ -10,6 +10,11 @@ class RealEstateMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      routes: {
+        "/": (context) => RealEstateLoginPage(),
+        "/home" : (context)
+      },
+    );
   }
 }
