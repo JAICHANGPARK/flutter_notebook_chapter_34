@@ -264,6 +264,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   LinearProgressIndicator(
                     value: 0.3,
                     minHeight: 12,
+                    backgroundColor: Colors.grey[300],
+                    color: Colors.yellow,
                   ),
                   Gap(4),
                   Row(
