@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RealEstateLoginPage extends StatefulWidget {
   const RealEstateLoginPage({super.key});
@@ -46,8 +47,39 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
           )),
           Expanded(
             child: Container(
+              padding: EdgeInsets.all(16),
               child: Column(
-                children: [],
+                children: [
+                  Container(
+                    height: 4,
+                    width: 42,
+                    color: Colors.grey,
+                  ),
+                  Gap(32),
+                  SizedBox(
+                    height: 72,
+                    child: Row(
+                      children: [
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                        )),
+                        Gap(16),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(42),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              )),
+                        )),
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
           ),
