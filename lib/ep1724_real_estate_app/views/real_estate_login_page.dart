@@ -142,6 +142,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       ],
                     ),
                   ),
+                  Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -160,13 +161,14 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                         ),
                         Positioned(
                             child: Center(
-                              child: Text(
-                                "Continue with Apple",
-                              ),
-                            ))
+                          child: Text(
+                            "Continue with Apple",
+                          ),
+                        ))
                       ],
                     ),
                   ),
+                  Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -185,10 +187,10 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                         ),
                         Positioned(
                             child: Center(
-                              child: Text(
-                                "Continue with Facebook",
-                              ),
-                            ))
+                          child: Text(
+                            "Continue with Facebook",
+                          ),
+                        ))
                       ],
                     ),
                   ),
