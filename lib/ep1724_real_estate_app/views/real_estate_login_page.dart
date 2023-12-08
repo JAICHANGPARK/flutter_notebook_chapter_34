@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:ionicons/ionicons.dart';
 
 class RealEstateLoginPage extends StatefulWidget {
   const RealEstateLoginPage({super.key});
@@ -110,7 +111,6 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                               ),
                               child: Text("or Login with"),
                             ),
-
                           ),
                         )
                       ],
@@ -118,10 +118,18 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   ),
                   Gap(32),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: BoxDecoration(),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Icon(
+                            Ionicons.logo_google,
+                          ),
+                        ),
 
+                      ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
