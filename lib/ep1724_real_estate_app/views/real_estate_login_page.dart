@@ -25,12 +25,25 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
             ),
             width: double.infinity,
             padding: EdgeInsets.all(24),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Home"),
-                Text("Discover Your\nDream Home")
-              ],
+            child: SafeArea(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Home",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text("Discover Your\nDream Home",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24
+                    ),
+                  )
+                ],
+              ),
             ),
           )),
           Expanded(child: Container()),
