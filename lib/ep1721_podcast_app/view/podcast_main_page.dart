@@ -163,7 +163,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                             ],
                           ),
                           const Gap(8),
-                          const Text("Music Tech"),
+                          Text(
+                            "Music Tech",
+                            style: TextStyle(
+                              color: Colors.grey[400]!,
+                              fontSize: 16,
+                            ),
+                          ),
                           const Gap(8),
                           const Text(
                             "A Flutterist Talk",
@@ -174,12 +180,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           ),
                           const Gap(8),
                           const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
                                 "14:04",
                                 style: TextStyle(
                                   fontSize: 52,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w400,
                                 ),
                               ),
                               Gap(8),
