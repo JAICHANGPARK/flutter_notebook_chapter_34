@@ -122,6 +122,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                         border: Border.all(
                       color: Colors.grey[300]!,
                     )),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                     child: Stack(
                       children: [
                         Positioned(
