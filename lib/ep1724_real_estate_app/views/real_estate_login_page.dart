@@ -19,15 +19,15 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
               child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: NetworkImage(
+                  image: const NetworkImage(
                     "https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_1280.jpg",
                   ),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(Colors.black.withOpacity(.4), BlendMode.darken)),
             ),
             width: double.infinity,
-            padding: EdgeInsets.all(24),
-            child: SafeArea(
+            padding: const EdgeInsets.all(24),
+            child: const SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -48,7 +48,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
           )),
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Container(
@@ -56,7 +56,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                     width: 42,
                     color: Colors.grey,
                   ),
-                  Gap(32),
+                  const Gap(32),
                   SizedBox(
                     height: 54,
                     child: Row(
@@ -64,7 +64,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(42)),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Login",
                                 style: TextStyle(color: Colors.white),
@@ -72,7 +72,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(16),
+                        const Gap(16),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
@@ -82,7 +82,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                                 color: Colors.grey[300]!,
                               ),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text("Sign Up"),
                             ),
                           ),
@@ -90,12 +90,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       ],
                     ),
                   ),
-                  Gap(32),
+                  const Gap(32),
                   SizedBox(
                     height: 18,
                     child: Stack(
                       children: [
-                        Positioned(
+                        const Positioned(
                           left: 0,
                           bottom: 0,
                           right: 0,
@@ -105,18 +105,18 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                         Positioned(
                           child: Center(
                             child: Container(
-                              padding: EdgeInsets.symmetric(horizontal: 7),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.symmetric(horizontal: 7),
+                              decoration: const BoxDecoration(
                                 color: Colors.white,
                               ),
-                              child: Text("or Login with"),
+                              child: const Text("or Login with"),
                             ),
                           ),
                         )
                       ],
                     ),
                   ),
-                  Gap(32),
+                  const Gap(32),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -125,8 +125,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                    child: Stack(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    child: const Stack(
                       children: [
                         Positioned(
                           child: Icon(
@@ -142,7 +142,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -151,8 +151,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                    child: Stack(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    child: const Stack(
                       children: [
                         Positioned(
                           child: Icon(
@@ -168,7 +168,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -177,8 +177,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                    child: Stack(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    child: const Stack(
                       children: [
                         Positioned(
                           child: Icon(
