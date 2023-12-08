@@ -116,6 +116,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       ],
                     ),
                   ),
+                  Gap(32),
+                  Container(
+                    decoration: BoxDecoration(
+                      
+                    ),
+                  )
                 ],
               ),
             ),
