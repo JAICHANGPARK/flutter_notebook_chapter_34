@@ -215,11 +215,17 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   )
                 ],
               ),
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(23),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Continue"),
+                  Text(
+                    "Continue",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey,
+                    ),
+                  ),
                   const Row(
                     children: [
                       Icon(
