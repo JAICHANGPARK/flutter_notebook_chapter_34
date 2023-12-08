@@ -16,6 +16,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Ionicons.home_outline),
