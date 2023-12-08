@@ -140,15 +140,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                             height: 100,
                             width: 120,
                             decoration: const BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(24),
-                                topRight: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                                bottomRight: Radius.circular(8),
-
-                              )
-                            ),
+                                color: Colors.red,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(24),
+                                  topRight: Radius.circular(8),
+                                  bottomLeft: Radius.circular(8),
+                                  bottomRight: Radius.circular(8),
+                                )),
                           ),
                           const Gap(12),
                           const Row(
@@ -158,7 +156,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                 size: 18,
                               ),
                               Gap(8),
-                              Icon(Icons.share,
+                              Icon(
+                                Icons.share,
                                 size: 18,
                               )
                             ],
@@ -166,15 +165,18 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           const Gap(8),
                           const Text("Music Tech"),
                           const Gap(8),
-                          const Text("A Flutterist Talk",
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          const Text(
+                            "A Flutterist Talk",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           const Gap(8),
                           const Row(
                             children: [
-                              Text("14:04",
+                              Text(
+                                "14:04",
                                 style: TextStyle(
                                   fontSize: 52,
                                   fontWeight: FontWeight.bold,
@@ -200,18 +202,19 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
             Container(
               height: 200,
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(32),
-                    topRight: Radius.circular(32),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey[400]!,
-                      blurRadius: 8,
-                      spreadRadius: 4,
-                    )
-                  ]),
+                color: Colors.white,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(32),
+                  topRight: Radius.circular(32),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey[400]!,
+                    blurRadius: 8,
+                    spreadRadius: 4,
+                  )
+                ],
+              ),
             )
           ],
         ),
