@@ -57,15 +57,24 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   ),
                   Gap(32),
                   SizedBox(
-                    height: 72,
+                    height: 64,
                     child: Row(
                       children: [
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(42)
+                            ),
+                            child: Center(
+                              child: Text("Login",
+                              style: TextStyle(
+                                color: Colors.white
+                              ),),
+                            ),
                           ),
-                        )),
+
+                        ),
                         Gap(16),
                         Expanded(
                             child: Container(
