@@ -142,6 +142,56 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       ],
                     ),
                   ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Icon(
+                            Ionicons.logo_apple,
+                          ),
+                        ),
+                        Positioned(
+                            child: Center(
+                              child: Text(
+                                "Continue with Apple",
+                              ),
+                            ))
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Icon(
+                            Ionicons.logo_google,
+                          ),
+                        ),
+                        Positioned(
+                            child: Center(
+                              child: Text(
+                                "Continue with Google",
+                              ),
+                            ))
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
