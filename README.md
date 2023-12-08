@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_34
 
-### EP1721
+### EP1724
+
+- Real Estate Mobile App Design
+- Happy Tri Milliarta for Odama
+- https://dribbble.com/shots/23037509-Real-Estate-Mobile-App-Design
+
+### EP1721-1723
 
 - Pod*Casts
 - Justin Greene
