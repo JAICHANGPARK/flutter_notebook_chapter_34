@@ -62,12 +62,20 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(42)),
-                            child: const Center(
-                              child: Text(
-                                "Login",
-                                style: TextStyle(color: Colors.white),
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/home");
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(42),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "Login",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
                           ),
