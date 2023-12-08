@@ -252,6 +252,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           ),
                         ),
                       ),
+                      Gap(42),
                       CircleAvatar(
                         backgroundColor: Colors.black,
                         foregroundColor: Colors.grey,
