@@ -238,6 +238,11 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         child: Text(
                           "Sounds of Tomorrow: What's Next in Music Technology?",
                         ),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        foregroundColor: Colors.grey,
+                        child: Icon(Icons.play_arrow),
                       )
                     ],
                   )
