@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class RealEstateLoginPage extends StatefulWidget {
   const RealEstateLoginPage({super.key});
 
@@ -14,7 +13,17 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Container()),
+          Expanded(
+              child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  "https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_1280.jpg",
+                ),
+                fit: BoxFit.cover,
+              ),
+            ),
+          )),
           Expanded(child: Container()),
         ],
       ),
