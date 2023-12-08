@@ -247,7 +247,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         child: Text(
                           "Sounds of Tomorrow: What's Next in Music Technology?",
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -259,6 +259,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       )
                     ],
                   ),
+                  Gap(4),
                   LinearProgressIndicator(
                     value: 0.3,
                     minHeight: 12,
