@@ -23,9 +23,14 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                 fit: BoxFit.cover,
               ),
             ),
+            width: double.infinity,
             padding: EdgeInsets.all(24),
             child: Column(
-              children: [],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Home"),
+                Text("Discover Your\nDream Home")
+              ],
             ),
           )),
           Expanded(child: Container()),
