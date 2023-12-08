@@ -215,6 +215,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   )
                 ],
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [],
+              ),
             )
           ],
         ),
