@@ -62,32 +62,60 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       children: [
                         Expanded(
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(42)
-                            ),
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(42)),
                             child: Center(
-                              child: Text("Login",
-                              style: TextStyle(
-                                color: Colors.white
-                              ),),
+                              child: Text(
+                                "Login",
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ),
                           ),
-
                         ),
                         Gap(16),
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
+                          child: Container(
+                            decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(42),
                               border: Border.all(
                                 color: Colors.grey[300]!,
-                              )),
-                        )),
+                              ),
+                            ),
+                            child: Center(
+                              child: Text("Sign Up"),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
-                  )
+                  ),
+                  Gap(32),
+                  SizedBox(
+                    height: 16,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 0,
+                          bottom: 0,
+                          right: 0,
+                          top: 0,
+                          child: Center(child: Divider()),
+                        ),
+                        Positioned(
+                          child: Center(
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 7),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Text("or Login with"),
+                            ),
+
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
