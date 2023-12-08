@@ -57,7 +57,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   ),
                   Gap(32),
                   SizedBox(
-                    height: 64,
+                    height: 54,
                     child: Row(
                       children: [
                         Expanded(
@@ -91,7 +91,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   ),
                   Gap(32),
                   SizedBox(
-                    height: 16,
+                    height: 18,
                     child: Stack(
                       children: [
                         Positioned(
@@ -119,7 +119,7 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   Gap(32),
                   Container(
                     decoration: BoxDecoration(
-                      
+
                     ),
                   )
                 ],
