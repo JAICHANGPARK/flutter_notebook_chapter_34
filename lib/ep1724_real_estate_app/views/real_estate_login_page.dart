@@ -23,6 +23,10 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                 fit: BoxFit.cover,
               ),
             ),
+            padding: EdgeInsets.all(24),
+            child: Column(
+              children: [],
+            ),
           )),
           Expanded(child: Container()),
         ],
