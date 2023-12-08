@@ -17,14 +17,11 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
               child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage(
-                  "https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_1280.jpg",
-                ),
-                fit: BoxFit.cover,
-                colorFilter: ColorFilter.mode(Colors.black.withOpacity(.4),
-                BlendMode.darken
-                )
-              ),
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_1280.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(.4), BlendMode.darken)),
             ),
             width: double.infinity,
             padding: EdgeInsets.all(24),
@@ -39,17 +36,21 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                     ),
                   ),
-                  Text("Discover Your\nDream Home",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24
-                    ),
+                  Text(
+                    "Discover Your\nDream Home",
+                    style: TextStyle(color: Colors.white, fontSize: 32),
                   )
                 ],
               ),
             ),
           )),
-          Expanded(child: Container()),
+          Expanded(
+            child: Container(
+              child: Column(
+                children: [],
+              ),
+            ),
+          ),
         ],
       ),
     );
