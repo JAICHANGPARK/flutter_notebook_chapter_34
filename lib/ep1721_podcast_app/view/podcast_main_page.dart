@@ -217,7 +217,31 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                children: [
+                  Text("Continue"),
+                  const Row(
+                    children: [
+                      Icon(
+                        Icons.ac_unit,
+                        size: 18,
+                      ),
+                      Gap(8),
+                      Icon(
+                        Icons.share,
+                        size: 18,
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          "Sounds of Tomorrow: What's Next in Music Technology?",
+                        ),
+                      )
+                    ],
+                  )
+                ],
               ),
             )
           ],
