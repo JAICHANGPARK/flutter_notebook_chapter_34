@@ -119,9 +119,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   Gap(32),
                   Container(
                     decoration: BoxDecoration(
-                        border: Border.all(
-                      color: Colors.grey[300]!,
-                    )),
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
                     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                     child: Stack(
                       children: [
