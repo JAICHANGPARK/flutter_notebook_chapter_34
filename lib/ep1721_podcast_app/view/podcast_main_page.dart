@@ -259,7 +259,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       )
                     ],
                   ),
-                  Gap(4),
+                  Gap(8),
                   LinearProgressIndicator(
                     value: 0.3,
                     minHeight: 12,
