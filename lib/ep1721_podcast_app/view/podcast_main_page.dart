@@ -215,6 +215,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   )
                 ],
               ),
+              padding: EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
