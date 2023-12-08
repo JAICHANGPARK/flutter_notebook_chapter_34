@@ -118,7 +118,10 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                   ),
                   Gap(32),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      color: Colors.grey[300]!,
+                    )),
                     child: Stack(
                       children: [
                         Positioned(
@@ -126,7 +129,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                             Ionicons.logo_google,
                           ),
                         ),
-
+                        Positioned(
+                            child: Center(
+                          child: Text(
+                            "Continue with Google",
+                          ),
+                        ))
                       ],
                     ),
                   ),
