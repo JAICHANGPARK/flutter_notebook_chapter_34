@@ -11,6 +11,13 @@ class RealEstateLoginPage extends StatefulWidget {
 class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Container()),
+          Expanded(child: Container()),
+        ],
+      ),
+    );
   }
 }
