@@ -23,7 +23,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                     "https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_1280.jpg",
                   ),
                   fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(.4), BlendMode.darken)),
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(.4), BlendMode.darken)),
             ),
             width: double.infinity,
             padding: const EdgeInsets.all(24),
@@ -113,7 +114,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                         Positioned(
                           child: Center(
                             child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 7),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 7),
                               decoration: const BoxDecoration(
                                 color: Colors.white,
                               ),
@@ -133,7 +135,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 12, vertical: 12),
                     child: const Stack(
                       children: [
                         Positioned(
@@ -142,11 +145,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                           ),
                         ),
                         Positioned(
-                            child: Center(
-                          child: Text(
-                            "Continue with Google",
+                          child: Center(
+                            child: Text(
+                              "Continue with Google",
+                            ),
                           ),
-                        ))
+                        )
                       ],
                     ),
                   ),
@@ -159,7 +163,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 12, vertical: 12),
                     child: const Stack(
                       children: [
                         Positioned(
@@ -168,11 +173,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                           ),
                         ),
                         Positioned(
-                            child: Center(
-                          child: Text(
-                            "Continue with Apple",
+                          child: Center(
+                            child: Text(
+                              "Continue with Apple",
+                            ),
                           ),
-                        ))
+                        )
                       ],
                     ),
                   ),
@@ -185,7 +191,8 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 12, vertical: 12),
                     child: const Stack(
                       children: [
                         Positioned(
@@ -194,11 +201,12 @@ class _RealEstateLoginPageState extends State<RealEstateLoginPage> {
                           ),
                         ),
                         Positioned(
-                            child: Center(
-                          child: Text(
-                            "Continue with Facebook",
+                          child: Center(
+                            child: Text(
+                              "Continue with Facebook",
+                            ),
                           ),
-                        ))
+                        )
                       ],
                     ),
                   ),
