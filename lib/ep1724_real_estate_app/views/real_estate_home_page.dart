@@ -34,6 +34,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                   ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.tune), onPressed: () {  },
+                  ),
                 )
               ],
             )
