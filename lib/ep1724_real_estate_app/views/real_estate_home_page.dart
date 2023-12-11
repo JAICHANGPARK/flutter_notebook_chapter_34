@@ -37,7 +37,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         height: 72,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(Ionicons.home_outline),
               label: "Home",
