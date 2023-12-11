@@ -28,6 +28,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           color: Colors.grey[200]!,
                         ),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: TextFormField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
