@@ -62,6 +62,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             Container(
               height: 320,
               child: Placeholder(),
+            ),
+            Container(
+              height: 400,
+              child: GridView.count(
+                crossAxisCount: 2,
+              ),
             )
           ],
         ),
