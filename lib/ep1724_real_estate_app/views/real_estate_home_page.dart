@@ -59,16 +59,31 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               height: 42,
               child: Placeholder(),
             ),
-            Container(
-              height: 320,
-              child: Placeholder(),
-            ),
-            Container(
-              height: 400,
-              child: GridView.count(
-                crossAxisCount: 2,
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 320,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 400,
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 16,
+                      crossAxisSpacing: 16,
+                      children: List.generate(
+                        100,
+                        (index) => Container(
+                          child: Placeholder(),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               ),
-            )
+            ))
           ],
         ),
       ),
