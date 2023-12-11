@@ -26,6 +26,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         color: Colors.grey[200]!,
                       ),
                     ),
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search",
+                        icon: Icon(Icons.search),
+                      ),
+                    ),
                   ),
                 )
               ],
@@ -37,6 +44,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         height: 72,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.black,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Ionicons.home_outline),
