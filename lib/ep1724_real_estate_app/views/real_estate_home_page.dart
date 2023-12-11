@@ -56,7 +56,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
             ),
             Container(
-              height: 42,
+              height: 52,
               child: Placeholder(),
             ),
             Expanded(
