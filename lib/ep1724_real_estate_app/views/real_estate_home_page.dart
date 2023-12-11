@@ -44,15 +44,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Ionicons.mail_outline),
-              label: "Home",
+              label: "Inbox",
             ),
             BottomNavigationBarItem(
               icon: Icon(Ionicons.list_circle_outline),
-              label: "Home",
+              label: "Activity",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined),
-              label: "Home",
+              label: "Profile",
             )
           ],
         ),
