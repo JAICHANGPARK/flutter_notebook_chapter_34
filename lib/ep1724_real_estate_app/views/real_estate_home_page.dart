@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:ionicons/ionicons.dart';
 
 class RealEstateHomePage extends StatefulWidget {
@@ -38,6 +39,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                   ),
+                  Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
@@ -46,7 +48,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.tune), onPressed: () {  },
+                      icon: Icon(Icons.tune),
+                      onPressed: () {},
                     ),
                   )
                 ],
