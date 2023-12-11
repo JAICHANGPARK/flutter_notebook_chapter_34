@@ -57,6 +57,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             ),
             Container(
               height: 52,
+              margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
               child: Placeholder(),
             ),
             Expanded(
@@ -64,11 +65,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 320,
+                    margin: EdgeInsets.only(left: 16,),
+                    height: 360,
                     child: Placeholder(),
                   ),
                   Container(
                     height: 400,
+                    margin: EdgeInsets.all(16),
                     child: GridView.count(
                       crossAxisCount: 2,
                       mainAxisSpacing: 16,
