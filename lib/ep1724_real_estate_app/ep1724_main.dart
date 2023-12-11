@@ -13,6 +13,9 @@ class RealEstateMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white
+      ),
       routes: {
         "/": (context) => const RealEstateLoginPage(),
         "/home": (context) => const RealEstateHomePage(),
