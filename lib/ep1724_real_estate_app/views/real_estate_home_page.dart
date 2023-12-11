@@ -16,34 +16,40 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(32),
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        ),
+                      ),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Search",
+                          icon: Icon(Icons.search),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(32),
+                      shape: BoxShape.circle,
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
                     ),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: "Search",
-                        icon: Icon(Icons.search),
-                      ),
+                    child: IconButton(
+                      icon: Icon(Icons.tune), onPressed: () {  },
                     ),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    icon: Icon(Icons.tune), onPressed: () {  },
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             )
           ],
         ),
