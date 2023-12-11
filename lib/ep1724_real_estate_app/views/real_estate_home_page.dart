@@ -12,8 +12,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
