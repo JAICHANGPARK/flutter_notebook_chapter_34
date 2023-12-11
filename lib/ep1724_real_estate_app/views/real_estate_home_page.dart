@@ -33,26 +33,29 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Ionicons.home_outline),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Ionicons.mail_outline),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Ionicons.list_circle_outline),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined),
-            label: "Home",
-          )
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Ionicons.home_outline),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Ionicons.mail_outline),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Ionicons.list_circle_outline),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined),
+              label: "Home",
+            )
+          ],
+        ),
       ),
     );
   }
