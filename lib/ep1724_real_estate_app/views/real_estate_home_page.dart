@@ -101,7 +101,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 240,
+                          width: 280,
                           margin: EdgeInsets.only(right: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
