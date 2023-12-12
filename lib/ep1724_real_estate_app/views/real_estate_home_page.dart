@@ -142,9 +142,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       crossAxisCount: 2,
                       mainAxisSpacing: 16,
                       crossAxisSpacing: 16,
+                      childAspectRatio: 1.3,
                       children: List.generate(
                         100,
                         (index) => Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg"),
+                              colorFilter: ColorFilter.mode(
+                                Colors.black.withOpacity(.4),
+                                BlendMode.darken,
+                              ),
+                            ),
+                          ),
                           child: Center(
                             child: Text("New Listing"),
                           ),
