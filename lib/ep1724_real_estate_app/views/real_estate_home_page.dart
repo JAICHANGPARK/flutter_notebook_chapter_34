@@ -31,9 +31,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           color: Colors.grey[200]!,
                         ),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: InputBorder.none,
                           hintText: "Search",
                           icon: Icon(Icons.search),
@@ -41,7 +41,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
@@ -50,7 +50,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.tune),
+                      icon: const Icon(Icons.tune),
                       onPressed: () {},
                     ),
                   )
@@ -59,7 +59,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             ),
             Container(
               height: 48,
-              margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+              margin: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: tabItems.length,
@@ -71,10 +71,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           color: index == 0 ? Colors.black : Colors.grey,
                         ),
                         borderRadius: BorderRadius.circular(32)),
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 24,
                     ),
-                    margin: EdgeInsets.only(right: 12),
+                    margin: const EdgeInsets.only(right: 12),
                     child: Center(
                       child: Text(
                         tabItems[index],
@@ -92,7 +92,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 16,
                     ),
                     height: 320,
@@ -102,13 +102,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 280,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.grey,
                                     image: DecorationImage(
                                       image: NetworkImage(
@@ -118,26 +118,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   ),
                                 ),
                               ),
-                              Gap(16),
-                              Text(
+                              const Gap(16),
+                              const Text(
                                 "\$440,000",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
                                 ),
                               ),
-                              Gap(8),
-                              Text("123 Main St, Developer, OK 238123821"),
+                              const Gap(8),
+                              const Text("123 Main St, Developer, OK 238123821"),
                             ],
                           ),
                         );
                       },
                     ),
                   ),
-                  Gap(4),
+                  const Gap(4),
                   Container(
                     height: 400,
-                    margin: EdgeInsets.all(16),
+                    margin: const EdgeInsets.all(16),
                     child: GridView.count(
                       crossAxisCount: 2,
                       mainAxisSpacing: 16,
@@ -149,7 +149,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           decoration: BoxDecoration(
                             color: Colors.grey,
                             image: DecorationImage(
-                              image: NetworkImage(
+                              image: const NetworkImage(
                                   "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg"),
                               colorFilter: ColorFilter.mode(
                                 Colors.black.withOpacity(.4),
@@ -158,7 +158,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "New Listing",
                               style: TextStyle(
