@@ -121,7 +121,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               Gap(16),
                               Text(
                                 "\$440,000",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
                               ),
                               Gap(8),
                               Text("123 Main St, Developer, OK 238123821"),
