@@ -142,7 +142,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       crossAxisCount: 2,
                       mainAxisSpacing: 16,
                       crossAxisSpacing: 16,
-                      childAspectRatio: 1.3,
+                      childAspectRatio: 1.5,
                       children: List.generate(
                         100,
                         (index) => Container(
