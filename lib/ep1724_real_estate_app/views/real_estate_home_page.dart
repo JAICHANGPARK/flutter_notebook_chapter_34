@@ -95,7 +95,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     margin: EdgeInsets.only(
                       left: 16,
                     ),
-                    height: 360,
+                    height: 320,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
@@ -134,6 +134,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       },
                     ),
                   ),
+                  Gap(4),
                   Container(
                     height: 400,
                     margin: EdgeInsets.all(16),
@@ -144,7 +145,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       children: List.generate(
                         100,
                         (index) => Container(
-                          child: Placeholder(),
+                          child: Center(
+                            child: Text("New Listing"),
+                          ),
                         ),
                       ),
                     ),
