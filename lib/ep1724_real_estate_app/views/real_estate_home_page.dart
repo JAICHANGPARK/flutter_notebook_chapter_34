@@ -70,7 +70,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       border: Border.all(
                         color: index == 0 ? Colors.black : Colors.grey,
                       ),
+                      borderRadius: BorderRadius.circular(32)
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 24,),
                     child: Center(
                       child: Text(tabItems[index]),
                     ),
