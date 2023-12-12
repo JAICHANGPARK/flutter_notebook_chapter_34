@@ -58,7 +58,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
             ),
             Container(
-              height: 52,
+              height: 48,
               margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -73,6 +73,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       borderRadius: BorderRadius.circular(32)
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 24,),
+                    margin: EdgeInsets.only(right: 12),
                     child: Center(
                       child: Text(tabItems[index]),
                     ),
