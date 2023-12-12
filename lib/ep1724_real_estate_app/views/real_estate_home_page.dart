@@ -100,14 +100,33 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            Expanded(
-                              child: Container(),
-                            ),
-                            Text("\$440,000"),
-                            Text("123 Main St, Developer, OK 238123821"),
-                          ],
+                        return Container(
+                          width: 240,
+                          margin: EdgeInsets.only(right: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_1280.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Gap(16),
+                              Text(
+                                "\$440,000",
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                              Gap(8),
+                              Text("123 Main St, Developer, OK 238123821"),
+                            ],
+                          ),
                         );
                       },
                     ),
