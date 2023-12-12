@@ -155,10 +155,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 Colors.black.withOpacity(.4),
                                 BlendMode.darken,
                               ),
+                              fit: BoxFit.cover,
                             ),
                           ),
                           child: Center(
-                            child: Text("New Listing"),
+                            child: Text(
+                              "New Listing",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         ),
                       ),
