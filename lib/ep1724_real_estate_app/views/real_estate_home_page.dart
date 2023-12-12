@@ -10,6 +10,8 @@ class RealEstateHomePage extends StatefulWidget {
 }
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
+  List<String> tabItems = ["Real Estate", "Apartment", "House", "Motels", "Hotels"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,14 +60,32 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             Container(
               height: 52,
               margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
-              child: Placeholder(),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: tabItems.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: index == 0 ? Colors.black : Colors.white,
+                      border: Border.all(
+                        color: index == 0 ? Colors.black : Colors.grey,
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(tabItems[index]),
+                    ),
+                  );
+                },
+              ),
             ),
             Expanded(
                 child: SingleChildScrollView(
               child: Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 16,),
+                    margin: EdgeInsets.only(
+                      left: 16,
+                    ),
                     height: 360,
                     child: Placeholder(),
                   ),
