@@ -66,16 +66,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(
-                      color: index == 0 ? Colors.black : Colors.white,
-                      border: Border.all(
-                        color: index == 0 ? Colors.black : Colors.grey,
-                      ),
-                      borderRadius: BorderRadius.circular(32)
+                        color: index == 0 ? Colors.black : Colors.white,
+                        border: Border.all(
+                          color: index == 0 ? Colors.black : Colors.grey,
+                        ),
+                        borderRadius: BorderRadius.circular(32)),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 24,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 24,),
                     margin: EdgeInsets.only(right: 12),
                     child: Center(
-                      child: Text(tabItems[index]),
+                      child: Text(
+                        tabItems[index],
+                        style: TextStyle(
+                          color: index == 0 ? Colors.white : Colors.grey,
+                        ),
+                      ),
                     ),
                   );
                 },
@@ -90,7 +96,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       left: 16,
                     ),
                     height: 360,
-                    child: Placeholder(),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Column(
+                          children: [
+                            Expanded(
+                              child: Container(),
+                            ),
+                            Text("\$440,000"),
+                            Text("123 Main St, Developer, OK 238123821"),
+                          ],
+                        );
+                      },
+                    ),
                   ),
                   Container(
                     height: 400,
