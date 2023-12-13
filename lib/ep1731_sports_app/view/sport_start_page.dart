@@ -11,6 +11,6 @@ class SportsStartPage extends StatefulWidget {
 class _SportsStartPageState extends State<SportsStartPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
