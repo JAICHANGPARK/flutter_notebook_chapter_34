@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RealEstateFilterPage extends StatefulWidget {
   const RealEstateFilterPage({super.key});
@@ -49,6 +50,16 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   ),
                 ],
               ),
+              Gap(24),
+              Container(
+                height: 52,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+              ),
+              Gap(24),
+              Text("Price range"),
+              
             ],
           ),
         ),
