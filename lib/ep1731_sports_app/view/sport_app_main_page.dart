@@ -258,7 +258,10 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                       ),
                       child: IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.home),
+                        icon: Icon(
+                          Icons.timer,
+                          color: Colors.grey,
+                        ),
                       ),
                     )),
                     Expanded(
@@ -267,10 +270,12 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                               // color: Colors.grey,
                               borderRadius: BorderRadius.circular(7),
                             ),
-                            child: Badge(
-                              child: Icon(
-                                Icons.chat,
-                                color: Colors.grey,
+                            child: Center(
+                              child: Badge(
+                                child: Icon(
+                                  Icons.chat,
+                                  color: Colors.grey,
+                                ),
                               ),
                             ))),
                   ],
