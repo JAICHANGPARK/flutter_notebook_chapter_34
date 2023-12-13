@@ -60,6 +60,7 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                               color: Colors.white,
                             ),
                           ),
+                          Gap(4),
                           Text(
                             "6,000",
                             style: TextStyle(
@@ -69,6 +70,11 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                         ],
                       )
                     ],
+                  ),
+                  Divider(),
+                  Container(
+                    height: 300,
+                    child: Placeholder(),
                   )
                 ],
               ),
