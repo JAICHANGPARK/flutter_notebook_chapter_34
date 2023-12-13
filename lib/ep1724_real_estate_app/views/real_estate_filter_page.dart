@@ -179,6 +179,19 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                       child: Column(
                     children: [
                       Text("Rooms"),
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(6),
+                            child: Text("1"),
+                          )
+                        ],
+                      )
                     ],
                   )),
                   Expanded(
