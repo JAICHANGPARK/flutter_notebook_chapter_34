@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1731_sports_app/view/sport_app_main_page.dart';
 import 'package:gap/gap.dart';
 
 class SportsStartPage extends StatefulWidget {
@@ -47,21 +48,30 @@ class _SportsStartPageState extends State<SportsStartPage> {
                   ),
                 ),
                 Gap(24),
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 16),
-                  decoration: BoxDecoration(
-                    color: Colors.tealAccent,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "GET STARTED",
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => SportsAppMainPage(),
                       ),
-                      Icon(
-                        Icons.play_arrow,
-                      )
-                    ],
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.tealAccent,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "GET STARTED",
+                        ),
+                        Icon(
+                          Icons.play_arrow,
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Gap(24),
