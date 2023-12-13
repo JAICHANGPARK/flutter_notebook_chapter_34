@@ -30,7 +30,7 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 24,
+                          fontSize: 32,
                         ),
                       ),
                       CircleAvatar(),
@@ -47,7 +47,7 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 24,
+                            fontSize: 32,
                           ),
                         ),
                       ),
