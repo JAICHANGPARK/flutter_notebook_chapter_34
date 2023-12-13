@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -97,14 +99,38 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                 color: Colors.blue,
                 child: Stack(
                   children: [
-                    RangeSlider(
-                      min: 0,
-                      max: 100,
-                      values: RangeValues(
-                        20.0,
-                        80.0,
+                    Positioned(
+                        left: 0,
+                        bottom: 50,
+                        right: 0,
+                        top: 0,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                            children: List.generate(
+                          42,
+                          (index) => Container(
+                            color: Colors.orange,
+                            width: 8,
+                            height: Random().nextInt(100).toDouble() + 42,
+                          ),
+                        ),),),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 24,
+                      child: RangeSlider(
+                        min: 0,
+                        max: 100,
+                        values: RangeValues(
+                          20.0,
+                          80.0,
+                        ),
+                        onChanged: (s) {},
+                        labels: RangeLabels(
+                          "20",
+                          "80",
+                        ),
                       ),
-                      onChanged: (s) {},
                     )
                   ],
                 ),
