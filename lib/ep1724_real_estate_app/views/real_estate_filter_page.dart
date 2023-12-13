@@ -96,7 +96,6 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               Gap(6),
               Container(
                 height: 140,
-                color: Colors.blue,
                 child: Stack(
                   children: [
                     Positioned(
