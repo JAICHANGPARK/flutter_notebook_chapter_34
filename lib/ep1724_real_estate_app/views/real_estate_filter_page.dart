@@ -180,7 +180,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Rooms"),
-                      Gap(4),
+                      Gap(8),
                       Row(
                         children: [
                           Container(
@@ -188,10 +188,62 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                               border: Border.all(
                                 color: Colors.grey[200]!,
                               ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
                             ),
-                            padding: EdgeInsets.all(6),
+
+                            padding: EdgeInsets.all(12),
+                            child: Text("1"),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+
+                            padding: EdgeInsets.all(12),
+                            child: Text("1"),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+
+                            padding: EdgeInsets.all(12),
+                            child: Text("1"),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+
+                            padding: EdgeInsets.all(12),
+                            child: Text("1"),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+
+                            padding: EdgeInsets.all(12),
                             child: Text("1"),
                           )
+
                         ],
                       )
                     ],
