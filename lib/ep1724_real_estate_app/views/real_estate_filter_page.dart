@@ -16,6 +16,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -59,7 +60,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Gap(24),
               Text("Price range"),
-              
+
             ],
           ),
         ),
