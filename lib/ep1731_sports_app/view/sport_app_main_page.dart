@@ -162,11 +162,18 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                         width: 200,
                         color: Colors.blue,
                       ),
+                      Gap(16),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          
+                          Text("Core with Sarah"),
+                          Text("20 MIN"),
                         ],
-                      )
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.tealAccent,
+                      ),
                     ],
                   )
                 ],
