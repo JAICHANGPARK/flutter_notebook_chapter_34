@@ -76,29 +76,76 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                     height: 300,
                     child: Placeholder(),
                   ),
-                  Divider(),
+                  Divider(
+                    height: 24,
+                  ),
                   Row(
                     children: [
                       Expanded(
-                          child: Column(
-                        children: [
-                          Text(
-                            "STEPS",
-                            style: TextStyle(
-                              color: Colors.white,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "STEPS",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
-                          ),
-                          Text(
-                            "5,440",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.tealAccent,
+                            Text(
+                              "5,440",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.tealAccent,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "CALORIES",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
-                          )
-                        ],
-                      ))
+                            Text(
+                              "402",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.tealAccent,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              "CALORIES",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              "402",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.tealAccent,
+                              ),
+                            )
+                          ],
+                        ),
+                      )
                     ],
-                  )
+                  ),
+                  Divider(
+                    height: 24,
+                  ),
                 ],
               ),
             ),
