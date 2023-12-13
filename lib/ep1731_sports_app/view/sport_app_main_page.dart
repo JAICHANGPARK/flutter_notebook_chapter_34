@@ -234,7 +234,14 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                 width: 200,
                 height: 64,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(.6,)
+                  color: Colors.black.withOpacity(.6,),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(child: Container()),
+                    Expanded(child: Container()),
+                    Expanded(child: Container()),
+                  ],
                 ),
               ),
             ),
