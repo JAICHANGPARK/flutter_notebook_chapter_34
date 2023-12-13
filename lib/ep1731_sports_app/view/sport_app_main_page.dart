@@ -242,12 +242,13 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                     Expanded(
                         child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.grey[300],
                         borderRadius: BorderRadius.circular(7),
                       ),
                       child: IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.home),
+                        color: Colors.tealAccent,
                       ),
                     )),
                     Expanded(
