@@ -91,9 +91,15 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Gap(24),
               Text("Price range"),
+              Gap(6),
               Container(
                 height: 140,
                 color: Colors.blue,
+                child: Stack(
+                  children: [
+                    RangeSlider(values: [0.0], onChanged: (onChanged))
+                  ],
+                ),
               ),
               Divider(
                 height: 32,
