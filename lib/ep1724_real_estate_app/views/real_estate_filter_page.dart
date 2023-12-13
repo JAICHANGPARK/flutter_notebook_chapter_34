@@ -55,7 +55,11 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               Container(
                 height: 52,
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Row(
+                  children: [],
                 ),
               ),
               Gap(24),
@@ -104,7 +108,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     ],
                   ))
                 ],
-              )
+              ),
+              Divider(
+                height: 32,
+              ),
             ],
           ),
         ),
