@@ -146,6 +146,13 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                   Divider(
                     height: 24,
                   ),
+                  Text(
+                    "TRAINING PLAN",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 32,
+                    ),
+                  )
                 ],
               ),
             ),
