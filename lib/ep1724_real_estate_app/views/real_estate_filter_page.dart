@@ -179,7 +179,12 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Rooms"),
+                      Text(
+                        "Rooms",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                      ),
                       Gap(8),
                       Row(
                         children: [
