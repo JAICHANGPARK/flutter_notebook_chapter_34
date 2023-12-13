@@ -99,14 +99,14 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 0,
+                      left: 32,
                       bottom: 50,
-                      right: 0,
+                      right: 32,
                       top: 0,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: List.generate(
-                          42,
+                          36,
                           (index) => Container(
                             color: Colors.orange,
                             width: 8,
@@ -122,6 +122,8 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                       child: RangeSlider(
                         min: 0,
                         max: 100,
+                        activeColor: Colors.black,
+                        inactiveColor: Colors.grey,
                         values: RangeValues(
                           20.0,
                           80.0,
