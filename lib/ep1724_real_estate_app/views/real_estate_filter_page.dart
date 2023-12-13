@@ -151,9 +151,11 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       margin: EdgeInsets.only(right: 8),
                       decoration: BoxDecoration(
-                        color: index == 0 ? Colors.black : Colors.white,
-                        borderRadius: BorderRadius.circular(32),
-                      ),
+                          color: index == 0 ? Colors.black : Colors.white,
+                          borderRadius: BorderRadius.circular(32),
+                          border: Border.all(
+                            color: Colors.grey,
+                          )),
                       child: Center(
                         child: Text(
                           "Real Estate",
