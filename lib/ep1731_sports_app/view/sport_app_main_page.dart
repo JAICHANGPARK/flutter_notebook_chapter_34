@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1731_sports_app/view/sport_app_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class SportsAppMainPage extends StatefulWidget {
@@ -155,39 +156,50 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                     ),
                   ),
                   Text("TODAY"),
-                  Row(
-                    children: [
-                      Container(
-                        height: 72,
-                        width: 170,
-                        color: Colors.blue,
-                      ),
-                      Gap(16),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Core with Sarah",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
-                            Gap(8),
-                            Text(
-                              "20 MIN",
-                              style: TextStyle(
-                                color: Colors.grey,
-                              ),
-                            ),
-                          ],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return SportAppDetailPage();
+                          },
                         ),
-                      ),
-                      Icon(
-                        Icons.check,
-                        color: Colors.tealAccent,
-                      ),
-                    ],
+                      );
+                    },
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 72,
+                          width: 170,
+                          color: Colors.blue,
+                        ),
+                        Gap(16),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Core with Sarah",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Gap(8),
+                              Text(
+                                "20 MIN",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(
+                          Icons.check,
+                          color: Colors.tealAccent,
+                        ),
+                      ],
+                    ),
                   ),
                   Gap(5),
                   Row(
