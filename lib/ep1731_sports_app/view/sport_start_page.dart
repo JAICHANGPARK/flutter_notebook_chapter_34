@@ -39,11 +39,12 @@ class _SportsStartPageState extends State<SportsStartPage> {
                   ),
                   Gap(24),
                   Container(
-                    
+                    padding: EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
                       color: Colors.tealAccent,
                     ),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "GET STARTED",
