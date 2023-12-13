@@ -66,16 +66,21 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Divider(),
               Text("House Type"),
-              Row(
-                children: List.generate(
-                  4,
-                  (index) => Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    margin: EdgeInsets.only(right: 8),
-                    decoration: BoxDecoration(
-                      color: index == 0 ? Colors.black : Colors.white,
+              Gap(16),
+              SizedBox(
+                height: 42,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: List.generate(
+                    4,
+                    (index) => Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      margin: EdgeInsets.only(right: 8),
+                      decoration: BoxDecoration(
+                        color: index == 0 ? Colors.black : Colors.white,
+                      ),
+                      child: Center(child: Text("Real Estate")),
                     ),
-                    child: Text("Real Estate"),
                   ),
                 ),
               )
