@@ -326,6 +326,14 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(32),
                 ),
+                child: Center(
+                  child: Text(
+                    "Save Filter",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               )
             ],
           ),
