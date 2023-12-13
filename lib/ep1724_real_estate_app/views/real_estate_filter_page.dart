@@ -249,9 +249,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                       )
                     ],
                   )),
+                  Gap(16),
                   Expanded(
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Bathrooms",
