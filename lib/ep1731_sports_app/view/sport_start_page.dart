@@ -24,13 +24,22 @@ class _SportsStartPageState extends State<SportsStartPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Gap(24),
-                  Text("YOUR FITNESS COACH"),
+                  Text(
+                    "YOUR FITNESS COACH",
+                    style: TextStyle(color: Colors.tealAccent),
+                  ),
                   Gap(24),
                   Text(
-                    "Welcome to Your Ultimate Training Companion",
+                    "Welcome to Your\nUltimate Training\nCompanion",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Gap(24),
                   Container(
+                    
                     decoration: BoxDecoration(
                       color: Colors.tealAccent,
                     ),
