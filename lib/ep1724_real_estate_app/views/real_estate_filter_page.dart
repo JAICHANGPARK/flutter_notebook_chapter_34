@@ -58,8 +58,25 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(32),
                 ),
+                padding: EdgeInsets.all(2),
                 child: Row(
-                  children: [],
+                  children: [
+                    Expanded(
+                      child: Center(
+                        child: Text("For Rent"),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white
+                        ),
+                        child: Center(
+                          child: Text("For Sale"),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Gap(24),
