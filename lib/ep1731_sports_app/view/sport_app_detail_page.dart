@@ -46,7 +46,22 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                 Divider(),
               ],
             ),
-          )
+          ),
+          Container(
+            height: 62,
+            child: Placeholder(),
+          ),
+          Gap(16),
+          Container(
+            height: 72,
+            child: Placeholder(),
+          ),
+          Gap(16),
+          Container(
+            height: 200,
+            child: Placeholder(),
+          ),
+
         ],
       ),
     );
