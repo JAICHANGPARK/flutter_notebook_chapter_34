@@ -167,17 +167,58 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Core with Sarah"),
+                            Text(
+                              "Core with Sarah",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                             Gap(8),
-                            Text("20 MIN"),
+                            Text(
+                              "20 MIN",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         ),
                       ),
-                      
                       Icon(
                         Icons.check,
                         color: Colors.tealAccent,
                       ),
+                    ],
+                  ),
+                  Gap(5),
+                  Row(
+                    children: [
+                      Container(
+                        height: 72,
+                        width: 170,
+                        color: Colors.blue,
+                      ),
+                      Gap(16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Core with Sarah",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Gap(8),
+                            Text(
+                              "20 MIN",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                     
                     ],
                   )
                 ],
