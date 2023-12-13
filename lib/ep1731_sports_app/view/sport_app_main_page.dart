@@ -250,8 +250,29 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                         icon: Icon(Icons.home),
                       ),
                     )),
-                    Expanded(child: Container()),
-                    Expanded(child: Container()),
+                    Expanded(
+                        child: Container(
+                      decoration: BoxDecoration(
+                        // color: Colors.grey,
+                        borderRadius: BorderRadius.circular(7),
+                      ),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.home),
+                      ),
+                    )),
+                    Expanded(
+                        child: Container(
+                            decoration: BoxDecoration(
+                              // color: Colors.grey,
+                              borderRadius: BorderRadius.circular(7),
+                            ),
+                            child: Badge(
+                              child: Icon(
+                                Icons.chat,
+                                color: Colors.grey,
+                              ),
+                            ))),
                   ],
                 ),
               ),
