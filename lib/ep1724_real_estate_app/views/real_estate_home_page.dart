@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1724_real_estate_app/views/real_estate_filter_page.dart';
 import 'package:gap/gap.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -51,7 +52,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     child: IconButton(
                       icon: const Icon(Icons.tune),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => RealEstateFilterPage(),
+                          ),
+                        );
+                      },
                     ),
                   )
                 ],
