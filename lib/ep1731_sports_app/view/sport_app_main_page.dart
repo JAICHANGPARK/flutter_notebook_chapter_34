@@ -75,6 +75,29 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                   Container(
                     height: 300,
                     child: Placeholder(),
+                  ),
+                  Divider(),
+                  Row(
+                    children: [
+                      Expanded(
+                          child: Column(
+                        children: [
+                          Text(
+                            "STEPS",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "5,440",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.tealAccent,
+                            ),
+                          )
+                        ],
+                      ))
+                    ],
                   )
                 ],
               ),
