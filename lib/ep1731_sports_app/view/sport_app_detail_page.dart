@@ -34,6 +34,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Yoga with Sarah",
