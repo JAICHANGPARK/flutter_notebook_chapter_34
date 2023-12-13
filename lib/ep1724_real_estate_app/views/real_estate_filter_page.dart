@@ -99,20 +99,22 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                        left: 0,
-                        bottom: 50,
-                        right: 0,
-                        top: 0,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                            children: List.generate(
+                      left: 0,
+                      bottom: 50,
+                      right: 0,
+                      top: 0,
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: List.generate(
                           42,
                           (index) => Container(
                             color: Colors.orange,
                             width: 8,
                             height: Random().nextInt(100).toDouble() + 42,
                           ),
-                        ),),),
+                        ),
+                      ),
+                    ),
                     Positioned(
                       left: 0,
                       right: 0,
@@ -150,8 +152,16 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                       margin: EdgeInsets.only(right: 8),
                       decoration: BoxDecoration(
                         color: index == 0 ? Colors.black : Colors.white,
+                        borderRadius: BorderRadius.circular(32),
                       ),
-                      child: Center(child: Text("Real Estate")),
+                      child: Center(
+                        child: Text(
+                          "Real Estate",
+                          style: TextStyle(
+                            color: index == 0 ? Colors.white : Colors.grey,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ),
