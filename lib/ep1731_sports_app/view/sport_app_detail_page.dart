@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SportAppDetailPage extends StatefulWidget {
   const SportAppDetailPage({super.key});
@@ -14,9 +15,12 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
+        foregroundColor: Colors.tealAccent,
         actions: [
           Text("MARK AS DONE"),
+          Gap(4),
           Icon(Icons.done_all),
+          Gap(12),
         ],
       ),
       body: Column(
