@@ -21,6 +21,7 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
             top: 24,
             child: SafeArea(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
