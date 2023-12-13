@@ -69,7 +69,8 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(32)
                         ),
                         child: Center(
                           child: Text("For Sale"),
