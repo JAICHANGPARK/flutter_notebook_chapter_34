@@ -159,7 +159,7 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                     children: [
                       Container(
                         height: 72,
-                        width: 200,
+                        width: 170,
                         color: Colors.blue,
                       ),
                       Gap(16),
