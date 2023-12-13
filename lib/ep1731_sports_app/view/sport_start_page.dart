@@ -18,7 +18,7 @@ class _SportsStartPageState extends State<SportsStartPage> {
         children: [
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage("https://cdn.pixabay.com/photo/2013/12/07/14/04/yoga-224643_1280.jpg"),
                   fit: BoxFit.cover,
@@ -29,17 +29,17 @@ class _SportsStartPageState extends State<SportsStartPage> {
           Container(
             width: double.infinity,
             color: Colors.black,
-            padding: EdgeInsets.symmetric(vertical: 42, horizontal: 16),
+            padding: const EdgeInsets.symmetric(vertical: 42, horizontal: 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Gap(24),
-                Text(
+                const Gap(24),
+                const Text(
                   "YOUR FITNESS COACH",
                   style: TextStyle(color: Colors.tealAccent),
                 ),
-                Gap(24),
-                Text(
+                const Gap(24),
+                const Text(
                   "Welcome to Your\nUltimate Training\nCompanion",
                   style: TextStyle(
                     color: Colors.white,
@@ -47,21 +47,21 @@ class _SportsStartPageState extends State<SportsStartPage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Gap(24),
+                const Gap(24),
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => SportsAppMainPage(),
+                        builder: (context) => const SportsAppMainPage(),
                       ),
                     );
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 16),
-                    decoration: BoxDecoration(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    decoration: const BoxDecoration(
                       color: Colors.tealAccent,
                     ),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
@@ -74,7 +74,7 @@ class _SportsStartPageState extends State<SportsStartPage> {
                     ),
                   ),
                 ),
-                Gap(24),
+                const Gap(24),
               ],
             ),
           ),
