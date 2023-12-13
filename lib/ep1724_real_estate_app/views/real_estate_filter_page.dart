@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class RealEstateFilterPage extends StatefulWidget {
   const RealEstateFilterPage({super.key});
 
@@ -21,7 +20,12 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(),
-
+                  ),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.keyboard_arrow_left,
+                    ),
                   ),
                 )
               ],
