@@ -205,7 +205,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                             ),
 
                             padding: EdgeInsets.all(12),
-                            child: Text("1"),
+                            child: Text("2"),
                           ),
                           Container(
                             decoration: BoxDecoration(
@@ -217,7 +217,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                             ),
 
                             padding: EdgeInsets.all(12),
-                            child: Text("1"),
+                            child: Text("3"),
                           ),
                           Container(
                             decoration: BoxDecoration(
@@ -229,21 +229,8 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                             ),
 
                             padding: EdgeInsets.all(12),
-                            child: Text("1"),
+                            child: Text("4+"),
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[200]!,
-                              ),
-                              shape: BoxShape.circle,
-                              // borderRadius: BorderRadius.circular(24)
-                            ),
-
-                            padding: EdgeInsets.all(12),
-                            child: Text("1"),
-                          )
-
                         ],
                       )
                     ],
