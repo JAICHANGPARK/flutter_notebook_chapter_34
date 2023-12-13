@@ -24,18 +24,28 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 200,
             color: Colors.blue,
           ),
-          Text("Yoga with Sarah",style: TextStyle(
-            color: Colors.white
-          ),),
-          Row(
-            children: [],
-          ),
-          Divider(),
+          Gap(24),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              children: [
+                Text(
+                  "Yoga with Sarah",
+                  style: TextStyle(color: Colors.white),
+                ),
+                Row(
+                  children: [],
+                ),
+                Divider(),
+              ],
+            ),
+          )
         ],
       ),
     );
