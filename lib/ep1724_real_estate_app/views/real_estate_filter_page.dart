@@ -60,7 +60,25 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Gap(24),
               Text("Price range"),
-
+              Container(
+                height: 140,
+                color: Colors.blue,
+              ),
+              Divider(),
+              Text("House Type"),
+              Row(
+                children: List.generate(
+                  4,
+                  (index) => Container(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    margin: EdgeInsets.only(right: 8),
+                    decoration: BoxDecoration(
+                      color: index == 0 ? Colors.black : Colors.white,
+                    ),
+                    child: Text("Real Estate"),
+                  ),
+                ),
+              )
             ],
           ),
         ),
