@@ -191,10 +191,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                               shape: BoxShape.circle,
                               // borderRadius: BorderRadius.circular(24)
                             ),
-
                             padding: EdgeInsets.all(12),
                             child: Text("1"),
                           ),
+                          Gap(8),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -203,10 +203,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                               shape: BoxShape.circle,
                               // borderRadius: BorderRadius.circular(24)
                             ),
-
                             padding: EdgeInsets.all(12),
                             child: Text("2"),
                           ),
+                          Gap(8),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -215,10 +215,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                               shape: BoxShape.circle,
                               // borderRadius: BorderRadius.circular(24)
                             ),
-
                             padding: EdgeInsets.all(12),
                             child: Text("3"),
                           ),
+                          Gap(8),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -227,7 +227,6 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                               shape: BoxShape.circle,
                               // borderRadius: BorderRadius.circular(24)
                             ),
-
                             padding: EdgeInsets.all(12),
                             child: Text("4+"),
                           ),
