@@ -149,7 +149,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Text(
                 "House Type",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
               ),
               Gap(16),
               SizedBox(
@@ -248,8 +251,67 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   )),
                   Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Bathrooms"),
+                      Text(
+                        "Bathrooms",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Gap(8),
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Text("1"),
+                          ),
+                          Gap(8),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Text("2"),
+                          ),
+                          Gap(8),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Text("3"),
+                          ),
+                          Gap(8),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              shape: BoxShape.circle,
+                              // borderRadius: BorderRadius.circular(24)
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Text("4+"),
+                          ),
+                        ],
+                      )
                     ],
                   ))
                 ],
