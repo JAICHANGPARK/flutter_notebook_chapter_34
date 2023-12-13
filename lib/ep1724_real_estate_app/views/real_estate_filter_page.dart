@@ -92,10 +92,13 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                 ),
               ),
               Gap(24),
-              Text("Price range",
+              Text(
+                "Price range",
                 style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18),),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
               Gap(24),
               Container(
                 height: 140,
@@ -144,10 +147,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               Divider(
                 height: 32,
               ),
-              Text("House Type",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18),),
+              Text(
+                "House Type",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
               Gap(16),
               SizedBox(
                 height: 42,
@@ -187,9 +190,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     children: [
                       Text(
                         "Rooms",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        fontSize: 18),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                       Gap(8),
                       Row(
