@@ -227,7 +227,17 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
           ),
           Positioned(
             bottom: 24,
-            child: Container(),
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                width: 200,
+                height: 64,
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(.6,)
+                ),
+              ),
+            ),
           )
         ],
       ),
