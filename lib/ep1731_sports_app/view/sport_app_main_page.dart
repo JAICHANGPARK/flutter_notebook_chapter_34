@@ -12,7 +12,7 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
 
   }
