@@ -15,7 +15,16 @@ class _SportsStartPageState extends State<SportsStartPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: Container()),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2013/12/07/14/04/yoga-224643_1280.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
           Container(
             width: double.infinity,
             color: Colors.black,
