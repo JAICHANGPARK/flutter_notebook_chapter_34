@@ -153,6 +153,21 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                       color: Colors.white,
                       fontSize: 32,
                     ),
+                  ),
+                  Text("TODAY"),
+                  Row(
+                    children: [
+                      Container(
+                        height: 54,
+                        width: 200,
+                        color: Colors.blue,
+                      ),
+                      Column(
+                        children: [
+                          
+                        ],
+                      )
+                    ],
                   )
                 ],
               ),
