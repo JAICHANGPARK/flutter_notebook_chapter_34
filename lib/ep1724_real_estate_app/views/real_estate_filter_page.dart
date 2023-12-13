@@ -97,7 +97,15 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                 color: Colors.blue,
                 child: Stack(
                   children: [
-                    RangeSlider(values: [0.0], onChanged: (onChanged))
+                    RangeSlider(
+                      min: 0,
+                      max: 100,
+                      values: RangeValues(
+                        20.0,
+                        80.0,
+                      ),
+                      onChanged: (s) {},
+                    )
                   ],
                 ),
               ),
