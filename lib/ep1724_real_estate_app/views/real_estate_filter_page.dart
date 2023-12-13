@@ -53,7 +53,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Gap(24),
               Container(
-                height: 52,
+                height: 56,
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(32),
@@ -68,7 +68,10 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     ),
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
                         child: Center(
                           child: Text(
                             "For Sale",
