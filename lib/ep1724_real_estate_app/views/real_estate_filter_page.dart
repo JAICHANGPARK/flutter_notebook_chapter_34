@@ -64,7 +64,9 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                 height: 140,
                 color: Colors.blue,
               ),
-              Divider(),
+              Divider(
+                height: 32,
+              ),
               Text("House Type"),
               Gap(16),
               SizedBox(
@@ -83,6 +85,25 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     ),
                   ),
                 ),
+              ),
+              Divider(
+                height: 32,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      child: Column(
+                    children: [
+                      Text("Rooms"),
+                    ],
+                  )),
+                  Expanded(
+                      child: Column(
+                    children: [
+                      Text("Bathrooms"),
+                    ],
+                  ))
+                ],
               )
             ],
           ),
