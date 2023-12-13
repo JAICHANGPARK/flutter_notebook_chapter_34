@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SportAppDetailPage extends StatefulWidget {
   const SportAppDetailPage({super.key});
 
@@ -12,10 +11,16 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        actions: [
+          Text("MARK AS DONE"),
+          Icon(Icons.done_all),
         ],
+      ),
+      body: Column(
+        children: [],
       ),
     );
   }
