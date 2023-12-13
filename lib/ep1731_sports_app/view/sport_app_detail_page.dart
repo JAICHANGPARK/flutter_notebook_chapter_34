@@ -24,7 +24,19 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 200,
+            color: Colors.blue,
+          ),
+          Text("Yoga with Sarah",style: TextStyle(
+            color: Colors.white
+          ),),
+          Row(
+            children: [],
+          ),
+          Divider(),
+        ],
       ),
     );
   }
