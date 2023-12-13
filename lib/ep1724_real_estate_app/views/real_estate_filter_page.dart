@@ -331,6 +331,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                     "Save Filter",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 18
                     ),
                   ),
                 ),
