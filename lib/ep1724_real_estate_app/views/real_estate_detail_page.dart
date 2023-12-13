@@ -14,7 +14,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
