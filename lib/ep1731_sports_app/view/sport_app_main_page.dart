@@ -218,7 +218,6 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
                           ],
                         ),
                       ),
-                     
                     ],
                   )
                 ],
@@ -231,14 +230,26 @@ class _SportsAppMainPageState extends State<SportsAppMainPage> {
             right: 0,
             child: Center(
               child: Container(
-                width: 200,
-                height: 64,
+                width: 170,
+                height: 54,
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(.6,),
+                  color: Colors.black.withOpacity(
+                    .6,
+                  ),
                 ),
                 child: Row(
                   children: [
-                    Expanded(child: Container()),
+                    Expanded(
+                        child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(7),
+                      ),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.home),
+                      ),
+                    )),
                     Expanded(child: Container()),
                     Expanded(child: Container()),
                   ],
