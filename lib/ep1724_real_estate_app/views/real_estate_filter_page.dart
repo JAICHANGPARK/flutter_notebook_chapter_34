@@ -320,6 +320,13 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               Divider(
                 height: 32,
               ),
+              Container(
+                height: 62,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+              )
             ],
           ),
         ),
