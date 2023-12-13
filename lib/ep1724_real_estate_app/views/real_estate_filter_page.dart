@@ -23,7 +23,9 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
                     ),
                     child: IconButton(
                       onPressed: () {},
@@ -40,7 +42,9 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
                     ),
                     child: IconButton(
                       onPressed: () {},
