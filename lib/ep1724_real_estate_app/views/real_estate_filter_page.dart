@@ -93,7 +93,7 @@ class _RealEstateFilterPageState extends State<RealEstateFilterPage> {
               ),
               Gap(24),
               Text("Price range"),
-              Gap(6),
+              Gap(24),
               Container(
                 height: 140,
                 child: Stack(
