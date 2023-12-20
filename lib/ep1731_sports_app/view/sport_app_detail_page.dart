@@ -95,9 +95,13 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                     ),
                   ],
                 ),
-                const Divider(),
               ],
             ),
+          ),
+          Gap(16),
+          const Divider(
+            indent: 16,
+            endIndent: 16,
           ),
           const Gap(16),
           Container(
