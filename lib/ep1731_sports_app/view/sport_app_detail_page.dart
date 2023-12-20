@@ -104,6 +104,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
             child: const Row(
               children: [
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "AVG TIME",
@@ -112,7 +113,13 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                         color: Colors.white,
                       ),
                     ),
-                    Text("25 MIN")
+                    Text(
+                      "25 MIN",
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
                   ],
                 )
               ],
