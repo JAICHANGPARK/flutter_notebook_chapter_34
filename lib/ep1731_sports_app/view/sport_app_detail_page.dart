@@ -208,6 +208,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
               margin: EdgeInsets.only(left: 16),
               height: 200,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "STEP 1 OF 3",
@@ -220,7 +221,24 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                   Expanded(
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {},
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 320,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "THE PIGEON POSE",
+                                style: TextStyle(
+                                  color: Colors.tealAccent,
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   )
                 ],
