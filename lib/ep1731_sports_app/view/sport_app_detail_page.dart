@@ -204,18 +204,27 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
             ),
           ),
           const Gap(16),
-          Text(
-            "STEP 1 OF 3",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-              fontSize: 20,
-            ),
-          ),
           Container(
-            height: 200,
-            child: const Placeholder(),
-          ),
+              margin: EdgeInsets.only(left: 16),
+              height: 200,
+              child: Column(
+                children: [
+                  Text(
+                    "STEP 1 OF 3",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {},
+                    ),
+                  )
+                ],
+              )),
         ],
       ),
     );
