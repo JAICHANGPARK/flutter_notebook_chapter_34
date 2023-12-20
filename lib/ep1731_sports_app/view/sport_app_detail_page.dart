@@ -41,7 +41,27 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 Row(
-                  children: [],
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.teal[200],
+                      ),
+                      child: Text(
+                        "HUDDLE",
+                        style: TextStyle(
+                          color: Colors.teal,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(),
+                      child: Text("HUDDLE"),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(),
+                      child: Text("HUDDLE"),
+                    ),
+                  ],
                 ),
                 Divider(),
               ],
@@ -61,7 +81,6 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
             height: 200,
             child: Placeholder(),
           ),
-
         ],
       ),
     );
