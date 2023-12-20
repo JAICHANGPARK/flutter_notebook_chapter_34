@@ -17,10 +17,10 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
         backgroundColor: Colors.black,
         foregroundColor: Colors.tealAccent,
         actions: [
-          Text("MARK AS DONE"),
-          Gap(4),
-          Icon(Icons.done_all),
-          Gap(12),
+          const Text("MARK AS DONE"),
+          const Gap(4),
+          const Icon(Icons.done_all),
+          const Gap(12),
         ],
       ),
       body: Column(
@@ -30,28 +30,28 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
             height: 200,
             color: Colors.blue,
           ),
-          Gap(24),
+          const Gap(24),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Yoga with Sarah",
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
-                Gap(8),
+                const Gap(8),
                 Row(
                   children: [
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 4,
                         vertical: 2,
                       ),
-                      child: Text(
+                      child: const Text(
                         "HUDDLE",
                         style: TextStyle(
                           color: Colors.teal,
@@ -59,16 +59,16 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                         ),
                       ),
                     ),
-                    Gap(6),
+                    const Gap(6),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 4,
                         vertical: 2,
                       ),
-                      child: Text(
+                      child: const Text(
                         "HUDDLE",
                         style: TextStyle(
                           color: Colors.teal,
@@ -76,16 +76,16 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                         ),
                       ),
                     ),
-                    Gap(6),
+                    const Gap(6),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 4,
                         vertical: 2,
                       ),
-                      child: Text(
+                      child: const Text(
                         "HUDDLE",
                         style: TextStyle(
                           color: Colors.teal,
@@ -95,23 +95,38 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                     ),
                   ],
                 ),
-                Divider(),
+                const Divider(),
               ],
             ),
           ),
           Container(
             height: 62,
-            child: Placeholder(),
+            child: const Row(
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      "AVG TIME",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text("25 MIN")
+                  ],
+                )
+              ],
+            ),
           ),
-          Gap(16),
+          const Gap(16),
           Container(
             height: 72,
-            child: Placeholder(),
+            child: const Placeholder(),
           ),
-          Gap(16),
+          const Gap(16),
           Container(
             height: 200,
-            child: Placeholder(),
+            child: const Placeholder(),
           ),
         ],
       ),
