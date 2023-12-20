@@ -38,9 +38,9 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
               children: [
                 Text(
                   "Yoga with Sarah",
-                  style: TextStyle(color: Colors.white,
-                  fontSize: 18),
+                  style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
+                Gap(8),
                 Row(
                   children: [
                     Container(
@@ -60,12 +60,36 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(),
-                      child: Text("HUDDLE"),
+                      decoration: BoxDecoration(
+                        color: Colors.teal[200],
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 4,
+                        vertical: 2,
+                      ),
+                      child: Text(
+                        "HUDDLE",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          fontSize: 12,
+                        ),
+                      ),
                     ),
                     Container(
-                      decoration: BoxDecoration(),
-                      child: Text("HUDDLE"),
+                      decoration: BoxDecoration(
+                        color: Colors.teal[200],
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 4,
+                        vertical: 2,
+                      ),
+                      child: Text(
+                        "HUDDLE",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          fontSize: 12,
+                        ),
+                      ),
                     ),
                   ],
                 ),
