@@ -224,6 +224,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 320,
+                          margin: EdgeInsets.only(right: 12),
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
                           ),
@@ -234,6 +235,10 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                                 style: TextStyle(
                                   color: Colors.tealAccent,
                                 ),
+                              ),
+                              Gap(8),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                               )
                             ],
                           ),
