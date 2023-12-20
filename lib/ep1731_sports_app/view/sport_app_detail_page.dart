@@ -117,7 +117,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                       Text(
                         "25 MIN",
                         style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.tealAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       )
@@ -138,7 +138,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                       Text(
                         "25 MIN",
                         style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.tealAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       )
@@ -159,7 +159,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                       Text(
                         "25 MIN",
                         style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.tealAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       )
