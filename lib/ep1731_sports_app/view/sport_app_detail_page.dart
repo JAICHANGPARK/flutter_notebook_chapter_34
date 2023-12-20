@@ -218,6 +218,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                       fontSize: 20,
                     ),
                   ),
+                  Gap(16),
                   Expanded(
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
