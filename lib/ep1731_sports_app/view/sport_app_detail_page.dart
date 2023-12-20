@@ -59,6 +59,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                         ),
                       ),
                     ),
+                    Gap(6),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
@@ -75,6 +76,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                         ),
                       ),
                     ),
+                    Gap(6),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
