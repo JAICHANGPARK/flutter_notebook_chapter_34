@@ -99,8 +99,10 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
               ],
             ),
           ),
+          Gap(16),
           Container(
             height: 62,
+            margin: EdgeInsets.symmetric(horizontal: 16),
             child: const Row(
               children: [
                 Expanded(
@@ -172,7 +174,16 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
           const Gap(16),
           Container(
             height: 72,
-            child: const Placeholder(),
+            child: Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    width: 2,
+                    color: Colors.tealAccent,
+                  ),
+                ),
+              ),
+            ),
           ),
           const Gap(16),
           Container(
