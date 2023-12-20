@@ -228,7 +228,9 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
                           ),
+                          padding: EdgeInsets.all(12),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "THE PIGEON POSE",
@@ -239,6 +241,11 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
                               Gap(8),
                               Text(
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                                overflow: TextOverflow.fade,
+                                maxLines: 5,
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
                               )
                             ],
                           ),
