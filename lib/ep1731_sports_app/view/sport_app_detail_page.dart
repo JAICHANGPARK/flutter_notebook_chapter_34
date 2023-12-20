@@ -175,6 +175,15 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
           Container(
             height: 72,
             child: Container(
+              child: Row(
+                children: [
+                  Text("LET'S GO"),
+                  Gap(12),
+                  Icon(
+                    Icons.play_arrow,
+                  )
+                ],
+              ),
               decoration: BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
