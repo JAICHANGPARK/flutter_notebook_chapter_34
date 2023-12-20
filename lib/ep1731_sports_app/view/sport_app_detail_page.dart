@@ -99,10 +99,10 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
               ],
             ),
           ),
-          Gap(16),
+          const Gap(16),
           Container(
             height: 62,
-            margin: EdgeInsets.symmetric(horizontal: 16),
+            margin: const EdgeInsets.symmetric(horizontal: 16),
             child: const Row(
               children: [
                 Expanded(
@@ -174,8 +174,8 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
           const Gap(16),
           Container(
             height: 64,
-            margin: EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
+            margin: const EdgeInsets.symmetric(horizontal: 16),
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
@@ -195,7 +195,7 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
             ),
             decoration: BoxDecoration(
               color: Colors.teal[600],
-              border: Border(
+              border: const Border(
                 bottom: BorderSide(
                   width: 2,
                   color: Colors.tealAccent,
@@ -205,57 +205,69 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
           ),
           const Gap(16),
           Container(
-              margin: EdgeInsets.only(left: 16),
-              height: 200,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "STEP 1 OF 3",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
+            margin: const EdgeInsets.only(left: 16),
+            height: 200,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  "STEP 1 OF 3",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 20,
                   ),
-                  Gap(16),
-                  Expanded(
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          width: 320,
-                          margin: EdgeInsets.only(right: 12),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.2),
-                          ),
-                          padding: EdgeInsets.all(12),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "THE PIGEON POSE",
-                                style: TextStyle(
-                                  color: Colors.tealAccent,
-                                ),
+                ),
+                const Gap(16),
+                Expanded(
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 320,
+                        margin: const EdgeInsets.only(right: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(.2),
+                        ),
+                        padding: const EdgeInsets.all(12),
+                        child: const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "THE PIGEON POSE",
+                              style: TextStyle(
+                                color: Colors.tealAccent,
                               ),
-                              Gap(8),
-                              Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                                overflow: TextOverflow.fade,
-                                maxLines: 5,
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      },
-                    ),
-                  )
-                ],
-              )),
+                            ),
+                            Gap(8),
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                              overflow: TextOverflow.fade,
+                              maxLines: 5,
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: const Text(
+              "ABOUT AUTHOR",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontSize: 20,
+              ),
+            ),
+          ),
         ],
       ),
     );
