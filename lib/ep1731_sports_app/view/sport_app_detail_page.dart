@@ -174,24 +174,31 @@ class _SportAppDetailPageState extends State<SportAppDetailPage> {
           const Gap(16),
           Container(
             height: 64,
-            child: Container(
-
-              child: Row(
-                children: [
-                  Text("LET'S GO"),
-                  Gap(12),
-                  Icon(
-                    Icons.play_arrow,
-                  )
-                ],
-              ),
-              decoration: BoxDecoration(
-                color: Colors.teal[600],
-                border: Border(
-                  bottom: BorderSide(
-                    width: 2,
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "LET'S GO",
+                  style: TextStyle(
                     color: Colors.tealAccent,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
                   ),
+                ),
+                Gap(12),
+                Icon(
+                  Icons.play_arrow,
+                  color: Colors.tealAccent,
+                )
+              ],
+            ),
+            decoration: BoxDecoration(
+              color: Colors.teal[600],
+              border: Border(
+                bottom: BorderSide(
+                  width: 2,
+                  color: Colors.tealAccent,
                 ),
               ),
             ),
