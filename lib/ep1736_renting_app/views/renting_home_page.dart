@@ -72,6 +72,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
               color: Colors.white,
             ),
           ),
+          Gap(24),
           Expanded(
             child: ListView.builder(
               itemCount: 10,
