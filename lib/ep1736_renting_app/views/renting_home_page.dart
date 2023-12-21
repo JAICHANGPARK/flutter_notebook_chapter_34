@@ -36,6 +36,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
+        shape: CircleBorder(),
         onPressed: (){},
         child: Icon(Icons.add),
       ),
