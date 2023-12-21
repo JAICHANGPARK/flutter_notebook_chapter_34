@@ -70,6 +70,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             style: TextStyle(
               fontWeight: FontWeight.w900,
               color: Colors.white,
+              fontSize: 24
             ),
           ),
           Gap(24),
