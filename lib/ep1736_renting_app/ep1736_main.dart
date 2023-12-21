@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1736_renting_app/views/renting_home_page.dart';
 
 
 void main() {
