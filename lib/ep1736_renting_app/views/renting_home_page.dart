@@ -20,6 +20,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
+        
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
