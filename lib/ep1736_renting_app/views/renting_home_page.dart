@@ -25,6 +25,20 @@ class _RentingHomePageState extends State<RentingHomePage> {
             icon: Icon(Icons.settings_outlined),
           ),
         ],
+        centerTitle: true,
+        titleTextStyle: TextStyle(
+          fontSize: 14,
+        ),
+        title: Column(
+          children: [
+            Text(
+              "Your location",
+            ),
+            Text(
+              "Seoul",
+            )
+          ],
+        ),
       ),
       body: Column(
         children: [],
