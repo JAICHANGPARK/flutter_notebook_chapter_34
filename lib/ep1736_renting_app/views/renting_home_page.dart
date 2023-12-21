@@ -33,6 +33,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
           children: [
             Text(
               "Your location",
+              style: TextStyle(
+                color: Colors.grey,
+              ),
+            ),
+            SizedBox(
+              height: 4,
             ),
             Text(
               "Seoul",
@@ -41,7 +47,13 @@ class _RentingHomePageState extends State<RentingHomePage> {
         ),
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            decoration: BoxDecoration(),
+            child: TextField(),
+          ),
+          
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
