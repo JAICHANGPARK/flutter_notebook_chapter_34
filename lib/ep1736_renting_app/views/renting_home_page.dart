@@ -49,10 +49,27 @@ class _RentingHomePageState extends State<RentingHomePage> {
       body: Column(
         children: [
           Container(
-            decoration: BoxDecoration(),
+            decoration: BoxDecoration(
+              
+            ),
             child: TextField(),
           ),
-          
+          SizedBox(
+            height: 42,
+            child: Placeholder(),
+          ),
+          Text("New offers"),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Container(
+                  height: 300,
+                  child: Placeholder(),
+                );
+              },
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
