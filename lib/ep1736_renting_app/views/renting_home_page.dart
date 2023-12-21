@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RentingHomePage extends StatefulWidget {
   const RentingHomePage({super.key});
@@ -49,16 +50,28 @@ class _RentingHomePageState extends State<RentingHomePage> {
       body: Column(
         children: [
           Container(
+            margin: EdgeInsets.all(16),
             decoration: BoxDecoration(
-              
+              color: Colors.white.withOpacity(0.2),
             ),
             child: TextField(),
           ),
-          SizedBox(
+          Container(
+            margin: EdgeInsets.only(
+              left: 16,
+              top: 8,
+            ),
             height: 42,
             child: Placeholder(),
           ),
-          Text("New offers"),
+          Gap(24),
+          Text(
+            "New offers",
+            style: TextStyle(
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+            ),
+          ),
           Expanded(
             child: ListView.builder(
               itemCount: 10,
