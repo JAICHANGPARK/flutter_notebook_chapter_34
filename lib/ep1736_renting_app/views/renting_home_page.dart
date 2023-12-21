@@ -48,6 +48,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
         ),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             margin: EdgeInsets.all(16),
@@ -65,24 +66,30 @@ class _RentingHomePageState extends State<RentingHomePage> {
             child: Placeholder(),
           ),
           Gap(24),
-          Text(
-            "New offers",
-            style: TextStyle(
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-              fontSize: 24
+          Padding(
+            padding: const EdgeInsets.only(left: 16),
+            child: Text(
+              "New offers",
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                color: Colors.white,
+                fontSize: 24
+              ),
             ),
           ),
           Gap(24),
           Expanded(
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return Container(
-                  height: 300,
-                  child: Placeholder(),
-                );
-              },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 300,
+                    child: Placeholder(),
+                  );
+                },
+              ),
             ),
           )
         ],
