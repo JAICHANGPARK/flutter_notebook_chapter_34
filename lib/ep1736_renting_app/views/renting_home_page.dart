@@ -21,11 +21,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
             label: "Home"
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home_filled),
+              icon: Icon(Icons.favorite_border),
               label: "Home"
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home_filled),
+              icon: Icon(Icons.chat_bubble_outline),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person_2_outlined),
               label: "Home"
           ),
         ],
