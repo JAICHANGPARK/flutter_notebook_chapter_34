@@ -12,7 +12,21 @@ class _RentingHomePageState extends State<RentingHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Stack(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.arrow_back_ios_new),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.settings_outlined),
+          ),
+        ],
+      ),
+      body: Column(
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -20,30 +34,17 @@ class _RentingHomePageState extends State<RentingHomePage> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
-        
         items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
-            label: "Home"
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_border),
-              label: "Home"
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.chat_bubble_outline),
-              label: "Home"
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person_2_outlined),
-              label: "Home"
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_outline), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "Home"),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         shape: CircleBorder(),
-        onPressed: (){},
+        onPressed: () {},
         child: Icon(Icons.add),
       ),
     );
