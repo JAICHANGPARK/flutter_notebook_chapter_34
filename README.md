@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_34
 
-### EP1731
+### EP1736
+
+- Renting App Design Concept
+- Dmitry Lauretsky for Ronas IT | UI/UX Team
+- https://dribbble.com/shots/23227147-Renting-App-Design-Concept
+
+### EP1731-1735
 
 - Sport App
 - Shakuro
