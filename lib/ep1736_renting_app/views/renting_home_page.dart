@@ -55,10 +55,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.2),
             ),
+            padding: EdgeInsets.symmetric(horizontal: 16),
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Search items",
-                icon: Icon(Icons.search)
+                icon: Icon(Icons.search),
+                border: InputBorder.none,
+                hintStyle: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
@@ -75,11 +80,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             padding: const EdgeInsets.only(left: 16),
             child: Text(
               "New offers",
-              style: TextStyle(
-                fontWeight: FontWeight.w900,
-                color: Colors.white,
-                fontSize: 24
-              ),
+              style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white, fontSize: 24),
             ),
           ),
           Gap(24),
@@ -107,7 +108,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Home"),
-
           BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_outline), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "Home"),
         ],
