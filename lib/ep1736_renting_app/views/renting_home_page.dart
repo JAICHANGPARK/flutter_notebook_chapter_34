@@ -143,17 +143,31 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             CircleAvatar(
                               radius: 16,
                             ),
+                            Gap(4),
                             Text(
                               "Dream Walker",
                               style: TextStyle(
                                 color: Colors.grey,
                               ),
                             ),
-                            Icon(Icons.location_on_rounded),
-                            Text("1.6km")
+                            Spacer(),
+                            Icon(
+                              Icons.location_on_rounded,
+                              color: Colors.lightGreenAccent,
+                            ),
+                            Gap(4),
+                            Text(
+                              "1.6km",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
                           ],
                         ),
-                        Text("2-4 Person Camping Tent"),
+                        Text("2-4 Person Camping Tent",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),),
                         Row(
                           children: [Text("\$40.00 day"), Text("\$180.00 week")],
                         )
