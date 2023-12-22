@@ -116,7 +116,30 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 300,
-                    child: const Placeholder(),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Container(),
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Text("Dream Walker"),
+                            Icon(Icons.location_on_rounded),
+                            Text("1.6km")
+                          ],
+                        ),
+
+                        Text("2-4 Person Camping Tent"),
+                        Row(
+                          children: [
+                            Text("\$40.00 day"),
+                            Text("\$180.00 week")
+                          ],
+                        )
+
+                      ],
+                    ),
                   );
                 },
               ),
