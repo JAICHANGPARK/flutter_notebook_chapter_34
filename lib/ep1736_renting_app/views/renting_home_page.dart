@@ -31,7 +31,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
           fontSize: 14,
         ),
         title: Column(
-          children: [
+          children: const [
             Text(
               "Your location",
               style: TextStyle(
@@ -55,7 +55,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.2),
             ),
-            child: TextField(),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "Search items",
+                icon: Icon(Icons.search)
+              ),
+            ),
           ),
           Container(
             margin: EdgeInsets.only(
@@ -99,9 +104,10 @@ class _RentingHomePageState extends State<RentingHomePage> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Home"),
+
           BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_outline), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "Home"),
         ],
