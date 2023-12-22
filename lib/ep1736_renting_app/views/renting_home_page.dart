@@ -169,7 +169,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             color: Colors.white,
                           ),),
                         Row(
-                          children: [Text("\$40.00 day"), Text("\$180.00 week")],
+                          children: [Text("\$40.00 day",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ), Text("\$180.00 week",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          )],
                         )
                       ],
                     ),
