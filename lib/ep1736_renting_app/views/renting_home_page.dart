@@ -116,7 +116,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 300,
+                    margin: EdgeInsets.only(bottom: 12),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Container(
@@ -141,7 +143,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         Row(
                           children: [
                             CircleAvatar(
-                              radius: 16,
+                              radius: 12,
                             ),
                             Gap(4),
                             Text(
