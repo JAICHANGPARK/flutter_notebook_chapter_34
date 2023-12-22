@@ -59,6 +59,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Search items",
+                iconColor: Colors.white,
                 icon: Icon(Icons.search),
                 border: InputBorder.none,
                 hintStyle: TextStyle(
@@ -68,13 +69,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(
-              left: 16,
-              top: 8,
-            ),
-            height: 42,
-            child: Placeholder(),
-          ),
+              margin: EdgeInsets.only(
+                left: 16,
+                top: 8,
+              ),
+              height: 42,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {},
+              )),
           Gap(24),
           Padding(
             padding: const EdgeInsets.only(left: 16),
