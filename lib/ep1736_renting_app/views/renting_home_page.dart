@@ -73,13 +73,14 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 left: 16,
                 top: 8,
               ),
-              height: 42,
+              height: 36,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(
                       color: index == 0 ? Colors.white : Colors.white.withOpacity(.3),
+                      borderRadius: BorderRadius.circular(24),
                     ),
                     margin: EdgeInsets.only(right: 8),
                     padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
