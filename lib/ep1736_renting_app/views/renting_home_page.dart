@@ -66,6 +66,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
                   color: Colors.white,
                 ),
               ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
           Container(
