@@ -119,25 +119,28 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     child: Column(
                       children: [
                         Expanded(
-                          child: Container(),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(7),
+                            ),
+                          ),
                         ),
+                        Gap(8),
                         Row(
                           children: [
-                            CircleAvatar(),
+                            CircleAvatar(
+                              radius: 16,
+                            ),
                             Text("Dream Walker"),
                             Icon(Icons.location_on_rounded),
                             Text("1.6km")
                           ],
                         ),
-
                         Text("2-4 Person Camping Tent"),
                         Row(
-                          children: [
-                            Text("\$40.00 day"),
-                            Text("\$180.00 week")
-                          ],
+                          children: [Text("\$40.00 day"), Text("\$180.00 week")],
                         )
-
                       ],
                     ),
                   );
