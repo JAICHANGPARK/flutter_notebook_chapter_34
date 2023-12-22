@@ -18,20 +18,20 @@ class _RentingHomePageState extends State<RentingHomePage> {
         foregroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(Icons.arrow_back_ios_new),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.settings_outlined),
+            icon: const Icon(Icons.settings_outlined),
           ),
         ],
         centerTitle: true,
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
           fontSize: 14,
         ),
-        title: Column(
-          children: const [
+        title: const Column(
+          children: [
             Text(
               "Your location",
               style: TextStyle(
@@ -51,13 +51,13 @@ class _RentingHomePageState extends State<RentingHomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.2),
               borderRadius: BorderRadius.circular(6),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 16),
-            child: TextField(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: const TextField(
               decoration: InputDecoration(
                 hintText: "Search items",
                 iconColor: Colors.white,
@@ -73,7 +73,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             ),
           ),
           Container(
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 left: 16,
                 top: 8,
               ),
@@ -86,8 +86,8 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       color: index == 0 ? Colors.white : Colors.white.withOpacity(.3),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    margin: EdgeInsets.only(right: 8),
-                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
+                    margin: const EdgeInsets.only(right: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 5),
                     child: Center(
                       child: Text(
                         "All",
@@ -99,15 +99,15 @@ class _RentingHomePageState extends State<RentingHomePage> {
                   );
                 },
               )),
-          Gap(24),
-          Padding(
-            padding: const EdgeInsets.only(left: 16),
+          const Gap(24),
+          const Padding(
+            padding: EdgeInsets.only(left: 16),
             child: Text(
               "New offers",
               style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white, fontSize: 24),
             ),
           ),
-          Gap(24),
+          const Gap(24),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -116,7 +116,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 300,
-                    child: Placeholder(),
+                    child: const Placeholder(),
                   );
                 },
               ),
@@ -138,9 +138,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
