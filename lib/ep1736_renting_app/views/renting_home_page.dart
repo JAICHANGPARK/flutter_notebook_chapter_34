@@ -124,6 +124,17 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               color: Colors.grey,
                               borderRadius: BorderRadius.circular(7),
                             ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 8,
+                                  top: 8,
+                                  child: CircleAvatar(
+                                    child: Icon(Icons.favorite_border),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         Gap(8),
@@ -132,7 +143,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             CircleAvatar(
                               radius: 16,
                             ),
-                            Text("Dream Walker"),
+                            Text(
+                              "Dream Walker",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
                             Icon(Icons.location_on_rounded),
                             Text("1.6km")
                           ],
