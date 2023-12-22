@@ -79,11 +79,18 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(.3),
+                      color: index == 0 ? Colors.white : Colors.white.withOpacity(.3),
                     ),
                     margin: EdgeInsets.only(right: 8),
                     padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
-                    child: Center(child: Text("All")),
+                    child: Center(
+                      child: Text(
+                        "All",
+                        style: TextStyle(
+                          color: index == 0 ? Colors.black : Colors.white,
+                        ),
+                      ),
+                    ),
                   );
                 },
               )),
