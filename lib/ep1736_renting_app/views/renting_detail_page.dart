@@ -33,6 +33,59 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
           Expanded(
             child: Container(
               color: Colors.black,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("Dream Walker",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.orangeAccent,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.orangeAccent,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.orangeAccent,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.orangeAccent,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.orangeAccent,
+                                ),
+                                Text(
+                                  "4.9",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.favorite_border),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
