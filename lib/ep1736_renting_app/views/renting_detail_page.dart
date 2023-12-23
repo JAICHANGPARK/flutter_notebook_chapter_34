@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class RentingDetailPage extends StatefulWidget {
   const RentingDetailPage({super.key});
 
@@ -14,8 +13,21 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(
+            child: Stack(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Expanded(
+              child: Container(
+            color: Colors.black,
+          )),
         ],
       ),
     );
