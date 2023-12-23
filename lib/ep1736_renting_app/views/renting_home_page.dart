@@ -137,7 +137,10 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   top: 12,
                                   child: CircleAvatar(
                                     radius: 16,
-                                    child: Icon(Icons.favorite_border),
+                                    child: Icon(
+                                      Icons.favorite_border,
+                                      size: 18,
+                                    ),
                                     backgroundColor: Colors.white,
                                     foregroundColor: Colors.black,
                                   ),
