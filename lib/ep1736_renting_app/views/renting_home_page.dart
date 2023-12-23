@@ -120,7 +120,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 300,
-                    margin: EdgeInsets.only(bottom: 12),
+                    margin: const EdgeInsets.only(bottom: 12),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -130,7 +130,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               color: Colors.grey,
                               borderRadius: BorderRadius.circular(7),
                             ),
-                            child: Stack(
+                            child: const Stack(
                               children: [
                                 Positioned(
                                   right: 12,
@@ -149,8 +149,8 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             ),
                           ),
                         ),
-                        Gap(8),
-                        Row(
+                        const Gap(8),
+                        const Row(
                           children: [
                             CircleAvatar(
                               radius: 12,
@@ -176,16 +176,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             )
                           ],
                         ),
-                        Gap(8),
-                        Text(
+                        const Gap(8),
+                        const Text(
                           "2-4 Person Camping Tent",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Gap(8),
-                        Row(
+                        const Gap(8),
+                        const Row(
                           children: [
                             Text(
                               "\$40.00 day",
