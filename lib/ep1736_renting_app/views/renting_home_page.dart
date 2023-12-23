@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1736_renting_app/views/renting_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class RentingHomePage extends StatefulWidget {
@@ -125,27 +126,36 @@ class _RentingHomePageState extends State<RentingHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                              borderRadius: BorderRadius.circular(7),
-                            ),
-                            child: const Stack(
-                              children: [
-                                Positioned(
-                                  right: 12,
-                                  top: 12,
-                                  child: CircleAvatar(
-                                    radius: 16,
-                                    child: Icon(
-                                      Icons.favorite_border,
-                                      size: 18,
-                                    ),
-                                    backgroundColor: Colors.white,
-                                    foregroundColor: Colors.black,
-                                  ),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => const RentingDetailPage(),
                                 ),
-                              ],
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(7),
+                              ),
+                              child: const Stack(
+                                children: [
+                                  Positioned(
+                                    right: 12,
+                                    top: 12,
+                                    child: CircleAvatar(
+                                      radius: 16,
+                                      child: Icon(
+                                        Icons.favorite_border,
+                                        size: 18,
+                                      ),
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
