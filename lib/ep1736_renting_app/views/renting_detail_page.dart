@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RentingDetailPage extends StatefulWidget {
   const RentingDetailPage({super.key});
@@ -35,6 +36,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               color: Colors.black,
               child: Column(
                 children: [
+                  Gap(16),
                   Row(
                     children: [
                       CircleAvatar(),
@@ -88,6 +90,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       )
                     ],
                   ),
+                  Gap(16),
                   const Text(
                     "2-4 Person Camping Tent",
                     style: TextStyle(
@@ -95,19 +98,34 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  Gap(16),
                   Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
+                  Gap(16),
                   Row(
                     children: [
                       Icon(Icons.location_on_rounded),
                       Text("Flutter World"),
                     ],
                   ),
+                  Gap(16),
                   Container(
+                    height: 80,
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
+
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(child: Column()),
+                        VerticalDivider(),
+                        Expanded(child: Column()),
+                        VerticalDivider(),
+                        Expanded(child: Column()),
+                      ],
                     ),
                   ),
+                  Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.lightGreen,
