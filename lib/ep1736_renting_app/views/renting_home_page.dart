@@ -166,10 +166,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             )
                           ],
                         ),
+                        Gap(8),
                         Text("2-4 Person Camping Tent",
                           style: TextStyle(
                             color: Colors.white,
                           ),),
+                        Gap(8),
                         Row(
                           children: [Text("\$40.00 day",
                             style: TextStyle(
