@@ -111,7 +111,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.lightGreen,
-                      borderRadius:
+                      borderRadius: BorderRadius.circular(8)
                     ),
 
                     padding: EdgeInsets.symmetric(vertical: 14),
