@@ -40,11 +40,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       CircleAvatar(),
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Dream Walker",
+                            Text(
+                              "Dream Walker",
                               style: TextStyle(
                                 color: Colors.white,
-                              ),),
+                              ),
+                            ),
                             Row(
                               children: [
                                 Icon(
@@ -74,7 +77,8 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                                   ),
                                 )
                               ],
-                            )
+                            ),
+                            Text("")
                           ],
                         ),
                       ),
@@ -83,6 +87,37 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                         icon: Icon(Icons.favorite_border),
                       )
                     ],
+                  ),
+                  const Text(
+                    "2-4 Person Camping Tent",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
+                  Row(
+                    children: [
+                      Icon(Icons.location_on_rounded),
+                      Text("Flutter World"),
+                    ],
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen,
+                      borderRadius:
+                    ),
+
+                    padding: EdgeInsets.symmetric(vertical: 14),
+                    child: Center(
+                      child: Text("Lease"),
+                    ),
                   )
                 ],
               ),
