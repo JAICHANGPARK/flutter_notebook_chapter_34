@@ -139,6 +139,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                     radius: 16,
                                     child: Icon(Icons.favorite_border),
                                     backgroundColor: Colors.white,
+                                    foregroundColor: Colors.black,
                                   ),
                                 ),
                               ],
