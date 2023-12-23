@@ -104,7 +104,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
             padding: EdgeInsets.only(left: 16),
             child: Text(
               "New offers",
-              style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white, fontSize: 24),
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                color: Colors.white,
+                fontSize: 24,
+              ),
             ),
           ),
           const Gap(24),
@@ -129,10 +133,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             child: Stack(
                               children: [
                                 Positioned(
-                                  right: 8,
-                                  top: 8,
+                                  right: 12,
+                                  top: 12,
                                   child: CircleAvatar(
+                                    radius: 16,
                                     child: Icon(Icons.favorite_border),
+                                    backgroundColor: Colors.white,
                                   ),
                                 ),
                               ],
