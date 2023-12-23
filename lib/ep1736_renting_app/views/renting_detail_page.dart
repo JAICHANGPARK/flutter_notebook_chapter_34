@@ -19,15 +19,22 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey,
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2019/10/03/11/14/camp-4522970_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 )
               ],
             ),
           ),
           Expanded(
-              child: Container(
-            color: Colors.black,
-          )),
+            child: Container(
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
     );
