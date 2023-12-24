@@ -18,7 +18,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
             child: Stack(
               children: [
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.grey,
                     image: DecorationImage(
                       image: NetworkImage(
@@ -26,7 +26,6 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       ),
                       fit: BoxFit.cover,
                     ),
-                    
                   ),
                   child: Stack(
                     children: [
@@ -34,7 +33,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                         children: [
                           Row(
                             children: [
-                              IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios_new))
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.arrow_back_ios_new),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.settings_outlined),
+                              ),
                             ],
                           )
                         ],
@@ -50,11 +56,11 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               color: Colors.black,
               child: Column(
                 children: [
-                  Gap(16),
+                  const Gap(16),
                   Row(
                     children: [
-                      CircleAvatar(),
-                      Expanded(
+                      const CircleAvatar(),
+                      const Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -100,11 +106,11 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.favorite_border),
+                        icon: const Icon(Icons.favorite_border),
                       )
                     ],
                   ),
-                  Gap(16),
+                  const Gap(16),
                   const Text(
                     "2-4 Person Camping Tent",
                     style: TextStyle(
@@ -112,24 +118,23 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Gap(16),
-                  Text(
+                  const Gap(16),
+                  const Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
-                  Gap(16),
-                  Row(
+                  const Gap(16),
+                  const Row(
                     children: [
                       Icon(Icons.location_on_rounded),
                       Text("Flutter World"),
                     ],
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     height: 80,
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
-
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Expanded(child: Column()),
                         VerticalDivider(),
@@ -139,15 +144,11 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
-                    decoration: BoxDecoration(
-                      color: Colors.lightGreen,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
-
-                    padding: EdgeInsets.symmetric(vertical: 14),
-                    child: Center(
+                    decoration: BoxDecoration(color: Colors.lightGreen, borderRadius: BorderRadius.circular(8)),
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    child: const Center(
                       child: Text("Lease"),
                     ),
                   )
