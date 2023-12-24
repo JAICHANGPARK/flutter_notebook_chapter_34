@@ -197,15 +197,17 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                     height: 80,
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(8)
                     ),
                     padding: EdgeInsets.all(16),
                     child: const Row(
                       children: [
                         Expanded(
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "\%5.00",
+                              "\$5.00",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
