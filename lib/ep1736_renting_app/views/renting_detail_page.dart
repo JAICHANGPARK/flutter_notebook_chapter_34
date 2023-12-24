@@ -26,6 +26,20 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       ),
                       fit: BoxFit.cover,
                     ),
+                    
+                  ),
+                  child: Stack(
+                    children: [
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios_new))
+                            ],
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 )
               ],
