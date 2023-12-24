@@ -48,6 +48,33 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                                   icon: const Icon(Icons.settings_outlined),
                                 ),
                               ],
+                            ),
+                            SizedBox(
+                              height: 6,
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      child: Container(
+                                    color: Colors.white,
+                                  )),
+                                  Expanded(
+                                      child: Container(
+                                        color: Colors.grey,
+                                      )),
+                                  Expanded(
+                                      child: Container(
+                                        color: Colors.grey,
+                                      )),
+                                  Expanded(
+                                      child: Container(
+                                        color: Colors.grey,
+                                      )),
+                                  Expanded(
+                                      child: Container(
+                                        color: Colors.grey,
+                                      )),
+                                ],
+                              ),
                             )
                           ],
                         ),
