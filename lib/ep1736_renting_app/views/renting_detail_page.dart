@@ -59,25 +59,25 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                                       color: Colors.white,
                                     ),
                                   ),
-                                  Gap(8),
+                                  const Gap(8),
                                   Expanded(
                                     child: Container(
                                       color: Colors.grey,
                                     ),
                                   ),
-                                  Gap(8),
+                                  const Gap(8),
                                   Expanded(
                                     child: Container(
                                       color: Colors.grey,
                                     ),
                                   ),
-                                  Gap(8),
+                                  const Gap(8),
                                   Expanded(
                                     child: Container(
                                       color: Colors.grey,
                                     ),
                                   ),
-                                  Gap(8),
+                                  const Gap(8),
                                   Expanded(
                                     child: Container(
                                       color: Colors.grey,
@@ -98,7 +98,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
           Expanded(
             child: Container(
               color: Colors.black,
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -107,8 +107,8 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       const CircleAvatar(),
-                      Gap(8),
-                      Column(
+                      const Gap(8),
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -157,7 +157,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           ),
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
                         onPressed: () {},
                         icon: const Icon(Icons.favorite_border),
@@ -195,16 +195,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   const Gap(16),
                   Container(
                     height: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(8)
-                    ),
-                    padding: EdgeInsets.all(16),
+                    decoration:
+                        BoxDecoration(color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(8)),
+                    padding: const EdgeInsets.all(16),
                     child: const Row(
                       children: [
                         Expanded(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
                               "\$5.00",
@@ -222,9 +220,45 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           ],
                         )),
                         VerticalDivider(),
-                        Expanded(child: Column()),
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "\$5.00",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "hourly",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
+                          ],
+                        )),
                         VerticalDivider(),
-                        Expanded(child: Column()),
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "\$5.00",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "hourly",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
+                          ],
+                        )),
                       ],
                     ),
                   ),
@@ -233,7 +267,13 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                     decoration: BoxDecoration(color: Colors.lightGreen, borderRadius: BorderRadius.circular(8)),
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     child: const Center(
-                      child: Text("Lease"),
+                      child: Text(
+                        "Lease",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                        ),
+                      ),
                     ),
                   )
                 ],
