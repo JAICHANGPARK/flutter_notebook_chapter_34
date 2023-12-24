@@ -35,6 +35,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                         top: 53,
                         bottom: 16,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -57,18 +58,19 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                                       child: Container(
                                     color: Colors.white,
                                   )),
+                                  Gap(8),
                                   Expanded(
                                       child: Container(
                                         color: Colors.grey,
-                                      )),
+                                      )),Gap(8),
                                   Expanded(
                                       child: Container(
                                         color: Colors.grey,
-                                      )),
+                                      )),Gap(8),
                                   Expanded(
                                       child: Container(
                                         color: Colors.grey,
-                                      )),
+                                      )),Gap(8),
                                   Expanded(
                                       child: Container(
                                         color: Colors.grey,
