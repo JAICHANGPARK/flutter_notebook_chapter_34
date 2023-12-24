@@ -99,6 +99,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
             child: Container(
               color: Colors.black,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Gap(16),
                   Padding(
@@ -171,6 +172,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      fontSize: 20
                     ),
                   ),
                   const Gap(16),
