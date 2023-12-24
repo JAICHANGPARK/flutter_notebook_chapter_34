@@ -30,9 +30,9 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 16,
-                        right: 16,
-                        top: 72,
+                        left: 8,
+                        right: 8,
+                        top: 53,
                         bottom: 16,
                         child: Column(
                           children: [
