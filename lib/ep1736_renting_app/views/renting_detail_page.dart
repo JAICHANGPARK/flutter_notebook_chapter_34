@@ -179,12 +179,17 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   const Gap(16),
                   const Row(
                     children: [
-                      Icon(Icons.location_on_rounded,
-                      color: Colors.lightGreen,),
+                      Icon(
+                        Icons.location_on_rounded,
+                        color: Colors.lightGreen,
+                      ),
                       Gap(16),
-                      Text("Flutter World",style: TextStyle(
-                        color: Colors.grey,
-                      ),),
+                      Text(
+                        "Flutter World",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
                     ],
                   ),
                   const Gap(16),
@@ -193,9 +198,27 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
                     ),
+                    padding: EdgeInsets.all(16),
                     child: const Row(
                       children: [
-                        Expanded(child: Column()),
+                        Expanded(
+                            child: Column(
+                          children: [
+                            Text(
+                              "\%5.00",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "hourly",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
+                          ],
+                        )),
                         VerticalDivider(),
                         Expanded(child: Column()),
                         VerticalDivider(),
