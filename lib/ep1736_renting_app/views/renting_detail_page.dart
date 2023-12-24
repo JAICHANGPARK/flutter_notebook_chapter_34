@@ -98,73 +98,71 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
           Expanded(
             child: Container(
               color: Colors.black,
+              padding: EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Gap(16),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const CircleAvatar(),
-                        Gap(8),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Dream Walker",
-                              style: TextStyle(
-                                color: Colors.white,
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const CircleAvatar(),
+                      Gap(8),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Dream Walker",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Gap(4),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                color: Colors.orangeAccent,
+                                size: 18,
                               ),
-                            ),
-                            Gap(4),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                  size: 18,
+                              Icon(
+                                Icons.star,
+                                color: Colors.orangeAccent,
+                                size: 18,
+                              ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.orangeAccent,
+                                size: 18,
+                              ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.orangeAccent,
+                                size: 18,
+                              ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.orangeAccent,
+                                size: 18,
+                              ),
+                              Gap(8),
+                              Text(
+                                "4.9",
+                                style: TextStyle(
+                                  color: Colors.white,
                                 ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                  size: 18,
-                                ),
-                                Gap(8),
-                                Text(
-                                  "4.9",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        Spacer(),
-                        IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.favorite_border),
-                        )
-                      ],
-                    ),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.favorite_border),
+                      )
+                    ],
                   ),
                   const Gap(16),
                   const Text(
