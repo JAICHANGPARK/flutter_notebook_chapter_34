@@ -101,58 +101,64 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               child: Column(
                 children: [
                   const Gap(16),
-                  Row(
-                    children: [
-                      const CircleAvatar(),
-                      const Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Dream Walker",
-                              style: TextStyle(
-                                color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        const CircleAvatar(),
+                        Gap(8),
+                        const Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Dream Walker",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orangeAccent,
-                                ),
-                                Text(
-                                  "4.9",
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
                                   ),
-                                )
-                              ],
-                            ),
-                            Text("")
-                          ],
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent, size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent, size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent, size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent, size: 18,
+                                  ),
+                                  Text(
+                                    "4.9",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Text("")
+                            ],
+                          ),
                         ),
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.favorite_border),
-                      )
-                    ],
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.favorite_border),
+                        )
+                      ],
+                    ),
                   ),
                   const Gap(16),
                   const Text(
