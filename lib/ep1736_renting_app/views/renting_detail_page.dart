@@ -179,8 +179,12 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   const Gap(16),
                   const Row(
                     children: [
-                      Icon(Icons.location_on_rounded),
-                      Text("Flutter World"),
+                      Icon(Icons.location_on_rounded,
+                      color: Colors.lightGreen,),
+                      Gap(16),
+                      Text("Flutter World",style: TextStyle(
+                        color: Colors.grey,
+                      ),),
                     ],
                   ),
                   const Gap(16),
