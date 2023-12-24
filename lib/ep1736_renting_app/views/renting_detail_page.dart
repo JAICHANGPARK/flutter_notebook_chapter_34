@@ -55,26 +55,34 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                               child: Row(
                                 children: [
                                   Expanded(
-                                      child: Container(
-                                    color: Colors.white,
-                                  )),
+                                    child: Container(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   Gap(8),
                                   Expanded(
-                                      child: Container(
-                                        color: Colors.grey,
-                                      )),Gap(8),
+                                    child: Container(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Gap(8),
                                   Expanded(
-                                      child: Container(
-                                        color: Colors.grey,
-                                      )),Gap(8),
+                                    child: Container(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Gap(8),
                                   Expanded(
-                                      child: Container(
-                                        color: Colors.grey,
-                                      )),Gap(8),
+                                    child: Container(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Gap(8),
                                   Expanded(
-                                      child: Container(
-                                        color: Colors.grey,
-                                      )),
+                                    child: Container(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
