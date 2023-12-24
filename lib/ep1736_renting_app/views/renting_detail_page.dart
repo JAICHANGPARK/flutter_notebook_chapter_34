@@ -29,21 +29,28 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   ),
                   child: Stack(
                     children: [
-                      Column(
-                        children: [
-                          Row(
-                            children: [
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.arrow_back_ios_new),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.settings_outlined),
-                              ),
-                            ],
-                          )
-                        ],
+                      Positioned(
+                        left: 16,
+                        right: 16,
+                        top: 72,
+                        bottom: 16,
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.arrow_back_ios_new),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.settings_outlined),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
