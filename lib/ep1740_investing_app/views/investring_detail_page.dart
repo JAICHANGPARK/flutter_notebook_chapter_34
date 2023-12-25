@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class InvestingDetailPage extends StatefulWidget {
   const InvestingDetailPage({super.key});
@@ -20,32 +21,49 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
       ),
       body: Column(
         children: [
-          Container(
-            height: 400,
-            child: Placeholder(),
-          ),
-          Row(
-            children: [
-              Text("About"),
-              OutlinedButton.icon(
-                onPressed: () {},
-                icon: Icon(Icons.check),
-                label: Text("Watching"),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 400,
+                    child: Placeholder(),
+                  ),
+                  Row(
+                    children: [
+                      Text("About"),
+                      OutlinedButton.icon(
+                        onPressed: () {},
+                        icon: Icon(Icons.check),
+                        label: Text("Watching"),
+                      ),
+                    ],
+                  ),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.clip,
+                  ),
+                  Container(
+                    height: 240,
+                    color: Colors.white,
+                  )
+                ],
               ),
-            ],
-          ),
-          Text(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            style: TextStyle(
-              color: Colors.grey,
-
             ),
-            maxLines: 2,
-            overflow: TextOverflow.clip,
           ),
           Container(
-            height: 240,
-            color: Colors.white,
+            height: 72,
+            child: Row(
+              children: [
+                Expanded(child: Placeholder()),
+                Gap(16),
+                Expanded(child: Placeholder()),
+              ],
+            ),
           )
         ],
       ),
