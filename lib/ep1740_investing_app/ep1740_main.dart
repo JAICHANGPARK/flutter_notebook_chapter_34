@@ -14,6 +14,7 @@ class InvestingApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/": (context) => InvestingHomePage(),
+        "/detail": (context) => InvestingDetailPage(),
       },
     );
   }
