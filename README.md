@@ -3,6 +3,9 @@
 ### EP1736
 ### EP1740
 
+- Mobile App UI - Auto Investing Portfolio Management Dashboard
+- Extej Design Agency
+- https://dribbble.com/shots/23228572-Mobile-App-UI-Auto-Investing-Portfolio-Management-Dashboard
 - Renting App Design Concept
 - Dmitry Lauretsky for Ronas IT | UI/UX Team
 - https://dribbble.com/shots/23227147-Renting-App-Design-Concept
