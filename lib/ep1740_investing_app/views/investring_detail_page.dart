@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class InvestingDetailPage extends StatefulWidget {
   const InvestingDetailPage({super.key});
 
@@ -11,6 +10,11 @@ class InvestingDetailPage extends StatefulWidget {
 class _InvestingDetailPageState extends State<InvestingDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(23, 23, 23, 1),
+      appBar: AppBar(
+        
+      ),
+    );
   }
 }
