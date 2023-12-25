@@ -1,6 +1,5 @@
 # flutter_notebook_chapter_34
 
-### EP1736
 ### EP1740
 
 - Mobile App UI - Auto Investing Portfolio Management Dashboard
