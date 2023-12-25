@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1740_investing_app/views/investing_home_page.dart';
 import 'package:flutter_notebook_chapter_34/ep1740_investing_app/views/investring_detail_page.dart';
 
 void main() {
@@ -10,8 +11,10 @@ class InvestingApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: InvestingDetailPage(),
+    return MaterialApp(
+      routes: {
+        "/": (context) => InvestingHomePage(),
+      },
     );
   }
 }
