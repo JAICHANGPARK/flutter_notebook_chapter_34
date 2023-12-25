@@ -20,6 +20,13 @@ class _InvestingHomePageState extends State<InvestingHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.add), label: "Add"),
         ],
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pushNamed("/detail");
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
