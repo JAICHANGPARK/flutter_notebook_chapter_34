@@ -19,53 +19,56 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
         centerTitle: true,
         title: Text("Unknown"),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    height: 400,
-                    child: Placeholder(),
-                  ),
-                  Row(
-                    children: [
-                      Text("About"),
-                      OutlinedButton.icon(
-                        onPressed: () {},
-                        icon: Icon(Icons.check),
-                        label: Text("Watching"),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                    style: TextStyle(
-                      color: Colors.grey,
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 400,
+                      child: Placeholder(),
                     ),
-                    maxLines: 2,
-                    overflow: TextOverflow.clip,
-                  ),
-                  Container(
-                    height: 240,
-                    color: Colors.white,
-                  )
-                ],
+                    Row(
+                      children: [
+                        Text("About"),
+                        OutlinedButton.icon(
+                          onPressed: () {},
+                          icon: Icon(Icons.check),
+                          label: Text("Watching"),
+                        ),
+                      ],
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                      maxLines: 2,
+                      overflow: TextOverflow.clip,
+                    ),
+                    Container(
+                      height: 240,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
               ),
             ),
-          ),
-          Container(
-            height: 72,
-            child: Row(
-              children: [
-                Expanded(child: Placeholder()),
-                Gap(16),
-                Expanded(child: Placeholder()),
-              ],
-            ),
-          )
-        ],
+            Container(
+              height: 72,
+              child: Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Gap(16),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
