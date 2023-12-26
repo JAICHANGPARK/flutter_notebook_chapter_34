@@ -73,7 +73,8 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                           "Buy",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.white
+                            color: Colors.white,
+                            fontSize: 16
                           ),
                         ),
                       ),
@@ -90,7 +91,8 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                         "Sell",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.white
+                            color: Colors.white,
+                            fontSize: 16
                         ),
                       ),
                     ),
