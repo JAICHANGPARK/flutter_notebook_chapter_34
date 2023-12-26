@@ -32,8 +32,16 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       child: Placeholder(),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("About"),
+                        Text(
+                          "About",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: Colors.grey,
+                          ),
+                        ),
                         OutlinedButton.icon(
                           onPressed: () {},
                           icon: Icon(Icons.check),
@@ -41,6 +49,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                         ),
                       ],
                     ),
+                    Gap(16),
                     Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                       style: TextStyle(
@@ -49,7 +58,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       maxLines: 2,
                       overflow: TextOverflow.clip,
                     ),
-                    Gap(15),
+                    Gap(16),
                     Container(
                       height: 200,
                       decoration: BoxDecoration(
