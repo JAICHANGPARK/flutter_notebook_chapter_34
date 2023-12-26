@@ -49,6 +49,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       maxLines: 2,
                       overflow: TextOverflow.clip,
                     ),
+                    Gap(15),
                     Container(
                       height: 200,
                       decoration: BoxDecoration(
@@ -70,6 +71,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                           Expanded(
                             child: GridView.count(
                               crossAxisCount: 2,
+                              childAspectRatio: 2.3,
                               children: [
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,11 +86,75 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     Gap(4),
                                     Text(
                                       "\$131.26",
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Low",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.grey,
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 16
                                       ),
+                                    ),
+                                    Gap(4),
+                                    Text(
+                                      "\$131.26",
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Low",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Gap(4),
+                                    Text(
+                                      "\$131.26",
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Low",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Gap(4),
+                                    Text(
+                                      "\$131.26",
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Low",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Gap(4),
+                                    Text(
+                                      "\$131.26",
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
                                     ),
                                   ],
                                 )
