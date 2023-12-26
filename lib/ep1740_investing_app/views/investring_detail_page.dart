@@ -58,13 +58,14 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
               ),
             ),
             Container(
-              height: 64,
+              height: 58,
               child: Row(
                 children: [
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.green,
+                        borderRadius: BorderRadius.circular(8)
                       ),
                       child: Center(
                         child: Text(
@@ -81,6 +82,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                   Expanded( child: Container(
                     decoration: BoxDecoration(
                       color: Colors.red,
+                        borderRadius: BorderRadius.circular(8)
                     ),
                     child: Center(
                       child: Text(
