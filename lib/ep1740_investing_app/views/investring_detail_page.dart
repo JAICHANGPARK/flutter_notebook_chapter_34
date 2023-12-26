@@ -58,10 +58,25 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
               ),
             ),
             Container(
-              height: 72,
+              height: 64,
               child: Row(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Buy",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                   Gap(16),
                   Expanded(child: Placeholder()),
                 ],
