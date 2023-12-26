@@ -62,7 +62,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                     Container(
                       height: 200,
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
+                        color: Colors.white.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       padding: EdgeInsets.all(16),
@@ -80,7 +80,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                           Expanded(
                             child: GridView.count(
                               crossAxisCount: 2,
-                              childAspectRatio: 2.3,
+                              childAspectRatio: 2.6,
                               children: [
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
