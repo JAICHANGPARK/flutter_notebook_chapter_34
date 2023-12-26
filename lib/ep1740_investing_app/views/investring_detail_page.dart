@@ -55,9 +55,15 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                         color: Colors.white.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Detail"),
+                          Text("Detail",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 18,
+                          ),),
                           Gap(12),
                           Expanded(
                             child: GridView.count(
