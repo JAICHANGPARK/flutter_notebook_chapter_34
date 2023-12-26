@@ -50,9 +50,9 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       overflow: TextOverflow.clip,
                     ),
                     Container(
-                      height: 240,
+                      height: 200,
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.3),
+                        color: Colors.white.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Column(
@@ -64,7 +64,20 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                               crossAxisCount: 2,
                               children: [
                                 Column(
-                                  children: [],
+                                  children: [
+                                    Text(
+                                      "Low",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\$131.26",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
                                 )
                               ],
                             ),
