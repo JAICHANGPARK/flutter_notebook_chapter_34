@@ -31,6 +31,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       height: 400,
                       child: Placeholder(),
                     ),
+                    Gap(16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -46,6 +47,12 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                           onPressed: () {},
                           icon: Icon(Icons.check),
                           label: Text("Watching"),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.green,
+                            side: BorderSide(
+                              color: Colors.green,
+                            ),
+                          ),
                         ),
                       ],
                     ),
