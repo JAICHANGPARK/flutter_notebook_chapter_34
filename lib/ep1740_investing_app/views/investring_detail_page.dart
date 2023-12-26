@@ -51,7 +51,26 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                     ),
                     Container(
                       height: 240,
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        children: [
+                          Text("Detail"),
+                          Gap(12),
+                          Expanded(
+                            child: GridView.count(
+                              crossAxisCount: 2,
+                              children: [
+                                Column(
+                                  children: [],
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
@@ -64,39 +83,27 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.circular(8)
-                      ),
+                      decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
                       child: Center(
                         child: Text(
                           "Buy",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 16
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
                         ),
                       ),
                     ),
                   ),
                   Gap(16),
-                  Expanded( child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                        borderRadius: BorderRadius.circular(8)
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Sell",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 16
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                      child: Center(
+                        child: Text(
+                          "Sell",
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
                         ),
                       ),
                     ),
-                  ),),
+                  ),
                 ],
               ),
             )
