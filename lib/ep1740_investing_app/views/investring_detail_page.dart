@@ -78,7 +78,20 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                     ),
                   ),
                   Gap(16),
-                  Expanded(child: Placeholder()),
+                  Expanded( child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Sell",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
+                        ),
+                      ),
+                    ),
+                  ),),
                 ],
               ),
             )
