@@ -57,7 +57,8 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                 ),
               ),
             ),
-            Container(
+            Gap(16),
+            SizedBox(
               height: 58,
               child: Row(
                 children: [
