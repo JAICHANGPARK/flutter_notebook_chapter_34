@@ -78,6 +78,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                       "Low",
                                       style: TextStyle(
                                         color: Colors.grey,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     Gap(4),
@@ -86,6 +87,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 16
                                       ),
                                     ),
                                   ],
