@@ -28,7 +28,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 400,
+                      height: 360,
                       child: Placeholder(),
                     ),
                     Gap(16),
