@@ -59,17 +59,20 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Detail",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 18,
-                          ),),
+                          Text(
+                            "Detail",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 18,
+                            ),
+                          ),
                           Gap(12),
                           Expanded(
                             child: GridView.count(
                               crossAxisCount: 2,
                               children: [
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       "Low",
@@ -77,10 +80,12 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                         color: Colors.grey,
                                       ),
                                     ),
+                                    Gap(4),
                                     Text(
                                       "\$131.26",
                                       style: TextStyle(
                                         color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ],
