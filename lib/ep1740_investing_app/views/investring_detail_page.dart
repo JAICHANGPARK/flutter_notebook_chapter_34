@@ -34,29 +34,32 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                             Row(
                               children: [
                                 CircleAvatar(),
+                                Gap(12),
                                 Expanded(
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("ABCD",
-                                      style: TextStyle(
-                                        color: Colors.white
-                                      ),),
+                                      Text(
+                                        "ABCD",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      Gap(4),
                                       Row(
                                         children: [
-                                          Text("12.34%",style: TextStyle(
-                                              color: Colors.white
-                                          ),),
+                                          Text(
+                                            "12.34%",
+                                            style: TextStyle(color: Colors.white),
+                                          ),
                                           Icon(
                                             Icons.arrow_drop_down,
                                             color: Colors.red,
                                           ),
-                                          Text("-0.12%",
-                                            style: TextStyle(
-                                                color: Colors.red
-                                            ),),
+                                          Text(
+                                            "-0.12%",
+                                            style: TextStyle(color: Colors.red),
+                                          ),
                                         ],
                                       ),
-                                  
                                     ],
                                   ),
                                 ),
