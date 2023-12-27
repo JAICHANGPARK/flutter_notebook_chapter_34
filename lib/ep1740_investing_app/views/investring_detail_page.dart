@@ -94,41 +94,41 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 onPressed: (idx) {},
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     color: Colors.yellow,
                                     child: Text(
                                       "1M",
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
                                       "3M",
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "6M",
+                                      "6M",style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "1Y",
+                                      "1Y",style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "3Y",
+                                      "3Y",style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "ALL",
+                                      "ALL",style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                 ],
