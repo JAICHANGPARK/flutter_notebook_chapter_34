@@ -12,12 +12,12 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(23, 23, 23, 1),
+      backgroundColor: const Color.fromRGBO(23, 23, 23, 1),
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(23, 23, 23, 1),
+        backgroundColor: const Color.fromRGBO(23, 23, 23, 1),
         foregroundColor: Colors.grey,
         centerTitle: true,
-        title: Text("Unknown"),
+        title: const Text("Unknown"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -29,13 +29,17 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                   children: [
                     Container(
                       height: 360,
-                      child: Placeholder(),
+                      child: Column(
+                        children: [
+                          
+                        ],
+                      )
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "About",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -45,19 +49,19 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                         ),
                         OutlinedButton.icon(
                           onPressed: () {},
-                          icon: Icon(Icons.check),
-                          label: Text("Watching"),
+                          icon: const Icon(Icons.check),
+                          label: const Text("Watching"),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Colors.green,
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.green,
                             ),
                           ),
                         ),
                       ],
                     ),
-                    Gap(16),
-                    Text(
+                    const Gap(16),
+                    const Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                       style: TextStyle(
                         color: Colors.grey,
@@ -65,31 +69,31 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       maxLines: 2,
                       overflow: TextOverflow.clip,
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Container(
                       height: 200,
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Detail",
                             style: TextStyle(
                               color: Colors.grey,
                               fontSize: 18,
                             ),
                           ),
-                          Gap(12),
+                          const Gap(12),
                           Expanded(
                             child: GridView.count(
                               crossAxisCount: 2,
                               childAspectRatio: 2.6,
                               children: [
-                                Column(
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -106,7 +110,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     ),
                                   ],
                                 ),
-                                Column(
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -123,7 +127,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     ),
                                   ],
                                 ),
-                                Column(
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -140,7 +144,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     ),
                                   ],
                                 ),
-                                Column(
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -157,7 +161,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     ),
                                   ],
                                 ),
-                                Column(
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -184,7 +188,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                 ),
               ),
             ),
-            Gap(16),
+            const Gap(16),
             SizedBox(
               height: 58,
               child: Row(
@@ -192,7 +196,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Buy",
                           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
@@ -200,11 +204,11 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                       ),
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Sell",
                           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
