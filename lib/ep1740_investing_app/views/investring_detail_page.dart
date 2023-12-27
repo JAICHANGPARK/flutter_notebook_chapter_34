@@ -104,41 +104,42 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     child: Text(
                                       "1M",
                                     ),
+                                    margin: EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
                                       "3M",
                                       style: TextStyle(color: Colors.white),
-                                    ),
+                                    ), margin: EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
                                       "6M",
                                       style: TextStyle(color: Colors.white),
-                                    ),
+                                    ), margin: EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
                                       "1Y",
                                       style: TextStyle(color: Colors.white),
-                                    ),
+                                    ), margin: EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
                                       "3Y",
                                       style: TextStyle(color: Colors.white),
-                                    ),
+                                    ), margin: EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
                                       "ALL",
                                       style: TextStyle(color: Colors.white),
-                                    ),
+                                    ), margin: EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                 ],
                               ),
