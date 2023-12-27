@@ -95,7 +95,6 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                   false,
                                 ],
                                 selectedColor: Colors.black,
-                                borderColor: Colors.grey,
                                 onPressed: (idx) {},
                                 children: [
                                   Container(
