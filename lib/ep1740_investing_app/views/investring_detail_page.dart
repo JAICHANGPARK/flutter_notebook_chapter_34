@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -73,7 +74,13 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 )
                               ],
                             ),
-                            Expanded(child: Placeholder()),
+                            Gap(8),
+                            Expanded(
+                              child: LineChart(
+                                LineChartData(),
+                              ),
+                            ),
+                            Gap(8),
                             Container(
                               // padding: EdgeInsets.all(2),
                               decoration: BoxDecoration(
@@ -98,7 +105,6 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 children: [
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
                                       color: Colors.yellow,
