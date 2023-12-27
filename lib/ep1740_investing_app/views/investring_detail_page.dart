@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -32,7 +34,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                         height: 360,
                         child: Column(
                           children: [
-                            Row(
+                            const Row(
                               children: [
                                 CircleAvatar(),
                                 Gap(12),
@@ -74,13 +76,25 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 )
                               ],
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Expanded(
                               child: LineChart(
-                                LineChartData(),
+                                LineChartData(
+                                  lineBarsData: [
+                                    LineChartBarData(
+                                      spots: List.generate(
+                                        10,
+                                        (index) => FlSpot(
+                                          index.toDouble(),
+                                          Random().nextDouble(),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Container(
                               // padding: EdgeInsets.all(2),
                               decoration: BoxDecoration(
@@ -88,7 +102,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: ToggleButtons(
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: double.infinity,
                                   maxHeight: 62,
                                 ),
@@ -104,55 +118,55 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 onPressed: (idx) {},
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
                                       color: Colors.yellow,
                                     ),
-                                    child: Text(
+                                    child: const Text(
                                       "1M",
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 4),
+                                    margin: const EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                    child: Text(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Text(
                                       "3M",
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 4),
+                                    margin: const EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                    child: Text(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Text(
                                       "6M",
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 4),
+                                    margin: const EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                    child: Text(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Text(
                                       "1Y",
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 4),
+                                    margin: const EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                    child: Text(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Text(
                                       "3Y",
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 4),
+                                    margin: const EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                    child: Text(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Text(
                                       "ALL",
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 4),
+                                    margin: const EdgeInsets.symmetric(horizontal: 4),
                                   ),
                                 ],
                               ),
