@@ -75,7 +75,12 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                             ),
                             Expanded(child: Placeholder()),
                             Container(
-                              color: Colors.white.withOpacity(0.1),
+
+                              padding: EdgeInsets.all(2),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
                               child: ToggleButtons(
                                 constraints: BoxConstraints(
                                   maxWidth: double.infinity,
@@ -110,25 +115,29 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "6M",style: TextStyle(color: Colors.white),
+                                      "6M",
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "1Y",style: TextStyle(color: Colors.white),
+                                      "1Y",
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "3Y",style: TextStyle(color: Colors.white),
+                                      "3Y",
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                     child: Text(
-                                      "ALL",style: TextStyle(color: Colors.white),
+                                      "ALL",
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                 ],
