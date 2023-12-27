@@ -28,13 +28,29 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 360,
-                      child: Column(
-                        children: [
-                          
-                        ],
-                      )
-                    ),
+                        height: 360,
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(),
+                                Column(
+                                  children: [
+                                    Text("ABCD"),
+                                    Row(
+                                      children: [
+                                        Text("12.34%"),
+                                        Icon(
+                                          Icons.arrow_drop_down,
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        )),
                     const Gap(16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
