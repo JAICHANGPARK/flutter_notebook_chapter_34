@@ -88,12 +88,14 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                   false,
                                   false,
                                 ],
-                                selectedColor: Colors.yellow,
+                                
+                                selectedColor: Colors.black,
                                 borderColor: Colors.grey,
                                 onPressed: (idx) {},
                                 children: [
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    color: Colors.yellow,
                                     child: Text(
                                       "1M",
                                     ),
