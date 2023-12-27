@@ -41,7 +41,11 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                     children: [
                                       Text(
                                         "ABCD",
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                       Gap(4),
                                       Row(
