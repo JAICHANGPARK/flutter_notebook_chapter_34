@@ -87,38 +87,48 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                   false,
                                   false,
                                   false,
+                                  false,
                                 ],
-                                
                                 selectedColor: Colors.black,
                                 borderColor: Colors.grey,
                                 onPressed: (idx) {},
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                     color: Colors.yellow,
                                     child: Text(
                                       "1M",
                                     ),
                                   ),
-                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                     child: Text(
                                       "3M",
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   ),
-                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                     child: Text(
-                                      "1M",
+                                      "6M",
                                     ),
                                   ),
-                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                     child: Text(
-                                      "1M",
+                                      "1Y",
                                     ),
                                   ),
-                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                     child: Text(
-                                      "1M",
+                                      "3Y",
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                    child: Text(
+                                      "ALL",
                                     ),
                                   ),
                                 ],
