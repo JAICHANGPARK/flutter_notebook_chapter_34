@@ -47,7 +47,7 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      Gap(4),
+                                      Gap(2),
                                       Row(
                                         children: [
                                           Text(
@@ -72,6 +72,55 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                   child: Icon(Icons.star),
                                 )
                               ],
+                            ),
+                            Expanded(child: Placeholder()),
+                            Container(
+                              color: Colors.white.withOpacity(0.1),
+                              child: ToggleButtons(
+                                constraints: BoxConstraints(
+                                  maxWidth: double.infinity,
+                                  maxHeight: 62,
+                                ),
+                                isSelected: [
+                                  true,
+                                  false,
+                                  false,
+                                  false,
+                                  false,
+                                ],
+                                selectedColor: Colors.yellow,
+                                borderColor: Colors.grey,
+                                onPressed: (idx) {},
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    child: Text(
+                                      "1M",
+                                    ),
+                                  ),
+                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    child: Text(
+                                      "3M",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    child: Text(
+                                      "1M",
+                                    ),
+                                  ),
+                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    child: Text(
+                                      "1M",
+                                    ),
+                                  ),
+                                  Container( padding: EdgeInsets.symmetric(horizontal: 12,vertical: 8),
+                                    child: Text(
+                                      "1M",
+                                    ),
+                                  ),
+                                ],
+                              ),
                             )
                           ],
                         )),
