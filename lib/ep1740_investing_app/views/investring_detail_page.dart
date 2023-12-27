@@ -36,16 +36,25 @@ class _InvestingDetailPageState extends State<InvestingDetailPage> {
                                 CircleAvatar(),
                                 Column(
                                   children: [
-                                    Text("ABCD"),
+                                    Text("ABCD",
+                                    style: TextStyle(
+                                      color: Colors.white
+                                    ),),
                                     Row(
                                       children: [
                                         Text("12.34%"),
                                         Icon(
                                           Icons.arrow_drop_down,
-                                        )
+                                        ),
+                                        Text("-0.12%"),
                                       ],
-                                    )
+                                    ),
+
                                   ],
+                                ),
+                                CircleAvatar(
+                                  backgroundColor: Colors.yellow,
+                                  child: Icon(Icons.star),
                                 )
                               ],
                             )
