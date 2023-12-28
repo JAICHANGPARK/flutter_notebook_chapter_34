@@ -19,17 +19,39 @@ class _BookingHomePageState extends State<BookingHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 200,
+                  height: 320,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(32),
-                      bottomLeft: Radius.circular(32),
+                      bottomRight: Radius.circular(42),
+                      bottomLeft: Radius.circular(42),
                     ),
+                    color: Colors.black
                   ),
                 ),
                 Expanded(
                   child: ListView(
-                    children: [],
+                    children: [
+                    Text("The most relevant"),
+                      Container(
+                        height: 320,
+                        color: Colors.blue,
+                        child: ListView(
+                          children: [
+
+                          ],
+                        ),
+                      ),
+                      Text("Discover new places"),
+                      Container(
+                        height: 320,
+                        color: Colors.blue,
+                        child: ListView(
+                          children: [
+
+                          ],
+                        ),
+                      )
+                    ],
                   ),
                 )
               ],
