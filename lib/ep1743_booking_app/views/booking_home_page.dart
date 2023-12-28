@@ -42,6 +42,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
             child: Container(
               height: 72,
               color: Colors.black,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(42)
+              ),
               child: BottomNavigationBar(
                 items: [
                   BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
