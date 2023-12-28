@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BookingHomePage extends StatefulWidget {
   const BookingHomePage({super.key});
@@ -21,25 +22,23 @@ class _BookingHomePageState extends State<BookingHomePage> {
                 Container(
                   height: 320,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(42),
-                      bottomLeft: Radius.circular(42),
-                    ),
-                    color: Colors.black
-                  ),
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(42),
+                        bottomLeft: Radius.circular(42),
+                      ),
+                      color: Colors.black),
                 ),
+                Gap(16),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
-                      Text("The most relevant"),
+                        Text("The most relevant"),
                         Container(
                           height: 320,
                           color: Colors.blue,
                           child: ListView(
-                            children: [
-                    
-                            ],
+                            children: [],
                           ),
                         ),
                         Text("Discover new places"),
@@ -47,9 +46,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           height: 320,
                           color: Colors.blue,
                           child: ListView(
-                            children: [
-                    
-                            ],
+                            children: [],
                           ),
                         )
                       ],
