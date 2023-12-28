@@ -13,6 +13,21 @@ class _BookingHomePageState extends State<BookingHomePage> {
     return Scaffold(
       body: Stack(
         children: [
+          Positioned.fill(
+            child: Column(
+              children: [
+                Container(
+                  height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      bottomRight: Radius.circular(32),
+                      bottomLeft: Radius.circular(32),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
           Positioned(
             left: 16,
             right: 16,
