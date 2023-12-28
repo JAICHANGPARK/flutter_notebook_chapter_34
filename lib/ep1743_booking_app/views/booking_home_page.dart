@@ -40,15 +40,19 @@ class _BookingHomePageState extends State<BookingHomePage> {
             right: 16,
             bottom: 14,
             child: Container(
-              height: 72,
-              color: Colors.black,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(42)
-              ),
+              height: 80,
+              decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(42)),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: BottomNavigationBar(
+                selectedItemColor: Colors.white,
+                unselectedItemColor: Colors.grey,
+                backgroundColor: Colors.black,
+                type: BottomNavigationBarType.fixed,
                 items: [
                   BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
-                  BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
+                  BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorites"),
+                  BottomNavigationBarItem(icon: Icon(Icons.collections_bookmark), label: "Bookings"),
+                  BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_outline), label: "Messages"),
                 ],
               ),
             ),
