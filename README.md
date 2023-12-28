@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_34
 
-### EP1740
+### EP1740-1742
+
+- Mobile App UI - Auto Investing Portfolio Management Dashboard
+- Extej Design Agency
+- https://dribbble.com/shots/23228572-Mobile-App-UI-Auto-Investing-Portfolio-Management-Dashboard
+
+### EP1740-1742
 
 - Mobile App UI - Auto Investing Portfolio Management Dashboard
 - Extej Design Agency
