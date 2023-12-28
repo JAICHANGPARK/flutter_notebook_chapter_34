@@ -11,10 +11,12 @@ class _BookingHomePageState extends State<BookingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned.fill(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   height: 200,
@@ -23,6 +25,11 @@ class _BookingHomePageState extends State<BookingHomePage> {
                       bottomRight: Radius.circular(32),
                       bottomLeft: Radius.circular(32),
                     ),
+                  ),
+                ),
+                Expanded(
+                  child: ListView(
+                    children: [],
                   ),
                 )
               ],
