@@ -40,7 +40,21 @@ class _BookingHomePageState extends State<BookingHomePage> {
             right: 16,
             bottom: 14,
             child: Container(
+              height: 72,
               color: Colors.black,
+              child: NavigationBar(
+                height: 72,
+                destinations: [
+                  NavigationDestination(
+                    icon: Icon(Icons.explore_outlined),
+                    label: "Discover",
+                  ),
+                  NavigationDestination(
+                    icon: Icon(Icons.explore_outlined),
+                    label: "Discover",
+                  )
+                ],
+              ),
             ),
           ),
         ],
