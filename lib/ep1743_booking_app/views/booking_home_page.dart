@@ -29,29 +29,31 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                 ),
                 Expanded(
-                  child: ListView(
-                    children: [
-                    Text("The most relevant"),
-                      Container(
-                        height: 320,
-                        color: Colors.blue,
-                        child: ListView(
-                          children: [
-
-                          ],
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                      Text("The most relevant"),
+                        Container(
+                          height: 320,
+                          color: Colors.blue,
+                          child: ListView(
+                            children: [
+                    
+                            ],
+                          ),
                         ),
-                      ),
-                      Text("Discover new places"),
-                      Container(
-                        height: 320,
-                        color: Colors.blue,
-                        child: ListView(
-                          children: [
-
-                          ],
-                        ),
-                      )
-                    ],
+                        Text("Discover new places"),
+                        Container(
+                          height: 320,
+                          color: Colors.blue,
+                          child: ListView(
+                            children: [
+                    
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
