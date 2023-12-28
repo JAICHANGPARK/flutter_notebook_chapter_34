@@ -31,7 +31,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
           Positioned(
             left: 16,
             right: 16,
-            child: Container(),
+            bottom: 14,
+            child: Container(
+              color: Colors.black,
+            ),
           ),
         ],
       ),
