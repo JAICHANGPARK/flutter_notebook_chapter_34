@@ -42,20 +42,27 @@ class _BookingHomePageState extends State<BookingHomePage> {
             child: Container(
               height: 72,
               color: Colors.black,
-              child: NavigationBar(
-                height: 72,
-                destinations: [
-                  NavigationDestination(
-                    icon: Icon(Icons.explore_outlined),
-                    label: "Discover",
-                  ),
-                  NavigationDestination(
-                    icon: Icon(Icons.explore_outlined),
-                    label: "Discover",
-                  )
+              child: BottomNavigationBar(
+                items: [
+                  BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
+                  BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
                 ],
               ),
             ),
+            //   child: NavigationBar(
+            //     height: 72,
+            //     destinations: [
+            //       NavigationDestination(
+            //         icon: Icon(Icons.explore_outlined),
+            //         label: "Discover",
+            //       ),
+            //       NavigationDestination(
+            //         icon: Icon(Icons.explore_outlined),
+            //         label: "Discover",
+            //       )
+            //     ],
+            //   ),
+            // ),
           ),
         ],
       ),
