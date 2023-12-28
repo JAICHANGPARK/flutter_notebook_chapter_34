@@ -1,10 +1,10 @@
 # flutter_notebook_chapter_34
 
-### EP1740-1742
+### EP1743
 
-- Mobile App UI - Auto Investing Portfolio Management Dashboard
-- Extej Design Agency
-- https://dribbble.com/shots/23228572-Mobile-App-UI-Auto-Investing-Portfolio-Management-Dashboard
+- Booking App
+- Shakuro
+- https://dribbble.com/shots/23271847-Booking-App
 
 ### EP1740-1742
 
