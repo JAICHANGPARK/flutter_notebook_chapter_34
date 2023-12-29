@@ -22,11 +22,27 @@ class _BookingHomePageState extends State<BookingHomePage> {
                 Container(
                   height: 320,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(42),
-                        bottomLeft: Radius.circular(42),
-                      ),
-                      color: Colors.black),
+                    borderRadius: BorderRadius.only(
+                      bottomRight: Radius.circular(42),
+                      bottomLeft: Radius.circular(42),
+                    ),
+                    color: Colors.black,
+                    
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.location_searching),
+                          Text("Unknown"),
+                          Spacer(),
+                          Icon(
+                            Icons.account_circle_outlined,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 Gap(16),
                 Expanded(
