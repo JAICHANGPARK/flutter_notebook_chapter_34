@@ -22,7 +22,6 @@ class _BookingHomePageState extends State<BookingHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(42),
@@ -83,14 +82,17 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(32)
-                            ),
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(32)),
                             child: TextField(
-
                               decoration: InputDecoration(
-                                  icon: Icon(Icons.search),
-                                  hintText: "Search places"
+                                icon: Icon(Icons.search),
+                                hintText: "Search places",
+                                helperText: "Date range Number of Guests",
+                                hintStyle: TextStyle(
+                                  color: Colors.white
+                                ),
+                                
+                                border: InputBorder.none,
                               ),
                             ),
                           ),
