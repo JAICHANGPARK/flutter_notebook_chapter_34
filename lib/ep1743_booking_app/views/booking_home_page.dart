@@ -20,7 +20,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 320,
+                  height: 280,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(42),
@@ -28,12 +28,16 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     ),
                     color: Colors.black,
                     image: DecorationImage(
-                      image: NetworkImage(
-                        "https://cdn.pixabay.com/photo/2023/08/25/16/13/skyscraper-8213318_1280.jpg",
-                      ),
-                      fit: BoxFit.cover,
-                    ),
+                        image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2023/08/25/16/13/skyscraper-8213318_1280.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                        colorFilter: ColorFilter.mode(
+                          Colors.black.withOpacity(0.1),
+                          BlendMode.darken,
+                        )),
                   ),
+                  padding: EdgeInsets.only(top: 64, left: 16 ,right: 16, bottom: 12),
                   child: Column(
                     children: [
                       Row(
