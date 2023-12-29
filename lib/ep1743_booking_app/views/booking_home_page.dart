@@ -73,17 +73,26 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 20,
+                          fontSize: 24,
                         ),
                       ),
                       Gap(24),
                       ClipRRect(
+                        borderRadius: BorderRadius.circular(32),
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                            decoration: BoxDecoration(),
-                            child: TextField(),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(32)
+                            ),
+                            child: TextField(
+
+                              decoration: InputDecoration(
+                                  icon: Icon(Icons.search),
+                                  hintText: "Search places"
+                              ),
+                            ),
                           ),
                         ),
                       )
