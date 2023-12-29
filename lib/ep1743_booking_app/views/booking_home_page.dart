@@ -22,7 +22,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 280,
+
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(42),
@@ -41,9 +41,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   padding: EdgeInsets.only(
                     top: 64,
-                    left: 16,
-                    right: 16,
-                    bottom: 12,
+                    left: 24,
+                    right: 24,
+                    bottom: 16,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
