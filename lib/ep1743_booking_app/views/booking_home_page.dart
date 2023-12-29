@@ -33,7 +33,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         ),
                         fit: BoxFit.cover,
                         colorFilter: ColorFilter.mode(
-                          Colors.black.withOpacity(0.1),
+                          Colors.black.withOpacity(0.2),
                           BlendMode.darken,
                         )),
                   ),
@@ -42,11 +42,15 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     children: [
                       Row(
                         children: [
-                          Icon(Icons.location_searching),
-                          Text("Unknown"),
+                          Icon(Icons.location_searching,
+                          color: Colors.white,),
+                          Text("Unknown",style: TextStyle(
+                            color: Colors.white,
+                          ),),
                           Spacer(),
                           Icon(
                             Icons.account_circle_outlined,
+                            color: Colors.white,
                           )
                         ],
                       )
