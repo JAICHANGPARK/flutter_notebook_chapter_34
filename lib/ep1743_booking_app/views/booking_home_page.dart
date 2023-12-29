@@ -23,13 +23,13 @@ class _BookingHomePageState extends State<BookingHomePage> {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomRight: Radius.circular(42),
                       bottomLeft: Radius.circular(42),
                     ),
                     color: Colors.black,
                     image: DecorationImage(
-                        image: NetworkImage(
+                        image: const NetworkImage(
                           "https://cdn.pixabay.com/photo/2023/08/25/16/13/skyscraper-8213318_1280.jpg",
                         ),
                         fit: BoxFit.cover,
@@ -38,7 +38,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           BlendMode.darken,
                         )),
                   ),
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     top: 64,
                     left: 24,
                     right: 24,
@@ -47,7 +47,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.location_searching,
@@ -66,8 +66,8 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           )
                         ],
                       ),
-                      Gap(24),
-                      Text(
+                      const Gap(24),
+                      const Text(
                         "Hey, Dream! Tell us where you want to go",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -75,15 +75,15 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           fontSize: 24,
                         ),
                       ),
-                      Gap(24),
+                      const Gap(24),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(32),
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(32)),
-                            child: TextField(
+                            child: const TextField(
                               decoration: InputDecoration(
                                 icon: Icon(Icons.search),
                                 hintText: "Search places",
@@ -103,13 +103,13 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     ],
                   ),
                 ),
-                Gap(16),
+                const Gap(16),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("The most relevant"),
+                        const Text("The most relevant"),
                         Container(
                           height: 320,
                           color: Colors.blue,
@@ -117,7 +117,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                             children: [],
                           ),
                         ),
-                        Text("Discover new places"),
+                        const Text("Discover new places"),
                         Container(
                           height: 320,
                           color: Colors.blue,
@@ -139,17 +139,17 @@ class _BookingHomePageState extends State<BookingHomePage> {
             child: Container(
               height: 80,
               decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(42)),
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: BottomNavigationBar(
                 selectedItemColor: Colors.white,
                 unselectedItemColor: Colors.grey,
                 backgroundColor: Colors.black,
                 type: BottomNavigationBarType.fixed,
                 items: [
-                  BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
-                  BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorites"),
-                  BottomNavigationBarItem(icon: Icon(Icons.collections_bookmark), label: "Bookings"),
-                  BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_outline), label: "Messages"),
+                  const BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
+                  const BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorites"),
+                  const BottomNavigationBarItem(icon: Icon(Icons.collections_bookmark), label: "Bookings"),
+                  const BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_outline), label: "Messages"),
                 ],
               ),
             ),
