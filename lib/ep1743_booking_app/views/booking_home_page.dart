@@ -122,7 +122,14 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               children: [],
                             ),
                           ),
-                          const Text("Discover new places"),
+                          Gap(24),
+                          const Text(
+                            "Discover new places",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
+                          Gap(8),
                           Container(
                             height: 320,
                             color: Colors.blue,
