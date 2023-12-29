@@ -29,14 +29,15 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     ),
                     color: Colors.black,
                     image: DecorationImage(
-                        image: const NetworkImage(
-                          "https://cdn.pixabay.com/photo/2023/08/25/16/13/skyscraper-8213318_1280.jpg",
-                        ),
-                        fit: BoxFit.cover,
-                        colorFilter: ColorFilter.mode(
-                          Colors.black.withOpacity(0.2),
-                          BlendMode.darken,
-                        )),
+                      image: const NetworkImage(
+                        "https://cdn.pixabay.com/photo/2023/08/25/16/13/skyscraper-8213318_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                      colorFilter: ColorFilter.mode(
+                        Colors.black.withOpacity(0.4),
+                        BlendMode.darken,
+                      ),
+                    ),
                   ),
                   padding: const EdgeInsets.only(
                     top: 64,
@@ -88,12 +89,8 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                 icon: Icon(Icons.search),
                                 hintText: "Search places",
                                 helperText: "Date range Number of Guests",
-                                hintStyle: TextStyle(
-                                  color: Colors.white
-                                ),
-                                helperStyle: TextStyle(
-                                    color: Colors.white
-                                ),
+                                hintStyle: TextStyle(color: Colors.white),
+                                helperStyle: TextStyle(color: Colors.white),
                                 border: InputBorder.none,
                               ),
                             ),
