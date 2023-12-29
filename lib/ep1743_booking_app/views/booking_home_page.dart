@@ -103,26 +103,35 @@ class _BookingHomePageState extends State<BookingHomePage> {
                 const Gap(16),
                 Expanded(
                   child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text("The most relevant"),
-                        Container(
-                          height: 320,
-                          color: Colors.blue,
-                          child: ListView(
-                            children: [],
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 16, top: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "The most relevant",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
                           ),
-                        ),
-                        const Text("Discover new places"),
-                        Container(
-                          height: 320,
-                          color: Colors.blue,
-                          child: ListView(
-                            children: [],
+                          Gap(8),
+                          Container(
+                            height: 320,
+                            color: Colors.blue,
+                            child: ListView(
+                              children: [],
+                            ),
                           ),
-                        )
-                      ],
+                          const Text("Discover new places"),
+                          Container(
+                            height: 320,
+                            color: Colors.blue,
+                            child: ListView(
+                              children: [],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )
