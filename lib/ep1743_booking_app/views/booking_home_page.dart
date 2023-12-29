@@ -57,7 +57,13 @@ class _BookingHomePageState extends State<BookingHomePage> {
                       Text("Hey, Dream! Tell us where you want to go",style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white
-                      ),)
+                      ),),
+                      Container(
+                        decoration: BoxDecoration(
+                              color: Colors.white
+                        ),
+                        child: TextField(),
+                      )
                     ],
                   ),
                 ),
