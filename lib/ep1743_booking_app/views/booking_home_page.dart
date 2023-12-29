@@ -37,16 +37,21 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           BlendMode.darken,
                         )),
                   ),
-                  padding: EdgeInsets.only(top: 64, left: 16 ,right: 16, bottom: 12),
+                  padding: EdgeInsets.only(top: 64, left: 16, right: 16, bottom: 12),
                   child: Column(
                     children: [
                       Row(
                         children: [
-                          Icon(Icons.location_searching,
-                          color: Colors.white,),
-                          Text("Unknown",style: TextStyle(
+                          Icon(
+                            Icons.location_searching,
                             color: Colors.white,
-                          ),),
+                          ),
+                          Text(
+                            "Unknown",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                           Spacer(),
                           Icon(
                             Icons.account_circle_outlined,
@@ -54,14 +59,18 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           )
                         ],
                       ),
-                      Text("Hey, Dream! Tell us where you want to go",style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white
-                      ),),
-                      Container(
-                        decoration: BoxDecoration(
-                              color: Colors.white
+                      Gap(24),
+                      Text(
+                        "Hey, Dream! Tell us where you want to go",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 18,
                         ),
+                      ),
+                      Gap(24),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
                         child: TextField(),
                       )
                     ],
