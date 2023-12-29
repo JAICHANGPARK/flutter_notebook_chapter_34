@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -65,13 +67,25 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 20,
                         ),
                       ),
                       Gap(24),
-                      Container(
-                        decoration: BoxDecoration(color: Colors.white),
-                        child: TextField(),
+                      ClipRRect(
+                        child: BackdropFilter(
+
+                          filter: ImageFilter.blur(
+                            sigmaX: 10,
+                            sigmaY: 10
+                          ),
+
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 12 ,
+                            vertical: 12),
+                            decoration: BoxDecoration(),
+                            child: TextField(),
+                          ),
+                        ),
                       )
                     ],
                   ),
