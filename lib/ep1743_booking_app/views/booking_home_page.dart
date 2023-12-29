@@ -27,7 +27,12 @@ class _BookingHomePageState extends State<BookingHomePage> {
                       bottomLeft: Radius.circular(42),
                     ),
                     color: Colors.black,
-                    
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2023/08/25/16/13/skyscraper-8213318_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   child: Column(
                     children: [
