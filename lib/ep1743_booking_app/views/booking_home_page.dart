@@ -53,7 +53,11 @@ class _BookingHomePageState extends State<BookingHomePage> {
                             color: Colors.white,
                           )
                         ],
-                      )
+                      ),
+                      Text("Hey, Dream! Tell us where you want to go",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                      ),)
                     ],
                   ),
                 ),
