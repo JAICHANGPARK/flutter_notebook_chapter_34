@@ -91,7 +91,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                 hintStyle: TextStyle(
                                   color: Colors.white
                                 ),
-                                
+                                helperStyle: TextStyle(
+                                    color: Colors.white
+                                ),
                                 border: InputBorder.none,
                               ),
                             ),
@@ -105,6 +107,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("The most relevant"),
                         Container(
