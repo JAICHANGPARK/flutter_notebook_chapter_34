@@ -39,8 +39,14 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           BlendMode.darken,
                         )),
                   ),
-                  padding: EdgeInsets.only(top: 64, left: 16, right: 16, bottom: 12),
+                  padding: EdgeInsets.only(
+                    top: 64,
+                    left: 16,
+                    right: 16,
+                    bottom: 12,
+                  ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -73,15 +79,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                       Gap(24),
                       ClipRRect(
                         child: BackdropFilter(
-
-                          filter: ImageFilter.blur(
-                            sigmaX: 10,
-                            sigmaY: 10
-                          ),
-
+                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 12 ,
-                            vertical: 12),
+                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                             decoration: BoxDecoration(),
                             child: TextField(),
                           ),
