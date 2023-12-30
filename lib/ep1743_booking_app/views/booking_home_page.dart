@@ -118,8 +118,18 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           Container(
                             height: 320,
                             color: Colors.blue,
-                            child: ListView(
-                              children: [],
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 320,
+                                  decoration: BoxDecoration(color: Colors.white),
+                                  child: Column(
+                                    children: [],
+                                  ),
+                                );
+                              },
                             ),
                           ),
                           Gap(24),
