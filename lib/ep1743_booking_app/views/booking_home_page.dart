@@ -114,7 +114,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               fontSize: 20,
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Container(
                             height: 320,
                             color: Colors.blue,
@@ -124,22 +124,97 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               itemBuilder: (context, index) {
                                 return Container(
                                   width: 320,
-                                  decoration: BoxDecoration(color: Colors.white),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  margin: const EdgeInsets.only(right: 12),
                                   child: Column(
-                                    children: [],
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(16),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg"),
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(12.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            const Row(
+                                              children: [
+                                                Text(
+                                                  "Tiny home in South Korea",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
+                                                Spacer(),
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 20,
+                                                ),
+                                                Text(
+                                                  "4.96 (217)",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                            Gap(4),
+                                            const Text("4 guest 2 badrooms 2 bads 1 bathroom"),
+                                            Gap(4),
+                                            const Text.rich(
+                                              TextSpan(
+                                                children: [
+                                                  TextSpan(
+                                                    text: "\$117",
+                                                    style: TextStyle(
+                                                      decoration: TextDecoration.lineThrough,
+                                                    ),
+                                                  ),
+                                                  TextSpan(
+                                                    text: " \$91 night",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  TextSpan(
+                                                    text: "\$273 total ",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 );
                               },
                             ),
                           ),
-                          Gap(24),
+                          const Gap(24),
                           const Text(
                             "Discover new places",
                             style: TextStyle(
                               fontSize: 20,
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Container(
                             height: 320,
                             color: Colors.blue,
