@@ -215,10 +215,21 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           ),
                           const Gap(8),
                           Container(
-                            height: 320,
+                            height: 200,
                             color: Colors.blue,
-                            child: ListView(
-                              children: [],
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 240,
+                                  margin: EdgeInsets.only(right: 16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(16)
+                                  ),
+                                );
+                              },
                             ),
                           )
                         ],
