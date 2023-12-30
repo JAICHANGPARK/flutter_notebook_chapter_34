@@ -14,7 +14,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[100],
       body: Stack(
         children: [
           Positioned.fill(
@@ -117,7 +117,6 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           const Gap(8),
                           Container(
                             height: 320,
-                            color: Colors.blue,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
