@@ -216,7 +216,6 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           const Gap(8),
                           Container(
                             height: 200,
-                            color: Colors.blue,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
