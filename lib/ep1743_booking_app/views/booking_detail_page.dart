@@ -24,6 +24,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(32),
                     ),
+                    
                   ),
                   Gap(16),
                   Text("Entrie cabin in mountain"),
@@ -64,6 +65,22 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                         ),
                       )
                     ],
+                  ),
+                  Divider(),
+                  ListTile(
+                    leading: Icon(Icons.location_searching),
+                    title: Text("Self check-in"),
+                    subtitle: Text("Check yourself in with the lockbox"),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.key),
+                    title: Text("Great check-in experience"),
+                    subtitle: Text("Check yourself in with the lockbox"),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.key),
+                    title: Text("Great check-in experience"),
+                    subtitle: Text("Check yourself in with the lockbox"),
                   )
                 ],
               ),
