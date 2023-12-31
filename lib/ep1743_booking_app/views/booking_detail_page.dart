@@ -24,7 +24,28 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(32),
+                              bottomRight: Radius.circular(32),
+                            ),
+                            child: PageView(
+                              children: [
+                                Container(
+                                  color: Colors.grey,
+                                ),
+                                Container(
+                                  color: Colors.red,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Gap(16),
                   Text("Entrie cabin in mountain"),
@@ -52,10 +73,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                   Wrap(
                     children: [
                       Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(3)
-                        ),
+                        decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                         child: Text(
                           "Wi-Fi",
