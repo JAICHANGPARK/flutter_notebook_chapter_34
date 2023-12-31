@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BookingDetailPage extends StatefulWidget {
   const BookingDetailPage({super.key});
 
@@ -15,7 +14,32 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned(
+                left: 16,
+                right: 16,
+                bottom: 16,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(32)
+                  ),
+                  padding: EdgeInsets.all(16),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("18 . 21 Oct . 3 nights"),
+                            Text(
+                              "\$384",
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ))
           ],
         ),
       ),
