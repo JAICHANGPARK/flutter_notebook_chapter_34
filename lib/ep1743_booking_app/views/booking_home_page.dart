@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_34/ep1743_booking_app/views/booking_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class BookingHomePage extends StatefulWidget {
@@ -122,8 +123,12 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return GestureDetector(
-                                  onTap: (){
-                                    
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => BookingDetailPage(),
+                                      ),
+                                    );
                                   },
                                   child: Container(
                                     width: 320,
@@ -228,10 +233,8 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                 return Container(
                                   width: 240,
                                   margin: EdgeInsets.only(right: 16),
-                                  decoration: BoxDecoration(
-                                    color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(16)),
                                 );
                               },
                             ),
