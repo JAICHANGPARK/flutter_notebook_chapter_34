@@ -44,6 +44,15 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                             ),
                           ),
                         ),
+                        Positioned(child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                
+                              ],
+                            )
+                          ],
+                        ))
                       ],
                     ),
                   ),
