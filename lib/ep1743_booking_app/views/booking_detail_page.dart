@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BookingDetailPage extends StatefulWidget {
   const BookingDetailPage({super.key});
@@ -16,7 +17,25 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
           children: [
             Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Container(
+                    height: 320,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                  ),
+                  Gap(16),
+                  Text("Entrie cabin in mountain"),
+                  Row(
+                    children: [
+                      Icon(Icons.star),
+                      Text("4.92"),
+                      Text("(116 reviews)"),
+                    ],
+                  ),
+                  
+                ],
               ),
             ),
             Positioned(
