@@ -14,6 +14,11 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
       body: SafeArea(
         child: Stack(
           children: [
+            Positioned.fill(
+              child: Column(
+                children: [],
+              ),
+            ),
             Positioned(
                 left: 16,
                 right: 16,
@@ -27,23 +32,24 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("18 . 21 Oct . 3 nights",style: TextStyle(
-                              color: Colors.white,
-                            ),),
                             Text(
-                              "\$384",style: TextStyle(
-                            color: Colors.white,
+                              "18 . 21 Oct . 3 nights",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
+                            Text(
+                              "\$384",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ],
                         ),
                       ),
                       Container(
                         height: 42,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(32)
-                        ),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
                           child: Text(
