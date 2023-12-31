@@ -34,7 +34,37 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       Text("(116 reviews)"),
                     ],
                   ),
-                  
+                  Divider(),
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Text("Entire home"),
+                          Text("Hosted by unknown"),
+                        ],
+                      ),
+                      CircleAvatar(),
+                    ],
+                  ),
+                  Divider(),
+                  Text("Amenities"),
+                  Wrap(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(3)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                        child: Text(
+                          "Wi-Fi",
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
