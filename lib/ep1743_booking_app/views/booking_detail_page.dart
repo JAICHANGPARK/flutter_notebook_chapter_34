@@ -27,9 +27,13 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("18 . 21 Oct . 3 nights"),
+                            Text("18 . 21 Oct . 3 nights",style: TextStyle(
+                              color: Colors.white,
+                            ),),
                             Text(
-                              "\$384",
+                              "\$384",style: TextStyle(
+                            color: Colors.white,
+                            ),
                             ),
                           ],
                         ),
