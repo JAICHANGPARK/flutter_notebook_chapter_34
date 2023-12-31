@@ -19,10 +19,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                 right: 16,
                 bottom: 16,
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(32)
-                  ),
+                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
                   padding: EdgeInsets.all(16),
                   child: Row(
                     children: [
@@ -35,6 +32,19 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                               "\$384",
                             ),
                           ],
+                        ),
+                      ),
+                      Container(
+                        height: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(32)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text(
+                            "Book now",
+                          ),
                         ),
                       )
                     ],
