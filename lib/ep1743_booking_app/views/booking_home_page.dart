@@ -121,86 +121,91 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
-                                return Container(
-                                  width: 320,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                  margin: const EdgeInsets.only(right: 12),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.grey,
-                                            borderRadius: BorderRadius.circular(16),
-                                            image: DecorationImage(
-                                              image: NetworkImage(
-                                                  "https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg"),
-                                              fit: BoxFit.cover,
+                                return GestureDetector(
+                                  onTap: (){
+                                    
+                                  },
+                                  child: Container(
+                                    width: 320,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    margin: const EdgeInsets.only(right: 12),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey,
+                                              borderRadius: BorderRadius.circular(16),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg"),
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(12.0),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            const Row(
-                                              children: [
-                                                Text(
-                                                  "Tiny home in South Korea",
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                  ),
-                                                ),
-                                                Spacer(),
-                                                Icon(
-                                                  Icons.star,
-                                                  size: 20,
-                                                ),
-                                                Text(
-                                                  "4.96 (217)",
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Gap(4),
-                                            const Text("4 guest 2 badrooms 2 bads 1 bathroom"),
-                                            Gap(4),
-                                            const Text.rich(
-                                              TextSpan(
+                                        Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              const Row(
                                                 children: [
-                                                  TextSpan(
-                                                    text: "\$117",
+                                                  Text(
+                                                    "Tiny home in South Korea",
                                                     style: TextStyle(
-                                                      decoration: TextDecoration.lineThrough,
+                                                      fontSize: 12,
                                                     ),
                                                   ),
-                                                  TextSpan(
-                                                    text: " \$91 night",
-                                                    style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                    ),
+                                                  Spacer(),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 20,
                                                   ),
-                                                  TextSpan(
-                                                    text: "\$273 total ",
+                                                  Text(
+                                                    "4.96 (217)",
                                                     style: TextStyle(
                                                       fontWeight: FontWeight.bold,
                                                     ),
                                                   ),
                                                 ],
                                               ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
+                                              Gap(4),
+                                              const Text("4 guest 2 badrooms 2 bads 1 bathroom"),
+                                              Gap(4),
+                                              const Text.rich(
+                                                TextSpan(
+                                                  children: [
+                                                    TextSpan(
+                                                      text: "\$117",
+                                                      style: TextStyle(
+                                                        decoration: TextDecoration.lineThrough,
+                                                      ),
+                                                    ),
+                                                    TextSpan(
+                                                      text: " \$91 night",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                    TextSpan(
+                                                      text: "\$273 total ",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 );
                               },
