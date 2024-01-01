@@ -76,67 +76,71 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       ],
                     ),
                   ),
-
-                  Gap(16),
-                  Expanded(child: SingleChildScrollView(child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-
-                      Text("Entrie cabin in mountain"),
-                      Row(
+                  Gap(8),
+                  Expanded(
+                      child: SingleChildScrollView(
+                    child: Padding(
+                      padding: const EdgeInsets.all(24.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(Icons.star),
-                          Text("4.92"),
-                          Text("(116 reviews)"),
-                        ],
-                      ),
-                      Divider(),
-                      Row(
-                        children: [
-                          Column(
+                          Text("Entrie cabin in mountain"),
+                          Row(
                             children: [
-                              Text("Entire home"),
-                              Text("Hosted by unknown"),
+                              Icon(Icons.star),
+                              Text("4.92"),
+                              Text("(116 reviews)"),
                             ],
                           ),
-                          CircleAvatar(),
-                        ],
-                      ),
-                      Divider(),
-                      Text("Amenities"),
-                      Wrap(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                            child: Text(
-                              "Wi-Fi",
-                              style: TextStyle(
-                                fontSize: 12,
+                          Divider(),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("Entire home"),
+                                  Text("Hosted by unknown"),
+                                ],
                               ),
-                            ),
+                              CircleAvatar(),
+                            ],
+                          ),
+                          Divider(),
+                          Text("Amenities"),
+                          Wrap(
+                            children: [
+                              Container(
+                                decoration:
+                                    BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
+                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                child: Text(
+                                  "Wi-Fi",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                          Divider(),
+                          ListTile(
+                            leading: Icon(Icons.location_searching),
+                            title: Text("Self check-in"),
+                            subtitle: Text("Check yourself in with the lockbox"),
+                          ),
+                          ListTile(
+                            leading: Icon(Icons.key),
+                            title: Text("Great check-in experience"),
+                            subtitle: Text("Check yourself in with the lockbox"),
+                          ),
+                          ListTile(
+                            leading: Icon(Icons.key),
+                            title: Text("Great check-in experience"),
+                            subtitle: Text("Check yourself in with the lockbox"),
                           )
                         ],
                       ),
-                      Divider(),
-                      ListTile(
-                        leading: Icon(Icons.location_searching),
-                        title: Text("Self check-in"),
-                        subtitle: Text("Check yourself in with the lockbox"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.key),
-                        title: Text("Great check-in experience"),
-                        subtitle: Text("Check yourself in with the lockbox"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.key),
-                        title: Text("Great check-in experience"),
-                        subtitle: Text("Check yourself in with the lockbox"),
-                      )
-                    ],
-                  ),))
-
+                    ),
+                  ))
                 ],
               ),
             ),
