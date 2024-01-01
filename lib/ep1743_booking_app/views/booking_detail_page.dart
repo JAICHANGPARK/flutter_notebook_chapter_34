@@ -159,9 +159,10 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: Row(
                   children: [
+                    Gap(8),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
