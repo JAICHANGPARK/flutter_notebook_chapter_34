@@ -79,6 +79,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
 
                   Gap(16),
                   Expanded(child: SingleChildScrollView(child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
 
                       Text("Entrie cabin in mountain"),
