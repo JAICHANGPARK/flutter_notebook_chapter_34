@@ -169,15 +169,11 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                         children: [
                           Text(
                             "18 . 21 Oct . 3 nights",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(color: Colors.white, fontSize: 12),
                           ),
                           Text(
                             "\$384",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                         ],
                       ),
@@ -189,6 +185,10 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       child: Center(
                         child: Text(
                           "Book now",
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     )
