@@ -96,7 +96,8 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                           Row(
                             children: [
                               Expanded(
-                                child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Entire home"),
                                     Text("Hosted by unknown"),
@@ -150,46 +151,50 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
               ),
             ),
             Positioned(
-                left: 16,
-                right: 16,
-                bottom: 16,
-                child: Container(
-                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
-                  padding: EdgeInsets.all(16),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "18 . 21 Oct . 3 nights",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
+              left: 16,
+              right: 16,
+              bottom: 16,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                padding: EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "18 . 21 Oct . 3 nights",
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
-                            Text(
-                              "\$384",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
+                          ),
+                          Text(
+                            "\$384",
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
-                          ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 42,
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Center(
+                        child: Text(
+                          "Book now",
                         ),
                       ),
-                      Container(
-                        height: 42,
-                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Book now",
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ))
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
