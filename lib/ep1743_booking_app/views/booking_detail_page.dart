@@ -95,11 +95,13 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                           Divider(),
                           Row(
                             children: [
-                              Column(
-                                children: [
-                                  Text("Entire home"),
-                                  Text("Hosted by unknown"),
-                                ],
+                              Expanded(
+                                child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Entire home"),
+                                    Text("Hosted by unknown"),
+                                  ],
+                                ),
                               ),
                               CircleAvatar(),
                             ],
@@ -123,16 +125,19 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                           ),
                           Divider(),
                           ListTile(
+                            contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.location_searching),
                             title: Text("Self check-in"),
                             subtitle: Text("Check yourself in with the lockbox"),
                           ),
                           ListTile(
+                            contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.key),
                             title: Text("Great check-in experience"),
                             subtitle: Text("Check yourself in with the lockbox"),
                           ),
                           ListTile(
+                            contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.key),
                             title: Text("Great check-in experience"),
                             subtitle: Text("Check yourself in with the lockbox"),
