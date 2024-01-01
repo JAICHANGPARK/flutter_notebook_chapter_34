@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -17,6 +18,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
           children: [
             Positioned.fill(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 320,
@@ -46,29 +48,31 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                         ),
                         Positioned(
                           left: 16,
-                            right: 16,
-                            top: 24,
-                            bottom: 16,
-                            
-                            child: Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                CircleAvatar(
-                                  foregroundColor: Colors.white,
-                                  backgroundColor: Colors.grey[400],
-                                  child: Icon(Icons.clear),
-                                ),
-                                CircleAvatar(
-                                  foregroundColor: Colors.white,
-                                  backgroundColor: Colors.grey[400],
-                                  child: Icon(Icons.file_upload_outlined),
-                                ),
-                              ],
-                            )
-                          ],
-                        ))
+                          right: 16,
+                          top: 24,
+                          bottom: 16,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  CircleAvatar(
+                                    foregroundColor: Colors.white,
+                                    backgroundColor: Colors.grey[400],
+                                    child: Icon(Icons.clear),
+                                  ),
+                                  CircleAvatar(
+                                    foregroundColor: Colors.white,
+                                    backgroundColor: Colors.grey[400],
+                                    child: Icon(Icons.file_upload_outlined),
+                                  ),
+                                ],
+                              ),
+                              Spacer(),
+                              DotsIndicator(dotsCount: 4),
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
