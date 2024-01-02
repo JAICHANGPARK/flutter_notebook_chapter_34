@@ -13,7 +13,9 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
           icon: Icon(Icons.clear),
         ),
         actions: [
@@ -23,6 +25,7 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
           ),
         ],
         title: Text("Search"),
+        centerTitle: true,
       ),
       body: Column(
         children: [],
