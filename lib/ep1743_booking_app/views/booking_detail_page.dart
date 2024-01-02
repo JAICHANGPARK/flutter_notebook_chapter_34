@@ -107,7 +107,8 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                                 ),
                               ),
                               Gap(4),
-                              Text("(116 reviews)",
+                              Text(
+                                "(116 reviews)",
                                 style: TextStyle(
                                   fontSize: 13,
                                   fontWeight: FontWeight.bold,
@@ -115,14 +116,21 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                               ),
                             ],
                           ),
-                          Divider(),
+                          Divider(
+                            height: 32,
+                          ),
                           Row(
                             children: [
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Entire home"),
+                                    Text(
+                                      "Entire home",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Text("Hosted by unknown"),
                                   ],
                                 ),
