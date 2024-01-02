@@ -12,14 +12,15 @@ class BookingDetailPage extends StatefulWidget {
 class _BookingDetailPageState extends State<BookingDetailPage> {
   List<String> amenitiesItems = [
     "Wi-Fi",
-    "65 HDTV" ,
-    "indoor fireplace" ,
-    "Hair dryer" ,
-    "Washing machine" ,
-    "Dryer" ,
-    "Refrigerator" ,
-    "Dishwasher" ,
+    "65 HDTV",
+    "indoor fireplace",
+    "Hair dryer",
+    "Washing machine",
+    "Dryer",
+    "Refrigerator",
+    "Dishwasher",
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -155,26 +156,25 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                             "Amenities",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-
                             ),
                           ),
                           Gap(8),
                           Wrap(
                             spacing: 8,
                             runSpacing: 8,
-                            children: amenitiesItems.map((e) =>
-                                Container(
-                                  decoration:
-                                  BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
-                                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                  child: Text(
-                                    e,
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                )
-                            ).toList(),
+                            children: amenitiesItems
+                                .map((e) => Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
+                                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                      child: Text(
+                                        e,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ))
+                                .toList(),
                           ),
                           Divider(),
                           ListTile(
@@ -187,6 +187,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                             contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.key),
                             title: Text("Great check-in experience"),
+
                             subtitle: Text("Check yourself in with the lockbox"),
                           ),
                           ListTile(
