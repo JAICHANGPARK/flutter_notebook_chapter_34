@@ -41,7 +41,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       children: [
                         Positioned(
                           child: ClipRRect(
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(32),
                               bottomRight: Radius.circular(32),
                             ),
@@ -67,19 +67,24 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  CircleAvatar(
-                                    foregroundColor: Colors.white,
-                                    backgroundColor: Colors.grey[400],
-                                    child: Icon(Icons.clear),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: CircleAvatar(
+                                      foregroundColor: Colors.white,
+                                      backgroundColor: Colors.grey[400],
+                                      child: const Icon(Icons.clear),
+                                    ),
                                   ),
                                   CircleAvatar(
                                     foregroundColor: Colors.white,
                                     backgroundColor: Colors.grey[400],
-                                    child: Icon(Icons.file_upload_outlined),
+                                    child: const Icon(Icons.file_upload_outlined),
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               DotsIndicator(dotsCount: 4),
                             ],
                           ),
@@ -87,7 +92,7 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       ],
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Expanded(
                       child: SingleChildScrollView(
                     child: Padding(
@@ -95,15 +100,15 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Entrie cabin in mountain",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
                             ),
                           ),
-                          Gap(4),
-                          Row(
+                          const Gap(4),
+                          const Row(
                             children: [
                               Icon(
                                 Icons.star,
@@ -127,10 +132,10 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                               ),
                             ],
                           ),
-                          Divider(
+                          const Divider(
                             height: 32,
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Expanded(
                                 child: Column(
@@ -149,16 +154,16 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                               CircleAvatar(),
                             ],
                           ),
-                          Divider(
+                          const Divider(
                             height: 32,
                           ),
-                          Text(
+                          const Text(
                             "Amenities",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Wrap(
                             spacing: 8,
                             runSpacing: 8,
@@ -166,31 +171,30 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                                 .map((e) => Container(
                                       decoration: BoxDecoration(
                                           color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
-                                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                                       child: Text(
                                         e,
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontSize: 12,
                                         ),
                                       ),
                                     ))
                                 .toList(),
                           ),
-                          Divider(),
-                          ListTile(
+                          const Divider(),
+                          const ListTile(
                             contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.location_searching),
                             title: Text("Self check-in"),
                             subtitle: Text("Check yourself in with the lockbox"),
                           ),
-                          ListTile(
+                          const ListTile(
                             contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.key),
                             title: Text("Great check-in experience"),
-
                             subtitle: Text("Check yourself in with the lockbox"),
                           ),
-                          ListTile(
+                          const ListTile(
                             contentPadding: EdgeInsets.zero,
                             leading: Icon(Icons.key),
                             title: Text("Great check-in experience"),
@@ -212,11 +216,11 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: Row(
                   children: [
-                    Gap(8),
-                    Expanded(
+                    const Gap(8),
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -234,8 +238,8 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                     Container(
                       height: 42,
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: const Center(
                         child: Text(
                           "Book now",
                           style: TextStyle(
