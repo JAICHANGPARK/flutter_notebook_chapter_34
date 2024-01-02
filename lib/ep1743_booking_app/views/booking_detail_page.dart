@@ -138,8 +138,17 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                               CircleAvatar(),
                             ],
                           ),
-                          Divider(),
-                          Text("Amenities"),
+                          Divider(
+                            height: 32,
+                          ),
+                          Text(
+                            "Amenities",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+
+                            ),
+                          ),
+                          Gap(8),
                           Wrap(
                             children: [
                               Container(
