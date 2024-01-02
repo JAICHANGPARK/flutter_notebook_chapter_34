@@ -160,19 +160,21 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                           ),
                           Gap(8),
                           Wrap(
-                            children: [
-                              Container(
-                                decoration:
-                                    BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
-                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                child: Text(
-                                  "Wi-Fi",
-                                  style: TextStyle(
-                                    fontSize: 12,
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: amenitiesItems.map((e) =>
+                                Container(
+                                  decoration:
+                                  BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(3)),
+                                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                  child: Text(
+                                    e,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
                                   ),
-                                ),
-                              )
-                            ],
+                                )
+                            ).toList(),
                           ),
                           Divider(),
                           ListTile(
