@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_34/ep1743_booking_app/views/booking_detail_page.dart';
+import 'package:flutter_notebook_chapter_34/ep1743_booking_app/views/booking_search_page.dart';
 import 'package:gap/gap.dart';
 
 class BookingHomePage extends StatefulWidget {
@@ -78,21 +79,30 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         ),
                       ),
                       const Gap(24),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(32),
-                        child: BackdropFilter(
-                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(32)),
-                            child: const TextField(
-                              decoration: InputDecoration(
-                                icon: Icon(Icons.search),
-                                hintText: "Search places",
-                                helperText: "Date range Number of Guests",
-                                hintStyle: TextStyle(color: Colors.white),
-                                helperStyle: TextStyle(color: Colors.white),
-                                border: InputBorder.none,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => BookingSearchPage(),
+                            ),
+                          );
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(32),
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(32)),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  icon: Icon(Icons.search),
+                                  hintText: "Search places",
+                                  helperText: "Date range Number of Guests",
+                                  hintStyle: TextStyle(color: Colors.white),
+                                  helperStyle: TextStyle(color: Colors.white),
+                                  border: InputBorder.none,
+                                ),
                               ),
                             ),
                           ),
