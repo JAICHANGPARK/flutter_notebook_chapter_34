@@ -10,6 +10,16 @@ class BookingDetailPage extends StatefulWidget {
 }
 
 class _BookingDetailPageState extends State<BookingDetailPage> {
+  List<String> amenitiesItems = [
+    "Wi-Fi",
+    "65 HDTV" ,
+    "indoor fireplace" ,
+    "Hair dryer" ,
+    "Washing machine" ,
+    "Dryer" ,
+    "Refrigerator" ,
+    "Dishwasher" ,
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
