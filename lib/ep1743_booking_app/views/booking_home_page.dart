@@ -116,7 +116,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                             ),
                           ),
                           const Gap(8),
-                          Container(
+                          SizedBox(
                             height: 320,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
