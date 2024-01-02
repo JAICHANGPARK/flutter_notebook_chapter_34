@@ -84,12 +84,35 @@ class _BookingDetailPageState extends State<BookingDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Entrie cabin in mountain"),
+                          Text(
+                            "Entrie cabin in mountain",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Gap(4),
                           Row(
                             children: [
-                              Icon(Icons.star),
-                              Text("4.92"),
-                              Text("(116 reviews)"),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                              ),
+                              Gap(4),
+                              Text(
+                                "4.92",
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Gap(4),
+                              Text("(116 reviews)",
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           ),
                           Divider(),
