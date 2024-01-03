@@ -61,12 +61,34 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
           ),
           Row(
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.black,
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: Center(
+                    child: Text(
+                      "Any type",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ),
-                child: Center(
-                  child: Text("Any type"),
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(border: Border.all()),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: Center(
+                    child: Text(
+                      "Room",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                 ),
               )
             ],
