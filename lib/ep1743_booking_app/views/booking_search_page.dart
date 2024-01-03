@@ -80,7 +80,10 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                 Gap(12),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(32)),
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(32),
+                    ),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     child: Center(
                       child: Text(
@@ -97,7 +100,7 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                   child: Container(
                     decoration: BoxDecoration(
                       border: Border.all(),
-                        borderRadius: BorderRadius.circular(32)
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     child: Center(
