@@ -59,6 +59,18 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
               ],
             ),
           ),
+          Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
+                child: Center(
+                  child: Text("Any type"),
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
