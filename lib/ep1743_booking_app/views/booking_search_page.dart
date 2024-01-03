@@ -59,53 +59,58 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
               ],
             ),
           ),
-          Row(
-            children: [
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  child: Center(
-                    child: Text(
-                      "Any type",
-                      style: TextStyle(
-                        color: Colors.white,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    child: Center(
+                      child: Text(
+                        "Any type",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(border: Border.all()),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  child: Center(
-                    child: Text(
-                      "Room",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                Gap(12),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(border: Border.all()),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    child: Center(
+                      child: Text(
+                        "Room",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(border: Border.all()),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  child: Center(
-                    child: Text(
-                      "Room",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                Gap(12),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(border: Border.all()),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    child: Center(
+                      child: Text(
+                        "Room",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           )
         ],
       ),
