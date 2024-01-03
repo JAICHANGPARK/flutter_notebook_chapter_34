@@ -90,6 +90,20 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                     ),
                   ),
                 ),
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(border: Border.all()),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: Center(
+                    child: Text(
+                      "Room",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
               )
             ],
           )
