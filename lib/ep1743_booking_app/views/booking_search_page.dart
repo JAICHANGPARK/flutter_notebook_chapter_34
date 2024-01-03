@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BookingSearchPage extends StatefulWidget {
   const BookingSearchPage({super.key});
@@ -40,8 +41,10 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
             child: Row(
               children: [
                 Icon(Icons.search),
+                Gap(16),
                 Expanded(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Unknown",
