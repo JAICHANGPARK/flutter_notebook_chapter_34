@@ -65,8 +65,11 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                     child: Center(
                       child: Text(
                         "Any type",
@@ -84,7 +87,7 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                     child: Center(
                       child: Text(
                         "Room",
@@ -102,10 +105,10 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                     child: Center(
                       child: Text(
-                        "Room",
+                        "Entire home",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
