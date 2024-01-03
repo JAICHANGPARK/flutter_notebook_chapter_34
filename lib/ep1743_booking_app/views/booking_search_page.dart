@@ -28,7 +28,32 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
         centerTitle: true,
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(42),
+            ),
+            child: Row(
+              children: [
+                Icon(Icons.search),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text(
+                        "Unknown",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text("18. 21 Oct 4 guests"),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
