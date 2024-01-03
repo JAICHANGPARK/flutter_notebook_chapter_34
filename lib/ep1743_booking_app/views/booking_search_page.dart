@@ -118,6 +118,20 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                 )
               ],
             ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+                top: 16
+              ),
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Placeholder();
+                },
+              ),
+            ),
           )
         ],
       ),
