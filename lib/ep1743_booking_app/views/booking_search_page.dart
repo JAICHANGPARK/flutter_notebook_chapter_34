@@ -11,6 +11,7 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
