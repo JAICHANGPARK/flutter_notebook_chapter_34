@@ -34,6 +34,8 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(42),
             ),
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Row(
               children: [
                 Icon(Icons.search),
