@@ -152,13 +152,29 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                                 ],
                               ),
                               Text("2 bedrooms 2 beds 1 bathroom"),
-                              Text(
-                                "\$108",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 13,
-                                  decoration: TextDecoration.lineThrough,
-                                ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$108",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 13,
+                                      decoration: TextDecoration.lineThrough,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$87 night",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$261 total",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
                               )
                             ],
                           ),
