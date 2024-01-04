@@ -127,6 +127,7 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                   return Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
                     ),
                     margin: EdgeInsets.only(bottom: 16),
                     child: Column(
@@ -134,9 +135,7 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                       children: [
                         Container(
                           height: 240,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(24)),
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,11 +143,12 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                             Row(
                               children: [
                                 Text("The Wonderland Riverside Resorts"),
-                                Icon(Icons.star,),
+                                Icon(
+                                  Icons.star,
+                                ),
                                 Text("4.83 (167)"),
                               ],
                             )
-
                           ],
                         )
                       ],
