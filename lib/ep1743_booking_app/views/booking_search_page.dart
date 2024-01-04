@@ -141,7 +141,23 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                             image: DecorationImage(
                               image:
                                   NetworkImage("https://cdn.pixabay.com/photo/2022/10/23/02/26/hotel-7540353_1280.jpg"),
+                              fit: BoxFit.cover,
                             ),
+                          ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                right: 16,
+                                top: 16,
+                                child: CircleAvatar(
+                                  backgroundColor: Colors.black.withOpacity(0.2),
+                                  foregroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.favorite,
+                                  ),
+                                ),
+                              )
+                            ],
                           ),
                         ),
                         Padding(
