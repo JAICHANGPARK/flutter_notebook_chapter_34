@@ -121,14 +121,26 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(
-                left: 16,
-                right: 16,
-                top: 16
-              ),
+              padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
               child: ListView.builder(
                 itemBuilder: (context, index) {
-                  return Placeholder();
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    margin: EdgeInsets.only(bottom: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 240,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
                 },
               ),
             ),
