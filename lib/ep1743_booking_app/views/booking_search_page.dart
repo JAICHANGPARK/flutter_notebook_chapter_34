@@ -188,7 +188,15 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                                   ),
                                 ],
                               ),
-                              Text("2 bedrooms 2 beds 1 bathroom"),
+                              Gap(4),
+                              Text(
+                                "2 bedrooms 2 beds 1 bathroom",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Gap(4),
                               Row(
                                 children: [
                                   Text(
