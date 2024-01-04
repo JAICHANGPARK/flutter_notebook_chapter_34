@@ -141,6 +141,13 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            Row(
+                              children: [
+                                Text("The Wonderland Riverside Resorts"),
+                                Icon(Icons.star,),
+                                Text("4.83 (167)"),
+                              ],
+                            )
 
                           ],
                         )
