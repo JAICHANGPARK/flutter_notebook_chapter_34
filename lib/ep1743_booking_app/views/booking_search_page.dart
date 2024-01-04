@@ -138,6 +138,12 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                             color: Colors.grey,
                           ),
                         ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+
+                          ],
+                        )
                       ],
                     ),
                   );
