@@ -144,11 +144,25 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                             children: [
                               Row(
                                 children: [
-                                  Text("The Wonderland Riverside Resorts"),
+                                  Text(
+                                    "The Wonderland Riverside Resorts",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Spacer(),
                                   Icon(
                                     Icons.star,
+                                    size: 16,
                                   ),
-                                  Text("4.83 (167)"),
+                                  Gap(4),
+                                  Text(
+                                    "4.83 (167)",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                               Text("2 bedrooms 2 beds 1 bathroom"),
