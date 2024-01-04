@@ -135,7 +135,14 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                       children: [
                         Container(
                           height: 240,
-                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(24)),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(24),
+                            image: DecorationImage(
+                              image:
+                                  NetworkImage("https://cdn.pixabay.com/photo/2022/10/23/02/26/hotel-7540353_1280.jpg"),
+                            ),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
