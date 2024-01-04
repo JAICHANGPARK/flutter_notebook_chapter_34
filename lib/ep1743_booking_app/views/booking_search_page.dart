@@ -137,19 +137,31 @@ class _BookingSearchPageState extends State<BookingSearchPage> {
                           height: 240,
                           decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(24)),
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text("The Wonderland Riverside Resorts"),
-                                Icon(
-                                  Icons.star,
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Text("The Wonderland Riverside Resorts"),
+                                  Icon(
+                                    Icons.star,
+                                  ),
+                                  Text("4.83 (167)"),
+                                ],
+                              ),
+                              Text("2 bedrooms 2 beds 1 bathroom"),
+                              Text(
+                                "\$108",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 13,
+                                  decoration: TextDecoration.lineThrough,
                                 ),
-                                Text("4.83 (167)"),
-                              ],
-                            )
-                          ],
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
