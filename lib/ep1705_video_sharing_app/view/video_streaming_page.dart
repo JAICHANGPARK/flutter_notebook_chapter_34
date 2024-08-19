@@ -74,7 +74,8 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           shape: StadiumBorder(),
                           color: Colors.deepOrange,
                         ),
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 8),
                         child: const Text(
                           "Follow",
                           style: TextStyle(
@@ -88,7 +89,8 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                           shape: const StadiumBorder(),
                           color: Colors.white.withOpacity(0.2),
                         ),
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 4),
                         child: const Row(
                           children: [
                             Icon(
@@ -152,9 +154,12 @@ class _VideoSharingLivePageState extends State<VideoSharingLivePage> {
                                           ),
                                         ),
                                         Gap(16),
-                                        Text("24mm",   style: TextStyle(
-                                          color: Colors.grey,
-                                        ),),
+                                        Text(
+                                          "24mm",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     Gap(8),
