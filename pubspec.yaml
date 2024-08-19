@@ -16,7 +16,7 @@ dependencies:
   google_fonts: ^6.1.0
   dots_indicator:
   ionicons: any
-  fl_chart: ^0.66.0
+  fl_chart: ^0.68.0
 
 dev_dependencies:
   flutter_test:
