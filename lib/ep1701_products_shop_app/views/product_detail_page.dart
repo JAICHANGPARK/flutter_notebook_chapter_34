@@ -104,7 +104,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           Text(
                             "Design house",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 18),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                           Gap(4),
                           Row(
